@@ -2,7 +2,7 @@
 
 > God node · 9 connections · `src/graphrag/decision.py`
 
-**Community:** [router.py](router.py.md)
+**Community:** [decision.py](decision.py.md)
 
 ## Connections by Relation
 
@@ -13,10 +13,10 @@
 - verify_item() `EXTRACTED`
 
 ### contains
-- decision.py `EXTRACTED`
+- [decision.py](decision.py.md) `EXTRACTED`
 
 ### imports
-- [router.py](router.py.md) `EXTRACTED`
+- router.py `EXTRACTED`
 - verify.py `EXTRACTED`
 - attributes.py `EXTRACTED`
 

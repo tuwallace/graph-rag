@@ -1,43 +1,43 @@
 # Graph Report - graph-rag  (2026-11-07)
 
 ## Corpus Check
-- 85 files · ~44,985 words
+- 86 files · ~46,842 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 4 file(s) not represented in the graph (top: (none) 2, .example 1, .lock 1)
 
 ## Summary
-- 624 nodes · 1047 edges · 46 communities (41 shown, 5 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.91)
+- 637 nodes · 1083 edges · 47 communities (44 shown, 3 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 30 edges (avg confidence: 0.91)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d97afcc4`
+- Built from commit: `0283b433`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- load.py
+- extract.py
 - mcp_server.py
-- router.py
+- decision.py
 - 07. Implementation roadmap
 - queries.py
 - docs/README.md
 - run_eval.py
 - pipeline.py
 - themes.py
-- json
+- pathlib
 - score.py
 - 03. Graph schema
-- sys
-- re
+- score_labels_v3.py
+- json
 - ADR-0009: Corpus: Anthropic Interviewer transcripts vs helpdesk tickets
-- ADR-0008: Decision model (Jev-style) as the question router
+- load.py
 - 04. Query routing and MCP tool surface
 - ADR-NNNN: Title (the decision, as a short noun phrase)
 - ADR-0010: Extraction pipeline for the transcripts
-- test_m3_modules.py
+- grounded.py
 - test_router.py
-- compare_m2.py
+- calibrate_verify.py
 - ADR-0001: Graph database
 - ADR-0002: How the graph is built
 - ADR-0003: Vector retrieval and graph expansion
@@ -61,9 +61,10 @@
 - 05_make_label_sheets.py
 - pre-push
 - graph-rag
+- confirm_adr0008.py
 
 ## God Nodes (most connected - your core abstractions)
-1. `07. Implementation roadmap` - 19 edges
+1. `07. Implementation roadmap` - 20 edges
 2. `ask_interviews()` - 14 edges
 3. `Stage` - 12 edges
 4. `segments()` - 11 edges
@@ -77,83 +78,83 @@
 ## Surprising Connections (you probably didn't know these)
 - `Milestones` --references--> `ask_interviews()`  [INFERRED]
   docs/07-implementation-roadmap.md → src/graphrag/mcp_server.py
+- `Nodes` --references--> `answer()`  [INFERRED]
+  docs/03-graph-schema.md → src/graphrag/router.py
 - `Decision-model attributes on `Segment` (properties, not nodes)` --references--> `attributes()`  [INFERRED]
   docs/03-graph-schema.md → src/graphrag/attributes.py
 - `Throughput reality (measured, one machine)` --references--> `attributes()`  [INFERRED]
   docs/05-components.md → src/graphrag/attributes.py
 - `Groundedness: what was needed (written 2026-11-07; built and measured below)` --references--> `is_grounded()`  [INFERRED]
   docs/07-implementation-roadmap.md → src/graphrag/ground.py
-- `Tool surface` --references--> `ask_interviews()`  [INFERRED]
-  docs/04-query-and-tools.md → src/graphrag/mcp_server.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (46 total, 5 thin omitted)
+## Communities (47 total, 3 thin omitted)
 
-### Community 0 - "load.py"
-Cohesion: 0.07
-Nodes (46): difflib, Groundedness: what was needed (written 2026-11-07; built and measured below), build_prompt(), dedupe(), extract(), hygiene_failures(), _nq(), Client (+38 more)
+### Community 0 - "extract.py"
+Cohesion: 0.06
+Nodes (49): difflib, Groundedness: what was needed (written 2026-11-07; built and measured below), ADR-0008: Decision model (Jev-style) as the question router, Confirmation, Confirmation result (2026-11-07), Consequences, Context, Decision (+41 more)
 
 ### Community 1 - "mcp_server.py"
 Cohesion: 0.06
 Nodes (42): 04. Query routing and MCP tool surface (Interviewer corpus), Answer rules (system prompt sketch), Example Cypher (parameterised, read-only), Global questions, ollmcp wiring, Optional: gated text-to-Cypher, Routes, Tool surface (+34 more)
 
-### Community 2 - "router.py"
-Cohesion: 0.08
-Nodes (32): 03. Graph schema (Interviewer corpus), Constraints and indexes, Decision-model attributes on `Segment` (properties, not nodes), Model, Nodes, Pipeline, Provenance rule, Relationships (all carry provenance) (+24 more)
+### Community 2 - "decision.py"
+Cohesion: 0.09
+Nodes (26): 03. Graph schema (Interviewer corpus), Constraints and indexes, Decision-model attributes on `Segment` (properties, not nodes), Model, Nodes, Pipeline, Provenance rule, Relationships (all carry provenance) (+18 more)
 
 ### Community 3 - "07. Implementation roadmap"
-Cohesion: 0.07
-Nodes (31): 07. Implementation roadmap, ADR-0008 confirmation (2026-11-07), Caveats carried forward, Critical path and parallel work, Decision points and fallbacks, Finding: the run was interrupted once, 2026-11-06 19:44:41, First three actions, Gate 2: retrieval check (proxy, no human labels) (+23 more)
+Cohesion: 0.09
+Nodes (21): 07. Implementation roadmap, ADR-0008 confirmation (2026-11-07), Caveats carried forward, Critical path and parallel work, Decision points and fallbacks, Finding: the run was interrupted once, 2026-11-06 19:44:41, First three actions, Gate 2: retrieval check (proxy, no human labels) (+13 more)
 
 ### Community 4 - "queries.py"
-Cohesion: 0.09
-Nodes (29): dotenv, hashlib, ndarray, numpy, os, Settings from environment / .env. No secrets in code., canonicalise(), clean() (+21 more)
+Cohesion: 0.08
+Nodes (26): ndarray, numpy, canonicalise(), clean(), cluster(), embed(), Client, Merge near-duplicate extracted names into canonical concepts using embeddings… (+18 more)
 
 ### Community 5 - "docs/README.md"
 Cohesion: 0.23
 Nodes (5): Archived: helpdesk-tickets design, Decision records, How to read the matrices, Index, Open questions for you
 
 ### Community 6 - "run_eval.py"
-Cohesion: 0.11
-Nodes (20): b_row(), ADR-0008 confirmation on questions written after the router changes were chosen…, timed_decide(), f(), chat(), config_A(), config_B(), config_C() (+12 more)
+Cohesion: 0.31
+Nodes (8): chat(), config_A(), config_B(), config_C(), final_answer(), M7: run the 40 questions through configs A (qwen3 picks typed tools), B (nimble…, Same behaviour as the typed MCP profile., run_tool()
 
 ### Community 7 - "pipeline.py"
 Cohesion: 0.13
-Nodes (17): quality(), Re-measure groundedness with answer generation, through the grounded path…, score(), Path, Resumable stage bookkeeping: each stage appends one JSON line per finished key;…, Stage, assemble(), kept_items() (+9 more)
+Nodes (18): quality(), Re-measure groundedness with answer generation, through the grounded path…, score(), Path, Resumable stage bookkeeping: each stage appends one JSON line per finished key;…, Stage, assemble(), kept_items() (+10 more)
 
 ### Community 8 - "themes.py"
-Cohesion: 0.20
-Nodes (15): argparse, M8 outcome (done 2026-11-07), itertools, networkx, build_graph(), detect(), fetch(), main() (+7 more)
+Cohesion: 0.21
+Nodes (15): M8 outcome (done 2026-11-07), itertools, networkx, unload(), build_graph(), detect(), fetch(), main() (+7 more)
 
-### Community 9 - "json"
-Cohesion: 0.15
-Nodes (10): asyncio, fastmcp, fastmcp_client_transports, json, pathlib, Start the MCP server over stdio and call it like a client would. Usage:…, M2: rerun extraction v3 on the same 20 transcripts as the spike. Usage:…, fake_extract() (+2 more)
+### Community 9 - "pathlib"
+Cohesion: 0.17
+Nodes (8): asyncio, fastmcp, fastmcp_client_transports, pathlib, Start the MCP server over stdio and call it like a client would. Usage:…, fake_extract(), test_stages_resume_and_assemble(), ext()
 
 ### Community 10 - "score.py"
-Cohesion: 0.22
-Nodes (12): context_numbers(), evaluate(), load(), norm(), nums(), p95(), pct(), quotes_in() (+4 more)
+Cohesion: 0.18
+Nodes (14): f(), context_numbers(), evaluate(), load(), norm(), nums(), p95(), pct() (+6 more)
 
 ### Community 11 - "03. Graph schema"
 Cohesion: 0.14
 Nodes (12): 01. Data analysis: what a graph can honestly add, Findings that drive the design, Tables, What this means, 03. Graph schema, Constraints and indexes (Cypher), Derived (materialized) edges and properties, Evolution path (+4 more)
 
-### Community 12 - "sys"
-Cohesion: 0.18
-Nodes (10): math, Download the Anthropic/AnthropicInterviewer transcripts into…, fmt(), Score the v3.2 labelling sheets. Usage: uv run --with pandas python…, wilson(), fmt(), Score filled-in labelling sheets. Usage: python spike/06_score_labels.py…, wilson() (+2 more)
+### Community 12 - "score_labels_v3.py"
+Cohesion: 0.24
+Nodes (7): math, fmt(), Score the v3.2 labelling sheets. Usage: uv run --with pandas python…, wilson(), fmt(), Score filled-in labelling sheets. Usage: python spike/06_score_labels.py…, wilson()
 
-### Community 13 - "re"
-Cohesion: 0.23
-Nodes (6): Gate 2 proxy: do the top-5 vector hits for 10 queries contain answers that…, ollama, pandas, random, re, Blind labelling sheet from extraction v3.2 output -> data/labeling_v3/ (git-…
+### Community 13 - "json"
+Cohesion: 0.19
+Nodes (9): json, ollama, pandas, random, re, requests, Blind labelling sheet from extraction v3.2 output -> data/labeling_v3/ (git-…, M2: rerun extraction v3 on the same 20 transcripts as the spike. Usage:… (+1 more)
 
 ### Community 14 - "ADR-0009: Corpus: Anthropic Interviewer transcripts vs helpdesk tickets"
 Cohesion: 0.17
 Nodes (12): ADR-0009: Corpus: Anthropic Interviewer transcripts vs helpdesk tickets, Confirmation, Consequences, Context, Decision drivers, Decision (recommended, pending your confirmation), Impact on the existing design, Options (+4 more)
 
-### Community 15 - "ADR-0008: Decision model (Jev-style) as the question router"
-Cohesion: 0.18
-Nodes (11): ADR-0008: Decision model (Jev-style) as the question router, Confirmation, Confirmation result (2026-11-07), Consequences, Context, Decision, Decision drivers, M3 note (2026-11-06) (+3 more)
+### Community 15 - "load.py"
+Cohesion: 0.11
+Nodes (24): argparse, dotenv, hashlib, os, Settings from environment / .env. No secrets in code., build(), checks(), chunks() (+16 more)
 
 ### Community 16 - "04. Query routing and MCP tool surface"
 Cohesion: 0.20
@@ -167,13 +168,17 @@ Nodes (9): ADR-NNNN: Title (the decision, as a short noun phrase), Confirmation,
 Cohesion: 0.20
 Nodes (10): ADR-0010: Extraction pipeline for the transcripts, Confirmation, Consequences, Context, Decision, Decision drivers, M3 amendments (2026-11-06), Options (+2 more)
 
+### Community 19 - "grounded.py"
+Cohesion: 0.15
+Nodes (17): Groundedness: built and measured (2026-11-07), allowed_numbers(), grounded_answer(), items(), numbers(), quotes_in(), Grounded answers: the server renders facts as text, a model may only add…, Route, render, frame with the LLM, validate, fall back to the rendered facts on… (+9 more)
+
 ### Community 20 - "test_router.py"
 Cohesion: 0.31
 Nodes (6): fake(), FakeIndex, test_concept_stats_low_enum_confidence_clarifies(), test_low_confidence_clarifies_and_runs_nothing(), test_out_of_scope_calls_no_query(), test_weak_concept_match_clarifies()
 
-### Community 21 - "compare_m2.py"
-Cohesion: 0.28
-Nodes (5): collections, requests, match(), Compare v3 against the labelled v2 edges (data/labeling_claude, LLM labels).…, statistics
+### Community 21 - "calibrate_verify.py"
+Cohesion: 0.20
+Nodes (7): csv, Calibrate the verify step against the LLM-labelled v3.2 sheet (a calibration,…, match(), Compare v3 against the labelled v2 edges (data/labeling_claude, LLM labels).…, Download the Anthropic/AnthropicInterviewer transcripts into…, statistics, urllib_request
 
 ### Community 22 - "ADR-0001: Graph database"
 Cohesion: 0.22
@@ -202,6 +207,10 @@ Nodes (9): ADR-0007: Privacy and access control, Confirmation, Consequences, Con
 ### Community 28 - "Spike 01: can local models build the graph from the transcripts?"
 Cohesion: 0.22
 Nodes (9): Addendum 2: v3.2 labels by Claude (2026-11-06), not a human result, Addendum: provisional labels by Claude (2026-11-05), not a human result, Against the ADR-0009 thresholds, Limits of this spike, Results, Setup, Spike 01: can local models build the graph from the transcripts?, Verdict (+1 more)
+
+### Community 29 - "__init__.py"
+Cohesion: 0.20
+Nodes (4): collections, Gate 2 proxy: do the top-5 vector hits for 10 queries contain answers that…, Routing accuracy on questions written by a different model (qwen2.5:32b) from…, neo4j
 
 ### Community 30 - "08. Evaluation results (M7)"
 Cohesion: 0.25
@@ -232,8 +241,8 @@ Cohesion: 0.33
 Nodes (6): 02. Architecture, Components, Failure handling, Resource budget, Routes (decided by `nimble`, see [04](04-query-and-tools.md)), Two flows
 
 ### Community 38 - "ADR-0012: Privacy, licensing and public-repo rules for the transcript corpus"
-Cohesion: 0.33
-Nodes (6): ADR-0012: Privacy, licensing and public-repo rules for the transcript corpus, Confirmation, Consequences, Context, Decision, Revisit when
+Cohesion: 0.29
+Nodes (7): ADR-0012: Privacy, licensing and public-repo rules for the transcript corpus, Confirmation, Consequences, Context, Decision, PII pass record (2026-11-07, before the first public commit), Revisit when
 
 ### Community 39 - "ADR-0013: Proceed without human labels for the demo"
 Cohesion: 0.33
@@ -255,25 +264,29 @@ Nodes (5): 01. Data analysis: Anthropic Interviewer transcripts, Risks specific 
 Cohesion: 0.60
 Nodes (4): best_pair(), norm(), pairs(), Build blind labelling sheets under data/labeling/ (git-ignored: they contain…
 
+### Community 46 - "confirm_adr0008.py"
+Cohesion: 0.40
+Nodes (3): b_row(), ADR-0008 confirmation on questions written after the router changes were chosen…, timed_decide()
+
 ## Knowledge Gaps
-- **202 isolated node(s):** `.venv/bin/python`, `PYTHONPATH`, `NEO4J_URI`, `NEO4J_USER`, `graph-rag` (+197 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 330 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **203 isolated node(s):** `.venv/bin/python`, `PYTHONPATH`, `NEO4J_URI`, `NEO4J_USER`, `graph-rag` (+198 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 334 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ask_interviews()` connect `mcp_server.py` to `router.py`, `07. Implementation roadmap`?**
-  _High betweenness centrality (0.249) - this node is a cross-community bridge._
-- **Why does `07. Implementation roadmap` connect `07. Implementation roadmap` to `load.py`, `themes.py`, `docs/README.md`?**
-  _High betweenness centrality (0.181) - this node is a cross-community bridge._
+- **Why does `ask_interviews()` connect `mcp_server.py` to `07. Implementation roadmap`, `grounded.py`?**
+  _High betweenness centrality (0.221) - this node is a cross-community bridge._
+- **Why does `07. Implementation roadmap` connect `07. Implementation roadmap` to `extract.py`, `themes.py`, `grounded.py`, `docs/README.md`?**
+  _High betweenness centrality (0.169) - this node is a cross-community bridge._
 - **Why does `Graph RAG demo: Anthropic Interviewer transcripts` connect `mcp_server.py` to `docs/README.md`?**
-  _High betweenness centrality (0.114) - this node is a cross-community bridge._
+  _High betweenness centrality (0.101) - this node is a cross-community bridge._
 - **Are the 7 inferred relationships involving `ask_interviews()` (e.g. with `Tool surface` and `Metrics`) actually correct?**
   _`ask_interviews()` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `.venv/bin/python`, `PYTHONPATH`, `NEO4J_URI` to the rest of the system?**
-  _202 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `load.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.06708595387840671 - nodes in this community are weakly interconnected._
+  _203 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `extract.py` be split into smaller, more focused modules?**
+  _Cohesion score 0.05764411027568922 - nodes in this community are weakly interconnected._
 - **Should `mcp_server.py` be split into smaller, more focused modules?**
   _Cohesion score 0.06423034330011074 - nodes in this community are weakly interconnected._

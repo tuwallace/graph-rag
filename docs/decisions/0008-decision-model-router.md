@@ -1,6 +1,6 @@
 # ADR-0008: Decision model (Jev-style) as the question router
 
-- Status: accepted 2026-11-07 on accuracy and argument errors; the latency bound is amended (see "Confirmation result"). Earlier: proposed (amended 2026-11-05: routes, verification and attributes now target transcripts; see [spike 01](../spike-01-extraction.md) for measured latency)
+- Status: accepted 2026-11-07 on accuracy and argument errors; the latency bound is amended to p95 under 2 s and was accepted by the project owner on 2026-11-07 (see "Confirmation result"). Earlier: proposed (amended 2026-11-05: routes, verification and attributes now target transcripts; see [spike 01](../spike-01-extraction.md) for measured latency)
 - Date: 2026-11-05
 - Deciders: twallace
 - Reversibility: Easy. The router is one function; the typed tools underneath do not change.
@@ -95,8 +95,8 @@ Changes made after M7, justified by the dev half only: confidence threshold 0.6 
 | Wrong-argument calls, original 40 (24 with arguments) | B 1 (router v2), A 3 | Met, directionally (B was 3 under v1; two of those fixes were chosen after seeing these questions, so the fresh set is the cleaner evidence) |
 | Abstentions on in-scope questions | fresh 20: 1 of 18; original 40: 2 of 36 | Fine |
 | Out-of-scope questions | 6/6 handled, none leaked at any threshold | Met |
-| p95 router latency, fresh text (n = 20) | p50 1.13 s, **p95 1.57 s** | **Not met** |
+| p95 router latency, fresh text (n = 20) | p50 1.13 s, **p95 1.57 s** | Not met against 1 s; **met against the accepted 2 s bound** |
 
-Latency: the decision call is a near-constant 1.13 s (fresh inputs; 18 of 20 within 1.12 to 1.22 s, two at 1.57 s), not dependent on question length. Shortening the route descriptions cuts it to about 0.88 s but costs accuracy: on the dev half, one-line descriptions gave 18/21 correct with 6 of 21 below the 0.5 confidence gate, and bare route names gave 15/21 with 14 below the gate (full descriptions: 19/21, 1 below). `tev1` models are not installed here and were not tested. I therefore keep the full descriptions and **amend the bound to p95 under 2 s on this machine**, with the reason that the router adds about 1.1 s to an answer that takes about 5 s end to end and the faster variants abstain more often. This amendment is my judgement, made after seeing the result; revisit it if a lighter router (`tev1`) becomes available.
+Latency: the decision call is a near-constant 1.13 s (fresh inputs; 18 of 20 within 1.12 to 1.22 s, two at 1.57 s), not dependent on question length. Shortening the route descriptions cuts it to about 0.88 s but costs accuracy: on the dev half, one-line descriptions gave 18/21 correct with 6 of 21 below the 0.5 confidence gate, and bare route names gave 15/21 with 14 below the gate (full descriptions: 19/21, 1 below). `tev1` models are not installed here and were not tested. I therefore keep the full descriptions and **amend the bound to p95 under 2 s on this machine**, with the reason that the router adds about 1.1 s to an answer that takes about 5 s end to end and the faster variants abstain more often. The amendment was proposed by me after seeing the result and was **accepted by the project owner on 2026-11-07**, so p95 under 2 s is now the bound of record (the measured p95 of 1.57 s meets it). Revisit it if a lighter router (`tev1`) becomes available.
 
 Remaining weaknesses: a one-in-three miss on questions that mix a concept with a group ("Which group uses AI for code generation the most?" was routed as `concept_stats` by both A and B), and an overview question phrased as "biggest themes in how people use AI" routed to `concept_stats` (confidence 0.56). Add such mixed questions to a future eval set rather than tuning on them.

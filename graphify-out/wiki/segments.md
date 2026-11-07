@@ -2,7 +2,7 @@
 
 > God node · 11 connections · `src/graphrag/parse.py`
 
-**Community:** [load.py](load.py.md)
+**Community:** [extract.py](extract.py.md)
 
 ## Connections by Relation
 
@@ -20,7 +20,7 @@
 ### imports
 - [pipeline.py](pipeline.py.md) `EXTRACTED`
 - [load.py](load.py.md) `EXTRACTED`
-- extract.py `EXTRACTED`
+- [extract.py](extract.py.md) `EXTRACTED`
 
 ### rationale_for
 - One segment per participant turn, paired with the interviewer turn before it. `EXTRACTED`

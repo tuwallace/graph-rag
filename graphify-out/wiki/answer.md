@@ -2,7 +2,7 @@
 
 > God node · 9 connections · `src/graphrag/router.py`
 
-**Community:** [router.py](router.py.md)
+**Community:** [grounded.py](grounded.py.md)
 
 ## Connections by Relation
 
@@ -14,7 +14,7 @@
 - clarify() `EXTRACTED`
 
 ### contains
-- [router.py](router.py.md) `EXTRACTED`
+- router.py `EXTRACTED`
 - done() `EXTRACTED`
 
 ### rationale_for

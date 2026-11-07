@@ -1,20 +1,20 @@
 # pipeline.py
 
-> 26 nodes
+> 27 nodes
 
 ## Key Concepts
 
-- **pipeline.py** (28 connections) — `src/graphrag/pipeline.py`
+- **pipeline.py** (29 connections) — `src/graphrag/pipeline.py`
 - **grounded_eval.py** (13 connections) — `eval/grounded_eval.py`
+- **time** (13 connections)
 - **Stage** (12 connections) — `src/graphrag/manifest.py`
-- **time** (12 connections)
 - **main()** (8 connections) — `src/graphrag/pipeline.py`
+- **select()** (8 connections) — `src/graphrag/pipeline.py`
 - **manifest.py** (8 connections) — `src/graphrag/manifest.py`
 - **assemble()** (5 connections) — `src/graphrag/pipeline.py`
 - **score()** (4 connections) — `eval/grounded_eval.py`
 - **stage_attributes()** (4 connections) — `src/graphrag/pipeline.py`
 - **stage_normalise()** (4 connections) — `src/graphrag/pipeline.py`
-- **unload()** (4 connections) — `src/graphrag/pipeline.py`
 - **.__init__()** (3 connections) — `src/graphrag/manifest.py`
 - **kept_items()** (3 connections) — `src/graphrag/pipeline.py`
 - **stage_extract()** (3 connections) — `src/graphrag/pipeline.py`
@@ -29,21 +29,22 @@
 - **Re-measure groundedness with answer generation, through the grounded path…** (1 connections) — `eval/grounded_eval.py`
 - **Resumable stage bookkeeping: each stage appends one JSON line per finished key;…** (1 connections) — `src/graphrag/manifest.py`
 - **Stage-major build pipeline: extract (qwen) -> verify + attributes (nimble) ->…** (1 connections) — `src/graphrag/pipeline.py`
-- *... and 1 more nodes in this community*
+- *... and 2 more nodes in this community*
 
 ## Relationships
 
-- [load.py](load.py.md) (11 shared connections)
-- [json](json.md) (5 shared connections)
+- [extract.py](extract.py.md) (10 shared connections)
+- [json](json.md) (9 shared connections)
+- [load.py](load.py.md) (6 shared connections)
 - [__init__.py](__init__.py.md) (4 shared connections)
-- [router.py](router.py.md) (4 shared connections)
-- [themes.py](themes.py.md) (3 shared connections)
-- [run_eval.py](run_eval.py.md) (3 shared connections)
-- [queries.py](queries.py.md) (3 shared connections)
-- [re](re.md) (3 shared connections)
-- [score.py](score.py.md) (2 shared connections)
-- [compare_m2.py](compare_m2.py.md) (2 shared connections)
-- [sys](sys.md) (1 shared connections)
+- [score.py](score.py.md) (3 shared connections)
+- [decision.py](decision.py.md) (3 shared connections)
+- [themes.py](themes.py.md) (2 shared connections)
+- [pathlib](pathlib.md) (2 shared connections)
+- [queries.py](queries.py.md) (1 shared connections)
+- [confirm_adr0008.py](confirm_adr0008.py.md) (1 shared connections)
+- [run_eval.py](run_eval.py.md) (1 shared connections)
+- [calibrate_verify.py](calibrate_verify.py.md) (1 shared connections)
 
 ## Source Files
 
@@ -53,7 +54,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 84 (100%)
+- EXTRACTED: 89 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

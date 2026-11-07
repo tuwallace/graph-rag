@@ -1,34 +1,23 @@
 # ADR-0008: Decision model (Jev-style) as the question router
 
-> 11 nodes
+> God node · 11 connections · `docs/decisions/0008-decision-model-router.md`
 
-## Key Concepts
+**Community:** [extract.py](extract.py.md)
 
-- **ADR-0008: Decision model (Jev-style) as the question router** (11 connections) — `docs/decisions/0008-decision-model-router.md`
-- **Confirmation** (1 connections) — `docs/decisions/0008-decision-model-router.md`
-- **Confirmation result (2026-11-07)** (1 connections) — `docs/decisions/0008-decision-model-router.md`
-- **Consequences** (1 connections) — `docs/decisions/0008-decision-model-router.md`
-- **Context** (1 connections) — `docs/decisions/0008-decision-model-router.md`
-- **Decision** (1 connections) — `docs/decisions/0008-decision-model-router.md`
-- **Decision drivers** (1 connections) — `docs/decisions/0008-decision-model-router.md`
-- **M3 note (2026-11-06)** (1 connections) — `docs/decisions/0008-decision-model-router.md`
-- **Options** (1 connections) — `docs/decisions/0008-decision-model-router.md`
-- **Revisit when** (1 connections) — `docs/decisions/0008-decision-model-router.md`
-- **Weighted decision matrix** (1 connections) — `docs/decisions/0008-decision-model-router.md`
+## Connections by Relation
 
-## Relationships
-
-- [docs/README.md](docs-README.md.md) (1 shared connections)
-
-## Source Files
-
-- `docs/decisions/0008-decision-model-router.md`
-
-## Audit Trail
-
-- EXTRACTED: 11 (100%)
-- INFERRED: 0 (0%)
-- AMBIGUOUS: 0 (0%)
+### contains
+- 0008-decision-model-router.md `EXTRACTED`
+- Context `EXTRACTED`
+- Decision drivers `EXTRACTED`
+- Options `EXTRACTED`
+- Weighted decision matrix `EXTRACTED`
+- Decision `EXTRACTED`
+- Consequences `EXTRACTED`
+- Confirmation `EXTRACTED`
+- Revisit when `EXTRACTED`
+- M3 note (2026-11-06) `EXTRACTED`
+- Confirmation result (2026-11-07) `EXTRACTED`
 
 ---
 

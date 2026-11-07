@@ -9,12 +9,12 @@
 - **05-components.md** (13 connections) — `docs/05-components.md`
 - **0009-corpus-anthropic-interviewer.md** (13 connections) — `docs/decisions/0009-corpus-anthropic-interviewer.md`
 - **06-evaluation-and-roadmap.md** (12 connections) — `docs/06-evaluation-and-roadmap.md`
+- **07-implementation-roadmap.md** (12 connections) — `docs/07-implementation-roadmap.md`
 - **0008-decision-model-router.md** (12 connections) — `docs/decisions/0008-decision-model-router.md`
 - **0010-extraction-pipeline.md** (12 connections) — `docs/decisions/0010-extraction-pipeline.md`
 - **spike-01-extraction.md** (12 connections) — `docs/spike-01-extraction.md`
-- **07-implementation-roadmap.md** (11 connections) — `docs/07-implementation-roadmap.md`
+- **0012-privacy-for-transcripts.md** (10 connections) — `docs/decisions/0012-privacy-for-transcripts.md`
 - **0011-retrieval-in-neo4j.md** (9 connections) — `docs/decisions/0011-retrieval-in-neo4j.md`
-- **0012-privacy-for-transcripts.md** (9 connections) — `docs/decisions/0012-privacy-for-transcripts.md`
 - **docs/01-data-analysis.md** (8 connections) — `docs/01-data-analysis.md`
 - **docs/04-query-and-tools.md** (8 connections) — `docs/04-query-and-tools.md`
 - **0013-waive-human-labels.md** (8 connections) — `docs/decisions/0013-waive-human-labels.md`
@@ -34,7 +34,7 @@
 ## Relationships
 
 - [mcp_server.py](mcp_server.py.md) (4 shared connections)
-- [router.py](router.py.md) (2 shared connections)
+- [decision.py](decision.py.md) (2 shared connections)
 - [01. Data analysis: Anthropic Interviewer transcripts](01._Data_analysis-_Anthropic_Interviewer_transcripts.md) (1 shared connections)
 - [02. Architecture](02._Architecture.md) (1 shared connections)
 - [07. Implementation roadmap](07._Implementation_roadmap.md) (1 shared connections)
@@ -71,7 +71,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 138 (100%)
+- EXTRACTED: 139 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

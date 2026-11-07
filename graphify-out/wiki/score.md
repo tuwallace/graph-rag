@@ -2,7 +2,7 @@
 
 > God node · 9 connections · `src/graphrag/ground.py`
 
-**Community:** [load.py](load.py.md)
+**Community:** [extract.py](extract.py.md)
 
 ## Connections by Relation
 
@@ -18,7 +18,7 @@
 - ground.py `EXTRACTED`
 
 ### imports
-- extract.py `EXTRACTED`
+- [extract.py](extract.py.md) `EXTRACTED`
 
 ### rationale_for
 - Fraction of quote tokens covered by in-order matching blocks of the haystack… `EXTRACTED`

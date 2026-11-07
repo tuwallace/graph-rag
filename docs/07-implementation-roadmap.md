@@ -335,3 +335,14 @@ Published to the public repo [tuwallace/graph-rag](https://github.com/tuwallace/
 - **Not published:** `data/`, `.env`, `.claude/`, the graphify cache, any transcript text or graph dump.
 
 Open caveats unchanged: precision is LLM-estimated; recall is unmeasured; the evaluation was written by one author; the router missed the 1 s latency bound (amended to 2 s); the README results are from one machine.
+
+## Open items: closing pass (2026-11-07)
+
+Independent checks by `qwen2.5:32b` (run alone; `eval/judge32b.py`, `eval/route_generated.py`). All are model-judged; the project owner states they confirmed the labels and reviewed the generated questions (not independently verifiable by me).
+
+- **Precision, 90 kept edges (30 per kind):** 70 correct, 11 hypothetical, 9 wrong. Correct only 78%; correct or hypothetical 90%. By kind (correct only): AI uses 87%, tasks 83%, concerns 63% (7 of 30 concerns are hypothetical). Agrees with the earlier LLM estimate of about 0.80.
+- **Verifier on 30 rejected edges:** 21 (70%) were wrong or hypothetical, 9 (30%) were correct, so the verifier drops some good edges.
+- **Recall, 10 transcripts:** the judge listed 256 things participants say; the kept edges cover 87 (34%). Workforce 35%, creatives 36%, scientists 30%. This is low and noisy: the judge lists many fine-grained items and matching is strict, but recall is clearly well below precision. Counts and rankings therefore under-count.
+- **Router on 48 judge-written questions (40 in scope, 8 out of scope):** B (router v2) 30/40 (75%), 4 abstained, 28/36 (78%) when answered; A 27/40 (68%). Out of scope 8/8 for both. Stats kind and group: B 7/8, A 6/8. Weak spot: `theme_overview` questions are sent to `concept_stats` or `local_search` (7 of 8 wrong), which is lower than on the author-written set (19/21 overall).
+- **Latency bound:** p95 under 2 s accepted by the owner (ADR-0008).
+- **Still needing a human:** none of the independence items remain open on labels or questions per the owner's confirmation; the dataset licence ambiguity (card front matter says mit, body says CC-BY) and the decision to push remain with the owner.
