@@ -1,0 +1,304 @@
+[
+ {
+  "route": "local_search",
+  "q": "How do creatives use AI when they are brainstorming?",
+  "id": "q01",
+  "split": "dev"
+ },
+ {
+  "route": "local_search",
+  "q": "What do scientists say about trusting AI for their research?",
+  "id": "q02",
+  "split": "held"
+ },
+ {
+  "route": "local_search",
+  "q": "How do people feel about AI writing their emails for them?",
+  "id": "q03",
+  "split": "dev"
+ },
+ {
+  "route": "local_search",
+  "q": "Why do some participants avoid using AI for creative work?",
+  "id": "q04",
+  "split": "held"
+ },
+ {
+  "route": "local_search",
+  "q": "What is it like to use AI to learn a new skill?",
+  "id": "q05",
+  "split": "dev"
+ },
+ {
+  "route": "local_search",
+  "q": "How are teachers using AI to prepare lessons?",
+  "id": "q06",
+  "split": "held"
+ },
+ {
+  "route": "local_search",
+  "q": "What worries people about relying on AI too much?",
+  "id": "q07",
+  "split": "dev"
+ },
+ {
+  "route": "local_search",
+  "q": "Describe how participants check whether AI output is correct.",
+  "id": "q08",
+  "split": "held"
+ },
+ {
+  "route": "concept_stats",
+  "q": "What are the most common concerns about AI overall?",
+  "kind": "concern",
+  "group": "all",
+  "id": "q09",
+  "split": "dev"
+ },
+ {
+  "route": "concept_stats",
+  "q": "Which concerns do scientists raise most often?",
+  "kind": "concern",
+  "group": "scientists",
+  "id": "q10",
+  "split": "held"
+ },
+ {
+  "route": "concept_stats",
+  "q": "What do creatives mainly use AI for?",
+  "kind": "ai_use",
+  "group": "creatives",
+  "id": "q11",
+  "split": "dev"
+ },
+ {
+  "route": "concept_stats",
+  "q": "Rank the top ways workforce participants use AI.",
+  "kind": "ai_use",
+  "group": "workforce",
+  "id": "q12",
+  "split": "held"
+ },
+ {
+  "route": "concept_stats",
+  "q": "What work tasks come up most among creatives?",
+  "kind": "task",
+  "group": "creatives",
+  "id": "q13",
+  "split": "dev"
+ },
+ {
+  "route": "concept_stats",
+  "q": "Which tasks do scientists mention most?",
+  "kind": "task",
+  "group": "scientists",
+  "id": "q14",
+  "split": "held"
+ },
+ {
+  "route": "concept_stats",
+  "q": "What are the top uses of AI across all the interviews?",
+  "kind": "ai_use",
+  "group": "all",
+  "id": "q15",
+  "split": "dev"
+ },
+ {
+  "route": "concept_stats",
+  "q": "What do creative professionals worry about most?",
+  "kind": "concern",
+  "group": "creatives",
+  "id": "q16",
+  "split": "held"
+ },
+ {
+  "route": "concept_stats",
+  "q": "List the most frequent work tasks among workforce interviewees.",
+  "kind": "task",
+  "group": "workforce",
+  "id": "q17",
+  "split": "dev"
+ },
+ {
+  "route": "concept_stats",
+  "q": "What are scientists' main uses of AI, ranked?",
+  "kind": "ai_use",
+  "group": "scientists",
+  "id": "q18",
+  "split": "held"
+ },
+ {
+  "route": "compare_groups",
+  "q": "How do scientists and creatives differ on hallucinations?",
+  "concepts": [
+   "hallucinations"
+  ],
+  "id": "q19",
+  "split": "dev"
+ },
+ {
+  "route": "compare_groups",
+  "q": "Compare how often the three groups worry about job displacement.",
+  "concepts": [
+   "job displacement"
+  ],
+  "id": "q20",
+  "split": "held"
+ },
+ {
+  "route": "compare_groups",
+  "q": "Which group uses AI for code generation the most?",
+  "concepts": [
+   "code generation"
+  ],
+  "id": "q21",
+  "split": "dev"
+ },
+ {
+  "route": "compare_groups",
+  "q": "Is plagiarism a bigger concern for creatives than for scientists?",
+  "concepts": [
+   "plagiarism"
+  ],
+  "id": "q22",
+  "split": "held"
+ },
+ {
+  "route": "compare_groups",
+  "q": "Compare brainstorming with AI across workforce, creatives and scientists.",
+  "concepts": [
+   "brainstorming"
+  ],
+  "id": "q23",
+  "split": "dev"
+ },
+ {
+  "route": "compare_groups",
+  "q": "Do scientists or creatives mention literature review more?",
+  "concepts": [
+   "literature review"
+  ],
+  "id": "q24",
+  "split": "held"
+ },
+ {
+  "route": "compare_groups",
+  "q": "How does the verification burden compare between groups?",
+  "concepts": [
+   "verification burden"
+  ],
+  "id": "q25",
+  "split": "dev"
+ },
+ {
+  "route": "evidence",
+  "q": "Show me quotes about losing skills because of AI.",
+  "concepts": [
+   "losing skills"
+  ],
+  "id": "q26",
+  "split": "dev"
+ },
+ {
+  "route": "evidence",
+  "q": "Give examples of people worried about job security.",
+  "concepts": [
+   "job security"
+  ],
+  "id": "q27",
+  "split": "held"
+ },
+ {
+  "route": "evidence",
+  "q": "Can I see what people said about hallucinations?",
+  "concepts": [
+   "hallucinations"
+  ],
+  "id": "q28",
+  "split": "dev"
+ },
+ {
+  "route": "evidence",
+  "q": "Quote participants talking about authenticity.",
+  "concepts": [
+   "authenticity"
+  ],
+  "id": "q29",
+  "split": "held"
+ },
+ {
+  "route": "evidence",
+  "q": "Show examples of using AI for email drafting.",
+  "concepts": [
+   "email drafting"
+  ],
+  "id": "q30",
+  "split": "dev"
+ },
+ {
+  "route": "evidence",
+  "q": "What did participants say about privacy risks? Show quotes.",
+  "concepts": [
+   "privacy risks"
+  ],
+  "id": "q31",
+  "split": "held"
+ },
+ {
+  "route": "evidence",
+  "q": "Show me quotes about market saturation.",
+  "concepts": [
+   "market saturation"
+  ],
+  "id": "q32",
+  "split": "dev"
+ },
+ {
+  "route": "theme_overview",
+  "q": "What are the main themes across all the interviews?",
+  "id": "q33",
+  "split": "dev"
+ },
+ {
+  "route": "theme_overview",
+  "q": "Give me an overall summary of what participants think about AI.",
+  "id": "q34",
+  "split": "held"
+ },
+ {
+  "route": "theme_overview",
+  "q": "What big-picture themes come up in the creatives interviews?",
+  "id": "q35",
+  "split": "dev"
+ },
+ {
+  "route": "theme_overview",
+  "q": "Summarise the overall findings from the scientists.",
+  "id": "q36",
+  "split": "held"
+ },
+ {
+  "route": "out_of_scope",
+  "q": "What is 17 times 23?",
+  "id": "q37",
+  "split": "dev"
+ },
+ {
+  "route": "out_of_scope",
+  "q": "hello, how are you today?",
+  "id": "q38",
+  "split": "held"
+ },
+ {
+  "route": "out_of_scope",
+  "q": "Who won the World Cup in 2010?",
+  "id": "q39",
+  "split": "dev"
+ },
+ {
+  "route": "out_of_scope",
+  "q": "Write me a Python function that reverses a string.",
+  "id": "q40",
+  "split": "held"
+ }
+]

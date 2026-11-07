@@ -1,0 +1,23 @@
+# Neo4j only. Ollama runs on the HOST (Docker on macOS cannot use the Apple GPU).
+# All ports are bound to 127.0.0.1: Neo4j here has a password, but nothing needs to be reachable from the network.
+services:
+  neo4j:
+    image: neo4j:5.26-community        # verified to exist for arm64 on 2026-11-05
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:7474:7474"          # Neo4j Browser
+      - "127.0.0.1:7687:7687"          # Bolt
+    environment:
+      NEO4J_AUTH: "neo4j/${NEO4J_PASSWORD:?set NEO4J_PASSWORD in .env}"
+      NEO4J_server_memory_heap_initial__size: 1G
+      NEO4J_server_memory_heap_max__size: 1G
+      NEO4J_server_memory_pagecache_size: 512M
+      NEO4J_db_transaction_timeout: 30s
+    volumes:
+      - ./data/neo4j:/data
+    healthcheck:
+      test: ["CMD-SHELL", "cypher-shell -u neo4j -p \"$${NEO4J_AUTH#neo4j/}\" 'RETURN 1' || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 12
+      start_period: 20s

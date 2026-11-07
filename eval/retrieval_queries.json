@@ -1,0 +1,12 @@
+[
+ {"q": "worried about losing creative skills because of AI", "re": "skill|deskill|atroph|lose my|losing"},
+ {"q": "AI hallucinations and wrong answers", "re": "hallucinat|inaccura|incorrect|wrong|made up|fabricat"},
+ {"q": "fear of losing my job to AI", "re": "\\bjob|replace|obsolete|layoff|laid off|unemploy"},
+ {"q": "using AI for brainstorming ideas", "re": "brainstorm|ideas|ideation"},
+ {"q": "writing code with AI assistance", "re": "\\bcode\\b|coding|programm|debug|software"},
+ {"q": "AI generated art and copyright concerns", "re": "copyright|plagiar|stolen|stole|scrap|trained on|artists"},
+ {"q": "privacy and sensitive data concerns", "re": "privacy|confidential|sensitive|data"},
+ {"q": "scientists using AI for literature review", "re": "literature|papers|citations|research"},
+ {"q": "trusting AI output without checking it", "re": "trust|verify|double.check|fact.check|check"},
+ {"q": "AI saves me time on routine tasks", "re": "save.{0,10}time|faster|efficien|time.consuming|routine|tedious"}
+]

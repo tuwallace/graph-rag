@@ -1,0 +1,136 @@
+[
+ {
+  "route": "local_search",
+  "q": "What do participants say about using AI to learn something new?",
+  "id": "c01"
+ },
+ {
+  "route": "local_search",
+  "q": "How do writers feel about AI tools helping with their drafts?",
+  "id": "c02"
+ },
+ {
+  "route": "local_search",
+  "q": "What is the experience of using AI at work for people who are not technical?",
+  "id": "c03"
+ },
+ {
+  "route": "concept_stats",
+  "q": "Which concerns come up most among the workforce group?",
+  "kind": "concern",
+  "group": "workforce",
+  "id": "c04"
+ },
+ {
+  "route": "concept_stats",
+  "q": "What are the most common tasks across all the interviews?",
+  "kind": "task",
+  "group": "all",
+  "id": "c05"
+ },
+ {
+  "route": "concept_stats",
+  "q": "How do scientists mainly use AI? Give me a ranking.",
+  "kind": "ai_use",
+  "group": "scientists",
+  "id": "c06"
+ },
+ {
+  "route": "concept_stats",
+  "q": "What worries creatives the most?",
+  "kind": "concern",
+  "group": "creatives",
+  "id": "c07"
+ },
+ {
+  "route": "concept_stats",
+  "q": "Which AI uses are most common among workforce participants?",
+  "kind": "ai_use",
+  "group": "workforce",
+  "id": "c08"
+ },
+ {
+  "route": "compare_groups",
+  "q": "Do creatives or workforce participants mention image generation more?",
+  "concepts": [
+   "image generation"
+  ],
+  "id": "c09"
+ },
+ {
+  "route": "compare_groups",
+  "q": "How does the concern about reliability differ across the three groups?",
+  "concepts": [
+   "reliability"
+  ],
+  "id": "c10"
+ },
+ {
+  "route": "compare_groups",
+  "q": "Compare research assistance across groups.",
+  "concepts": [
+   "research assistance"
+  ],
+  "id": "c11"
+ },
+ {
+  "route": "compare_groups",
+  "q": "Which group raises ai inaccuracy most often?",
+  "concepts": [
+   "ai inaccuracy"
+  ],
+  "id": "c12"
+ },
+ {
+  "route": "evidence",
+  "q": "Show me quotes about editing with AI.",
+  "concepts": [
+   "editing"
+  ],
+  "id": "c13"
+ },
+ {
+  "route": "evidence",
+  "q": "Give me examples of people worried about over reliance on AI.",
+  "concepts": [
+   "over reliance on ai"
+  ],
+  "id": "c14"
+ },
+ {
+  "route": "evidence",
+  "q": "What did people say about data analysis? I want quotes.",
+  "concepts": [
+   "data analysis"
+  ],
+  "id": "c15"
+ },
+ {
+  "route": "evidence",
+  "q": "Can you show quotes about job displacement?",
+  "concepts": [
+   "job displacement"
+  ],
+  "id": "c16"
+ },
+ {
+  "route": "theme_overview",
+  "q": "What are the biggest themes in how people use AI?",
+  "id": "c17"
+ },
+ {
+  "route": "theme_overview",
+  "q": "Give me a high-level overview of the interviews.",
+  "id": "c18"
+ },
+ {
+  "route": "out_of_scope",
+  "q": "What's the capital of Australia?",
+  "id": "c19"
+ },
+ {
+  "route": "out_of_scope",
+  "q": "Translate 'good morning' into French.",
+  "id": "c20"
+ }
+]

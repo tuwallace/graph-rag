@@ -1,0 +1,25 @@
+[project]
+name = "graph-rag"
+version = "0.1.0"
+description = "Graph RAG demo over the Anthropic Interviewer transcripts (local: Ollama, ollmcp, Neo4j)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "neo4j>=5.26",
+  "ollama",
+  "pandas",
+  "numpy",
+  "requests",
+  "python-dotenv",
+  "fastmcp",
+  "networkx>=3.7",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
