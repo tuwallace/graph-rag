@@ -40,7 +40,7 @@ flowchart LR
 | G2 | **Gate 2: passed on a proxy (see "M6 outcome")** | retrieval check | Recall at 5 of at least 0.7 on your 10 retrieval queries; otherwise add the full-text index (ADR-0011) | 1 to 2 h incl. your query list |
 | M7 | **Done 2026-11-07 (see "M7 outcome" and [08](08-evaluation-results.md))**. Evaluation | `eval/` question sets (40 routes, held-out half), configs A (qwen3 picks tools), B (router), C (plain vector RAG), results table | Table with route accuracy, abstention, quote validity, number groundedness, latency; honest note where the graph did not help | 1 to 1.5 days |
 | M8 | **Done 2026-11-07 (see "M8 outcome")**. Themes | `themes.py` (community detection on canonical-concept co-occurrence, in Python), offline summaries with `qwen2.5:32b` run alone | `theme_overview` answers from stored summaries, each citing member concepts and counts | 0.5 day + machine time |
-| M9 | Publish | README (credit and link to the dataset and Anthropic post, CC-BY reading, sample limits), PII pass note, pre-push check that fails on any tracked `data/` path | `git ls-files` contains no transcript text or artefacts; short excerpts only | 0.5 day |
+| M9 | **Done 2026-11-07 (see "M9 outcome")**. Publish | README (credit and link to the dataset and Anthropic post, CC-BY reading, sample limits), PII pass note, pre-push check that fails on any tracked `data/` path | `git ls-files` contains no transcript text or artefacts; short excerpts only | 0.5 day |
 
 Estimated total: about **5 to 7 working days** of effort plus roughly one or two overnight machine runs. These are planning guesses, not measurements.
 
@@ -322,3 +322,16 @@ Built: `src/graphrag/grounded.py` (render the facts as text, optional model fram
 | Median time per question, whole path | 7.6 s |
 
 The validator caught every bad quote in this run: the 3 invalid raw quotes sit in the 2 answers that fell back. Limits: 60 questions, one run, one author's questions; the validator and the scorer both use my grounding function (the scorer checks the whole corpus, the validator only the tool output); number words, unquoted claims and framing quality are not checked; the guarantee covers `grounded_answer()`, not free text a client model (for example in `ollmcp`) writes around the tool output.
+
+## M9 outcome (done 2026-11-07)
+
+Published to the public repo [tuwallace/graph-rag](https://github.com/tuwallace/graph-rag) (`main`, commit `e6b1923`; 152 files).
+
+- **README** at the repo root: what was built, data attribution (Anthropic/AnthropicInterviewer, Anthropic's Interviewer post, CC-BY reading and the inconsistent card), sample and evaluation limits, findings with caveats, run instructions, privacy rules.
+- **`scripts/download_data.py`** fetches the three CSVs into git-ignored `data/raw/`; **`scripts/prepush_check.py`** (hook in `.githooks/pre-push`, enabled with `git config core.hooksPath .githooks`) fails on tracked `data/` or `.env` paths, files over 1 MB, a run of 25+ words shared with the corpus, or gitleaks findings. It ran clean before the commit and again in the push hook.
+- **PII pass** recorded in [ADR-0012](decisions/0012-privacy-for-transcripts.md): no emails; URL domains reviewed; one capitalised-name overlap with participant turns ("Google Sheets", a product). Not checked: first names alone, lowercase employers, phone formats.
+- **gitleaks 8.30.1:** staged content, no leaks.
+- **Graphify:** `graphify update .` and `graphify export wiki` (via the vault-sync skill, which no longer exports an Obsidian vault) produced `graphify-out/` (624 nodes, 1,047 edges, 46 communities, 56 wiki articles) from code and docs only; committed except its cache. It was built before the roadmap edits that follow, so rerun the sync after larger changes.
+- **Not published:** `data/`, `.env`, `.claude/`, the graphify cache, any transcript text or graph dump.
+
+Open caveats unchanged: precision is LLM-estimated; recall is unmeasured; the evaluation was written by one author; the router missed the 1 s latency bound (amended to 2 s); the README results are from one machine.
