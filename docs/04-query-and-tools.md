@@ -63,7 +63,7 @@ RETURN i.transcript_id AS interview, s.id AS segment, score, left(s.answer, 300)
 
 ```
 Answer only from tool output. Cite interview ids. Quote at most one sentence per source.
-Say these are findings from a sample of AI-led interviews, not facts about workers in general.
+Say these are findings from a sample of 500 AI-led interviews (of the 1,250 published), not facts about workers in general.
 If a tool returns nothing or asks for clarification, say so; do not guess. No tool for greetings or unrelated questions.
 ```
 

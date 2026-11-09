@@ -4,12 +4,12 @@
 
 ## Key Concepts
 
-- **pipeline.py** (29 connections) — `src/graphrag/pipeline.py`
+- **pipeline.py** (30 connections) — `src/graphrag/pipeline.py`
+- **time** (14 connections)
 - **grounded_eval.py** (13 connections) — `eval/grounded_eval.py`
-- **time** (13 connections)
 - **Stage** (12 connections) — `src/graphrag/manifest.py`
+- **select()** (10 connections) — `src/graphrag/pipeline.py`
 - **main()** (8 connections) — `src/graphrag/pipeline.py`
-- **select()** (8 connections) — `src/graphrag/pipeline.py`
 - **manifest.py** (8 connections) — `src/graphrag/manifest.py`
 - **assemble()** (5 connections) — `src/graphrag/pipeline.py`
 - **score()** (4 connections) — `eval/grounded_eval.py`
@@ -33,18 +33,18 @@
 
 ## Relationships
 
-- [extract.py](extract.py.md) (10 shared connections)
-- [json](json.md) (9 shared connections)
+- [extract.py](extract.py.md) (7 shared connections)
+- [themes.py](themes.py.md) (6 shared connections)
 - [load.py](load.py.md) (6 shared connections)
+- [json](json.md) (4 shared connections)
 - [__init__.py](__init__.py.md) (4 shared connections)
+- [judge32b.py](judge32b.py.md) (3 shared connections)
 - [score.py](score.py.md) (3 shared connections)
+- [sys](sys.md) (3 shared connections)
+- [collections](collections.md) (3 shared connections)
 - [decision.py](decision.py.md) (3 shared connections)
-- [themes.py](themes.py.md) (2 shared connections)
 - [pathlib](pathlib.md) (2 shared connections)
 - [queries.py](queries.py.md) (1 shared connections)
-- [confirm_adr0008.py](confirm_adr0008.py.md) (1 shared connections)
-- [run_eval.py](run_eval.py.md) (1 shared connections)
-- [calibrate_verify.py](calibrate_verify.py.md) (1 shared connections)
 
 ## Source Files
 
@@ -54,7 +54,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 89 (100%)
+- EXTRACTED: 93 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,10 +1,11 @@
-# 08. Evaluation results (M7)
+# Label confirmation
 
-> 8 nodes
+> 9 nodes
 
 ## Key Concepts
 
-- **08. Evaluation results (M7)** (8 connections) — `docs/08-evaluation-results.md`
+- **Label confirmation** (8 connections) — `docs/08-evaluation-results.md`
+- **08. Evaluation results (M7)** (2 connections) — `docs/08-evaluation-results.md`
 - **All 40** (1 connections) — `docs/08-evaluation-results.md`
 - **Dev half (tuning allowed)** (1 connections) — `docs/08-evaluation-results.md`
 - **Held-out half** (1 connections) — `docs/08-evaluation-results.md`
@@ -23,7 +24,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
+- EXTRACTED: 9 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

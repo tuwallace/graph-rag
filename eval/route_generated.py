@@ -2,13 +2,13 @@
 B = router v2 (nimble); A = qwen3 picks among the 5 typed tools (first call only). The gold route is the generator's intent, so label noise is possible;
 disagreements are listed for reading. Run: PYTHONPATH=src:. uv run python eval/route_generated.py
 """
-import json, collections
+import json, os, collections
 from neo4j import GraphDatabase
 from graphrag import config as C, queries as Q, router
 import eval.run_eval as R
 
 TOOL_OF = {"local_search": "search_segments", "concept_stats": "concept_stats", "compare_groups": "compare_groups", "evidence": "quotes", "theme_overview": "theme_summary"}
-qs = json.load(open(C.ROOT / "data" / "eval" / "judge" / "questions.json"))
+qs = json.load(open(C.ROOT / "data" / "eval" / "judge" / os.environ.get("QFILE", "questions.json")))
 rows = []
 with GraphDatabase.driver(C.NEO4J_URI, auth=(C.NEO4J_USER, C.NEO4J_PASSWORD), notifications_min_severity="OFF") as d:
     ix = Q.ConceptIndex(d)

@@ -7,7 +7,7 @@
 ## Connections by Relation
 
 ### calls
-- [answer()](answer.md) `EXTRACTED`
+- answer() `EXTRACTED`
 - driver() `EXTRACTED`
 - index() `EXTRACTED`
 - render() `EXTRACTED`

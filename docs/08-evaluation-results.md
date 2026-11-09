@@ -1,6 +1,15 @@
 # 08. Evaluation results (M7)
 
-Run 2026-11-07 on the 500-interview graph (`demo1`). 40 questions I wrote (`eval/questions.json`), split alternately within each route into a dev half (21) and a held-out half (19). Configs: **A** qwen3:8b-16k picks among 5 typed tools; **B** `nimble` routes to one tool (threshold 0.6); **C** plain vector top 5 with no graph. All use the same answer model (qwen3:8b-16k, thinking off, temperature 0) and the same answer rules. Runner: `eval/run_eval.py`; scorer: `eval/score.py`. Raw answers are in git-ignored `data/eval/`; this page holds aggregates only.
+> All results in this file and in the follow-up checks describe the **500-interview** graph (500 of the 1,250 interviews in the dataset), not the full dataset.
+
+## Label confirmation
+
+The project owner stated on 2026-11-07 and 2026-11-09 that they confirmed the model-judged labels (the 120-edge precision sample, the recall coverage judgements, and the 27 labels on the second-pass concern edges) and reviewed the generated evaluation questions. I could not see which items they inspected, so this is recorded as their statement. `eval/check_labels.py` checks that the label files are complete and well formed (120 unique edges, valid labels, 30 kept per kind plus 30 rejected, 10 transcripts, 8 questions per route); it does not judge whether labels are right.
+
+Follow-up results from the 32b judge, second pass and router v3 are in `07-implementation-roadmap.md` ("Open items").
+
+
+Run 2026-11-07 on the 500-interview graph (`demo1`; 500 of the 1,250 interviews in the dataset: all creatives, all scientists, 250 of 1,000 workforce). 40 questions I wrote (`eval/questions.json`), split alternately within each route into a dev half (21) and a held-out half (19). Configs: **A** qwen3:8b-16k picks among 5 typed tools; **B** `nimble` routes to one tool (threshold 0.6); **C** plain vector top 5 with no graph. All use the same answer model (qwen3:8b-16k, thinking off, temperature 0) and the same answer rules. Runner: `eval/run_eval.py`; scorer: `eval/score.py`. Raw answers are in git-ignored `data/eval/`; this page holds aggregates only.
 
 Read with care: one author wrote the questions, the gold routes and the scoring rules, after seeing which concepts the graph holds. With 36 in-scope questions, a gap of 3 questions is 8 points and is within noise. Two scorer corrections were made after the first scores: (1) the compare-answer check was revised after I saw the first scores (answers often gave a percent of the group, not a raw count; both versions are shown); (2) quote pairing and list numbers (the first scorer mis-paired quote marks after short quoted terms and counted list markers such as "1." as figures, which understated quote validity and number groundedness; the corrected scores are below, and B's quote validity moved from 84% to 94%). Router configuration B in this page is router v1 (threshold 0.6); see ADR-0008 for router v2 routing results.
 

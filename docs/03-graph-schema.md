@@ -18,8 +18,8 @@ flowchart LR
 | Label | Key | Source | Properties | Approx. count (full corpus) |
 |---|---|---|---|---|
 | `Group` | `name` | split | `workforce`, `creatives`, `scientists` | 3 |
-| `Interview` | `transcript_id` | CSV | `n_turns`, `chars` | 1,250 |
-| `Segment` | `id` = `transcript_id#idx` | parsed Q/A pairs | `idx`, `question`, `answer`, `embedding`, plus decision-model attributes below | about 14,500 |
+| `Interview` | `transcript_id` | CSV | `n_turns`, `chars` | 500 loaded (of 1,250 in the dataset) |
+| `Segment` | `id` = `transcript_id#idx` | parsed Q/A pairs | `idx`, `question`, `answer`, `embedding`, plus decision-model attributes below | 5,450 loaded (500 interviews) |
 | `Task` | `key` (canonical) | extraction + merge | `name`, `aliases[]`, `mentions` | hundreds to low thousands (**unmeasured**) |
 | `AIUse` | `key` | extraction + merge | same | same |
 | `Concern` | `key` | extraction + merge | same | tens to hundreds |

@@ -7,16 +7,16 @@ import time
 from . import queries as Q
 from .decision import decide
 
-ROUTER_VERSION = "v2"   # v2: threshold 0.5 (from dev half of the M7 set); longer concept span wins ties
+ROUTER_VERSION = "v3"   # v3: boundary examples in the route descriptions (2026-11-09). v2: threshold 0.5 (from dev half of the M7 set); longer concept span wins ties
 MIN_CONFIDENCE = 0.5     # ADR-0008 started at 0.6; lowered to 0.5 from the dev half of the M7 set
 MIN_CONCEPT_SIM = 0.8    # below this the match is too weak (0.786 matched "weather" to "climate change")
 
 ROUTES = {
-    "local_search": "find what people said about a topic or how a kind of person uses AI",
-    "concept_stats": "count or rank things people mentioned: uses of AI, tasks, or concerns",
-    "compare_groups": "compare workforce, creatives and scientists on one topic",
-    "theme_overview": "the overall themes or a general summary of all the interviews",
-    "evidence": "show quotes or examples about one specific thing",
+    "local_search": "find what people said about a topic or how a kind of person uses AI; an open question answered by reading a few answers. e.g. 'how do designers use AI day to day?'",
+    "concept_stats": "count or rank things people mentioned: uses of AI, tasks, or concerns. e.g. 'what are the most common tasks?', 'top five worries among scientists'",
+    "compare_groups": "compare workforce, creatives and scientists on one topic. e.g. 'do writers and researchers differ on trust?'",
+    "theme_overview": "the big picture: the overall themes or a general summary of what the interviews say, about everyone or a whole group, with no single topic to look up. e.g. 'what are the main themes?', 'summarise what professionals say about AI', 'give me an overview of the concerns'",
+    "evidence": "show quotes or examples about one specific thing. e.g. 'show me quotes about hallucinations'",
     "out_of_scope": "unrelated to the interviews: arithmetic, greetings, general knowledge",
 }
 ROUTE_Q = {"type": "choice", "instructions": "Pick the best route for this question about a set of AI interview transcripts.", "criteria": ROUTES}

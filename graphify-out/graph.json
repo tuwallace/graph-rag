@@ -56,78 +56,6 @@
       "source_location": "L5"
     },
     {
-      "id": "eval_judge32b_ask",
-      "label": "ask()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "code",
-      "norm_label": "ask()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L21"
-    },
-    {
-      "id": "eval_judge32b_done_ids",
-      "label": "done_ids()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "code",
-      "norm_label": "done_ids()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L36"
-    },
-    {
-      "id": "eval_judge32b_load_records",
-      "label": "load_records()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "code",
-      "norm_label": "load_records()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L30"
-    },
-    {
-      "id": "eval_judge32b_precision",
-      "label": "precision()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "code",
-      "norm_label": "precision()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L40"
-    },
-    {
-      "id": "eval_judge32b_questions",
-      "label": "questions()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "code",
-      "norm_label": "questions()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L103"
-    },
-    {
-      "id": "eval_judge32b_recall",
-      "label": "recall()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "code",
-      "norm_label": "recall()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L68"
-    },
-    {
       "id": "src_graphrag_extract_build_prompt",
       "label": "build_prompt()",
       "_callable": true,
@@ -500,18 +428,6 @@
       "source_location": "L67"
     },
     {
-      "id": "eval_confirm_adr0008_timed_decide_f",
-      "label": "f()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "score.py",
-      "file_type": "code",
-      "norm_label": "f()",
-      "source_file": "eval/confirm_adr0008.py",
-      "source_location": "L18"
-    },
-    {
       "id": "eval_score_context_numbers",
       "label": "context_numbers()",
       "_callable": true,
@@ -656,18 +572,6 @@
       "source_location": "L132"
     },
     {
-      "id": "scripts_download_data_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "score.py",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/download_data.py",
-      "source_location": "L11"
-    },
-    {
       "id": "scripts_score_labels_v3_fmt",
       "label": "fmt()",
       "_callable": true,
@@ -728,7 +632,19 @@
       "source_location": "L4"
     },
     {
-      "id": "spike_02_extract_norm",
+      "id": "spike_05_make_label_sheets_best_pair",
+      "label": "best_pair()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "json",
+      "file_type": "code",
+      "norm_label": "best_pair()",
+      "source_file": "spike/05_make_label_sheets.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "spike_05_make_label_sheets_norm",
       "label": "norm()",
       "_callable": true,
       "_origin": "ast",
@@ -736,23 +652,11 @@
       "community_name": "json",
       "file_type": "code",
       "norm_label": "norm()",
-      "source_file": "spike/02_extract.py",
-      "source_location": "L24"
+      "source_file": "spike/05_make_label_sheets.py",
+      "source_location": "L15"
     },
     {
-      "id": "spike_02b_extract_v2_norm",
-      "label": "norm()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "json",
-      "file_type": "code",
-      "norm_label": "norm()",
-      "source_file": "spike/02b_extract_v2.py",
-      "source_location": "L24"
-    },
-    {
-      "id": "spike_03_nimble_pairs",
+      "id": "spike_05_make_label_sheets_pairs",
       "label": "pairs()",
       "_callable": true,
       "_origin": "ast",
@@ -760,8 +664,8 @@
       "community_name": "json",
       "file_type": "code",
       "norm_label": "pairs()",
-      "source_file": "spike/03_nimble.py",
-      "source_location": "L7"
+      "source_file": "spike/05_make_label_sheets.py",
+      "source_location": "L8"
     },
     {
       "id": "src_graphrag_load_build",
@@ -918,6 +822,18 @@
       "norm_label": "vector_index_stmt()",
       "source_file": "src/graphrag/schema.py",
       "source_location": "L16"
+    },
+    {
+      "id": "eval_concern_pass_judge_cov",
+      "label": "cov()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "grounded.py",
+      "file_type": "code",
+      "norm_label": "cov()",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L100"
     },
     {
       "id": "src_graphrag_grounded_allowed_numbers",
@@ -1160,6 +1076,102 @@
       "source_location": "L22"
     },
     {
+      "id": "tests_test_m3_modules_test_attributes_is_one_call_per_segment",
+      "label": "test_attributes_is_one_call_per_segment()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "decision.py",
+      "file_type": "code",
+      "norm_label": "test_attributes_is_one_call_per_segment()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "tests_test_m3_modules_test_attributes_is_one_call_per_segment_fake",
+      "label": "fake()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "decision.py",
+      "file_type": "code",
+      "norm_label": "fake()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L26"
+    },
+    {
+      "id": "tests_test_m3_modules_test_clean_names",
+      "label": "test_clean_names()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "decision.py",
+      "file_type": "code",
+      "norm_label": "test_clean_names()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L32"
+    },
+    {
+      "id": "tests_test_m3_modules_test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical",
+      "label": "test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "decision.py",
+      "file_type": "code",
+      "norm_label": "test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "tests_test_m3_modules_test_decide_raises_after_retries",
+      "label": "test_decide_raises_after_retries()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "decision.py",
+      "file_type": "code",
+      "norm_label": "test_decide_raises_after_retries()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L42"
+    },
+    {
+      "id": "tests_test_m3_modules_test_stage_is_resumable_and_ignores_half_written_line",
+      "label": "test_stage_is_resumable_and_ignores_half_written_line()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "decision.py",
+      "file_type": "code",
+      "norm_label": "test_stage_is_resumable_and_ignores_half_written_line()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "tests_test_m3_modules_test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty",
+      "label": "test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "decision.py",
+      "file_type": "code",
+      "norm_label": "test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L49"
+    },
+    {
+      "id": "tests_test_m3_modules_test_verify_claim_text_per_kind_and_underscore_cleanup",
+      "label": "test_verify_claim_text_per_kind_and_underscore_cleanup()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "decision.py",
+      "file_type": "code",
+      "norm_label": "test_verify_claim_text_per_kind_and_underscore_cleanup()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L13"
+    },
+    {
       "id": "tests_test_router_fake",
       "label": "fake()",
       "_callable": true,
@@ -1261,7 +1273,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 21,
-      "community_name": "calibrate_verify.py",
+      "community_name": "collections",
       "file_type": "code",
       "norm_label": "auc()",
       "source_file": "scripts/calibrate_verify.py",
@@ -1273,11 +1285,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 21,
-      "community_name": "calibrate_verify.py",
+      "community_name": "collections",
       "file_type": "code",
       "norm_label": "match()",
       "source_file": "scripts/compare_m2.py",
       "source_location": "L27"
+    },
+    {
+      "id": "spike_03_nimble_pairs",
+      "label": "pairs()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "pairs()",
+      "source_file": "spike/03_nimble.py",
+      "source_location": "L7"
     },
     {
       "id": "eval_route_generated_pct",
@@ -1446,6 +1470,66 @@
       "norm_label": "test_wrong_interview_id_fails()",
       "source_file": "tests/test_grounded.py",
       "source_location": "L22"
+    },
+    {
+      "id": "tests_test_themes_by",
+      "label": "_by()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "test_grounded.py",
+      "file_type": "code",
+      "norm_label": "_by()",
+      "source_file": "tests/test_themes.py",
+      "source_location": "L4"
+    },
+    {
+      "id": "tests_test_themes_test_detect_separates_clusters_and_is_deterministic",
+      "label": "test_detect_separates_clusters_and_is_deterministic()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "test_grounded.py",
+      "file_type": "code",
+      "norm_label": "test_detect_separates_clusters_and_is_deterministic()",
+      "source_file": "tests/test_themes.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "tests_test_themes_test_rare_concepts_excluded",
+      "label": "test_rare_concepts_excluded()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "test_grounded.py",
+      "file_type": "code",
+      "norm_label": "test_rare_concepts_excluded()",
+      "source_file": "tests/test_themes.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "tests_test_themes_test_validate_rejects_generic_and_duplicate_labels",
+      "label": "test_validate_rejects_generic_and_duplicate_labels()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "test_grounded.py",
+      "file_type": "code",
+      "norm_label": "test_validate_rejects_generic_and_duplicate_labels()",
+      "source_file": "tests/test_themes.py",
+      "source_location": "L32"
+    },
+    {
+      "id": "tests_test_themes_test_validate_rejects_uncited_and_numbers",
+      "label": "test_validate_rejects_uncited_and_numbers()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "test_grounded.py",
+      "file_type": "code",
+      "norm_label": "test_validate_rejects_uncited_and_numbers()",
+      "source_file": "tests/test_themes.py",
+      "source_location": "L25"
     },
     {
       "id": "tests_test_load_e",
@@ -1700,208 +1784,124 @@
       "source_location": "L77"
     },
     {
-      "id": "tests_test_m3_modules_test_attributes_is_one_call_per_segment",
-      "label": "test_attributes_is_one_call_per_segment()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_attributes_is_one_call_per_segment()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L24"
-    },
-    {
-      "id": "tests_test_m3_modules_test_attributes_is_one_call_per_segment_fake",
-      "label": "fake()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "fake()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L26"
-    },
-    {
-      "id": "tests_test_m3_modules_test_clean_names",
-      "label": "test_clean_names()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_clean_names()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L32"
-    },
-    {
-      "id": "tests_test_m3_modules_test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical",
-      "label": "test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L35"
-    },
-    {
-      "id": "tests_test_m3_modules_test_decide_raises_after_retries",
-      "label": "test_decide_raises_after_retries()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_decide_raises_after_retries()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L42"
-    },
-    {
-      "id": "tests_test_m3_modules_test_stage_is_resumable_and_ignores_half_written_line",
-      "label": "test_stage_is_resumable_and_ignores_half_written_line()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_stage_is_resumable_and_ignores_half_written_line()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L5"
-    },
-    {
-      "id": "tests_test_m3_modules_test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty",
-      "label": "test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L49"
-    },
-    {
-      "id": "tests_test_m3_modules_test_verify_claim_text_per_kind_and_underscore_cleanup",
-      "label": "test_verify_claim_text_per_kind_and_underscore_cleanup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_verify_claim_text_per_kind_and_underscore_cleanup()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L13"
-    },
-    {
-      "id": "tests_test_m3_modules_test_verify_item_and_keep_threshold",
-      "label": "test_verify_item_and_keep_threshold()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_verify_item_and_keep_threshold()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L18"
-    },
-    {
-      "id": "tests_test_themes_by",
-      "label": "_by()",
+      "id": "eval_judge32b_ask",
+      "label": "ask()",
       "_callable": true,
       "_origin": "ast",
       "community": 41,
-      "community_name": "test_themes.py",
+      "community_name": "judge32b.py",
       "file_type": "code",
-      "norm_label": "_by()",
-      "source_file": "tests/test_themes.py",
-      "source_location": "L4"
+      "norm_label": "ask()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L21"
     },
     {
-      "id": "tests_test_themes_test_detect_separates_clusters_and_is_deterministic",
-      "label": "test_detect_separates_clusters_and_is_deterministic()",
+      "id": "eval_judge32b_done_ids",
+      "label": "done_ids()",
       "_callable": true,
       "_origin": "ast",
       "community": 41,
-      "community_name": "test_themes.py",
+      "community_name": "judge32b.py",
       "file_type": "code",
-      "norm_label": "test_detect_separates_clusters_and_is_deterministic()",
-      "source_file": "tests/test_themes.py",
-      "source_location": "L13"
+      "norm_label": "done_ids()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L36"
     },
     {
-      "id": "tests_test_themes_test_rare_concepts_excluded",
-      "label": "test_rare_concepts_excluded()",
+      "id": "eval_judge32b_load_records",
+      "label": "load_records()",
       "_callable": true,
       "_origin": "ast",
       "community": 41,
-      "community_name": "test_themes.py",
+      "community_name": "judge32b.py",
       "file_type": "code",
-      "norm_label": "test_rare_concepts_excluded()",
-      "source_file": "tests/test_themes.py",
-      "source_location": "L20"
+      "norm_label": "load_records()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L30"
     },
     {
-      "id": "tests_test_themes_test_validate_rejects_generic_and_duplicate_labels",
-      "label": "test_validate_rejects_generic_and_duplicate_labels()",
+      "id": "eval_judge32b_precision",
+      "label": "precision()",
       "_callable": true,
       "_origin": "ast",
       "community": 41,
-      "community_name": "test_themes.py",
+      "community_name": "judge32b.py",
       "file_type": "code",
-      "norm_label": "test_validate_rejects_generic_and_duplicate_labels()",
-      "source_file": "tests/test_themes.py",
-      "source_location": "L32"
+      "norm_label": "precision()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L40"
     },
     {
-      "id": "tests_test_themes_test_validate_rejects_uncited_and_numbers",
-      "label": "test_validate_rejects_uncited_and_numbers()",
+      "id": "eval_judge32b_questions",
+      "label": "questions()",
       "_callable": true,
       "_origin": "ast",
       "community": 41,
-      "community_name": "test_themes.py",
+      "community_name": "judge32b.py",
       "file_type": "code",
-      "norm_label": "test_validate_rejects_uncited_and_numbers()",
-      "source_file": "tests/test_themes.py",
-      "source_location": "L25"
+      "norm_label": "questions()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L103"
     },
     {
-      "id": "spike_05_make_label_sheets_best_pair",
-      "label": "best_pair()",
+      "id": "eval_judge32b_recall",
+      "label": "recall()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "code",
+      "norm_label": "recall()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L68"
+    },
+    {
+      "id": "eval_check_labels_check",
+      "label": "check()",
       "_callable": true,
       "_origin": "ast",
       "community": 43,
-      "community_name": "05_make_label_sheets.py",
+      "community_name": "sys",
       "file_type": "code",
-      "norm_label": "best_pair()",
-      "source_file": "spike/05_make_label_sheets.py",
+      "norm_label": "check()",
+      "source_file": "eval/check_labels.py",
       "source_location": "L16"
     },
     {
-      "id": "spike_05_make_label_sheets_norm",
+      "id": "eval_check_labels_jl",
+      "label": "jl()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "jl()",
+      "source_file": "eval/check_labels.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "spike_02_extract_norm",
       "label": "norm()",
       "_callable": true,
       "_origin": "ast",
       "community": 43,
-      "community_name": "05_make_label_sheets.py",
+      "community_name": "sys",
       "file_type": "code",
       "norm_label": "norm()",
-      "source_file": "spike/05_make_label_sheets.py",
-      "source_location": "L15"
+      "source_file": "spike/02_extract.py",
+      "source_location": "L24"
     },
     {
-      "id": "spike_05_make_label_sheets_pairs",
-      "label": "pairs()",
+      "id": "spike_02b_extract_v2_norm",
+      "label": "norm()",
       "_callable": true,
       "_origin": "ast",
       "community": 43,
-      "community_name": "05_make_label_sheets.py",
+      "community_name": "sys",
       "file_type": "code",
-      "norm_label": "pairs()",
-      "source_file": "spike/05_make_label_sheets.py",
-      "source_location": "L8"
+      "norm_label": "norm()",
+      "source_file": "spike/02b_extract_v2.py",
+      "source_location": "L24"
     },
     {
       "id": "eval_confirm_adr0008_a_row",
@@ -1950,6 +1950,30 @@
       "norm_label": "timed_decide()",
       "source_file": "eval/confirm_adr0008.py",
       "source_location": "L16"
+    },
+    {
+      "id": "eval_confirm_adr0008_timed_decide_f",
+      "label": "f()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "confirm_adr0008.py",
+      "file_type": "code",
+      "norm_label": "f()",
+      "source_file": "eval/confirm_adr0008.py",
+      "source_location": "L18"
+    },
+    {
+      "id": "scripts_download_data_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "confirm_adr0008.py",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "scripts/download_data.py",
+      "source_location": "L11"
     },
     {
       "id": "eval_run_eval_chat",
@@ -2228,6 +2252,78 @@
       "source_location": "L36"
     },
     {
+      "id": "eval_concern_pass_extract",
+      "label": "extract()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "themes.py",
+      "file_type": "code",
+      "norm_label": "extract()",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L46"
+    },
+    {
+      "id": "eval_concern_pass_ids",
+      "label": "ids()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "themes.py",
+      "file_type": "code",
+      "norm_label": "ids()",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "eval_concern_pass_jl",
+      "label": "jl()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "themes.py",
+      "file_type": "code",
+      "norm_label": "jl()",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L42"
+    },
+    {
+      "id": "eval_concern_pass_judge",
+      "label": "judge()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "themes.py",
+      "file_type": "code",
+      "norm_label": "judge()",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L91"
+    },
+    {
+      "id": "eval_concern_pass_new_edges",
+      "label": "new_edges()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "themes.py",
+      "file_type": "code",
+      "norm_label": "new_edges()",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L75"
+    },
+    {
+      "id": "eval_concern_pass_verify",
+      "label": "verify()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "themes.py",
+      "file_type": "code",
+      "norm_label": "verify()",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L66"
+    },
+    {
       "id": "src_graphrag_pipeline_unload",
       "label": "unload()",
       "_callable": true,
@@ -2348,6 +2444,18 @@
       "source_location": "L119"
     },
     {
+      "id": "tests_test_m3_modules_test_verify_item_and_keep_threshold",
+      "label": "test_verify_item_and_keep_threshold()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "themes.py",
+      "file_type": "code",
+      "norm_label": "test_verify_item_and_keep_threshold()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L18"
+    },
+    {
       "id": "scripts_mcp_smoke_main",
       "label": "main()",
       "_callable": true,
@@ -2420,17 +2528,6 @@
       "source_location": "L19"
     },
     {
-      "id": "eval_judge32b",
-      "label": "judge32b.py",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "code",
-      "norm_label": "judge32b.py",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L1"
-    },
-    {
       "id": "src_graphrag_extract",
       "label": "extract.py",
       "_origin": "ast",
@@ -2483,161 +2580,6 @@
       "file_type": "code",
       "norm_label": "test_pipeline_core.py",
       "source_file": "tests/test_pipeline_core.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_07_implementation_roadmap_groundedness_what_was_needed_written_2026_11_07_built_and_measured_below",
-      "label": "Groundedness: what was needed (written 2026-11-07; built and measured below)",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "groundedness: what was needed (written 2026-11-07; built and measured below)",
-      "source_file": "docs/07-implementation-roadmap.md",
-      "source_location": "L298"
-    },
-    {
-      "id": "docs_decisions_0008_decision_model_router_adr_0008_decision_model_jev_style_as_the_question_router",
-      "label": "ADR-0008: Decision model (Jev-style) as the question router",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "adr-0008: decision model (jev-style) as the question router",
-      "source_file": "docs/decisions/0008-decision-model-router.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_decisions_0008_decision_model_router_confirmation",
-      "label": "Confirmation",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "confirmation",
-      "source_file": "docs/decisions/0008-decision-model-router.md",
-      "source_location": "L71"
-    },
-    {
-      "id": "docs_decisions_0008_decision_model_router_confirmation_result_2026_11_07",
-      "label": "Confirmation result (2026-11-07)",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "confirmation result (2026-11-07)",
-      "source_file": "docs/decisions/0008-decision-model-router.md",
-      "source_location": "L84"
-    },
-    {
-      "id": "docs_decisions_0008_decision_model_router_consequences",
-      "label": "Consequences",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "consequences",
-      "source_file": "docs/decisions/0008-decision-model-router.md",
-      "source_location": "L63"
-    },
-    {
-      "id": "docs_decisions_0008_decision_model_router_context",
-      "label": "Context",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "context",
-      "source_file": "docs/decisions/0008-decision-model-router.md",
-      "source_location": "L8"
-    },
-    {
-      "id": "docs_decisions_0008_decision_model_router_decision",
-      "label": "Decision",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "decision",
-      "source_file": "docs/decisions/0008-decision-model-router.md",
-      "source_location": "L53"
-    },
-    {
-      "id": "docs_decisions_0008_decision_model_router_decision_drivers",
-      "label": "Decision drivers",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "decision drivers",
-      "source_file": "docs/decisions/0008-decision-model-router.md",
-      "source_location": "L23"
-    },
-    {
-      "id": "docs_decisions_0008_decision_model_router_m3_note_2026_11_06",
-      "label": "M3 note (2026-11-06)",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "m3 note (2026-11-06)",
-      "source_file": "docs/decisions/0008-decision-model-router.md",
-      "source_location": "L79"
-    },
-    {
-      "id": "docs_decisions_0008_decision_model_router_options",
-      "label": "Options",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "options",
-      "source_file": "docs/decisions/0008-decision-model-router.md",
-      "source_location": "L32"
-    },
-    {
-      "id": "docs_decisions_0008_decision_model_router_revisit_when",
-      "label": "Revisit when",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "revisit when",
-      "source_file": "docs/decisions/0008-decision-model-router.md",
-      "source_location": "L75"
-    },
-    {
-      "id": "docs_decisions_0008_decision_model_router_weighted_decision_matrix",
-      "label": "Weighted decision matrix",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "weighted decision matrix",
-      "source_file": "docs/decisions/0008-decision-model-router.md",
-      "source_location": "L39"
-    },
-    {
-      "id": "eval_judge32b_rationale_1",
-      "label": "Independent checks by a larger model (qwen2.5:32b, run alone), so the 8B\u2026",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "extract.py",
-      "file_type": "rationale",
-      "norm_label": "independent checks by a larger model (qwen2.5:32b, run alone), so the 8b...",
-      "source_file": "eval/judge32b.py",
       "source_location": "L1"
     },
     {
@@ -3406,50 +3348,6 @@
       "source_location": "L1"
     },
     {
-      "id": "spike_01_profile",
-      "label": "01_profile.py",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "json",
-      "file_type": "code",
-      "norm_label": "01_profile.py",
-      "source_file": "spike/01_profile.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "spike_02_extract",
-      "label": "02_extract.py",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "json",
-      "file_type": "code",
-      "norm_label": "02_extract.py",
-      "source_file": "spike/02_extract.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "spike_02b_extract_v2",
-      "label": "02b_extract_v2.py",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "json",
-      "file_type": "code",
-      "norm_label": "02b_extract_v2.py",
-      "source_file": "spike/02b_extract_v2.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "spike_03_nimble",
-      "label": "03_nimble.py",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "json",
-      "file_type": "code",
-      "norm_label": "03_nimble.py",
-      "source_file": "spike/03_nimble.py",
-      "source_location": "L1"
-    },
-    {
       "id": "spike_04_analyze",
       "label": "04_analyze.py",
       "_origin": "ast",
@@ -3458,6 +3356,17 @@
       "file_type": "code",
       "norm_label": "04_analyze.py",
       "source_file": "spike/04_analyze.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "spike_05_make_label_sheets",
+      "label": "05_make_label_sheets.py",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "json",
+      "file_type": "code",
+      "norm_label": "05_make_label_sheets.py",
+      "source_file": "spike/05_make_label_sheets.py",
       "source_location": "L1"
     },
     {
@@ -3480,6 +3389,17 @@
       "file_type": "rationale",
       "norm_label": "m2: rerun extraction v3 on the same 20 transcripts as the spike. usage:...",
       "source_file": "scripts/run_m2.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "spike_05_make_label_sheets_rationale_1",
+      "label": "Build blind labelling sheets under data/labeling/ (git-ignored: they contain\u2026",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "json",
+      "file_type": "rationale",
+      "norm_label": "build blind labelling sheets under data/labeling/ (git-ignored: they contain...",
+      "source_file": "spike/05_make_label_sheets.py",
       "source_location": "L1"
     },
     {
@@ -4230,6 +4150,17 @@
       "source_location": "L1"
     },
     {
+      "id": "tests_test_m3_modules",
+      "label": "test_m3_modules.py",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "decision.py",
+      "file_type": "code",
+      "norm_label": "test_m3_modules.py",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L1"
+    },
+    {
       "id": "docs_03_graph_schema_03_graph_schema_interviewer_corpus",
       "label": "03. Graph schema (Interviewer corpus)",
       "_origin": "ast",
@@ -4445,7 +4376,7 @@
       "label": "calibrate_verify.py",
       "_origin": "ast",
       "community": 21,
-      "community_name": "calibrate_verify.py",
+      "community_name": "collections",
       "file_type": "code",
       "norm_label": "calibrate_verify.py",
       "source_file": "scripts/calibrate_verify.py",
@@ -4456,21 +4387,32 @@
       "label": "compare_m2.py",
       "_origin": "ast",
       "community": 21,
-      "community_name": "calibrate_verify.py",
+      "community_name": "collections",
       "file_type": "code",
       "norm_label": "compare_m2.py",
       "source_file": "scripts/compare_m2.py",
       "source_location": "L1"
     },
     {
-      "id": "scripts_download_data",
-      "label": "download_data.py",
+      "id": "spike_01_profile",
+      "label": "01_profile.py",
       "_origin": "ast",
       "community": 21,
-      "community_name": "calibrate_verify.py",
+      "community_name": "collections",
       "file_type": "code",
-      "norm_label": "download_data.py",
-      "source_file": "scripts/download_data.py",
+      "norm_label": "01_profile.py",
+      "source_file": "spike/01_profile.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "spike_03_nimble",
+      "label": "03_nimble.py",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "collections",
+      "file_type": "code",
+      "norm_label": "03_nimble.py",
+      "source_file": "spike/03_nimble.py",
       "source_location": "L1"
     },
     {
@@ -4478,7 +4420,7 @@
       "label": "Calibrate the verify step against the LLM-labelled v3.2 sheet (a calibration,\u2026",
       "_origin": "ast",
       "community": 21,
-      "community_name": "calibrate_verify.py",
+      "community_name": "collections",
       "file_type": "rationale",
       "norm_label": "calibrate the verify step against the llm-labelled v3.2 sheet (a calibration,...",
       "source_file": "scripts/calibrate_verify.py",
@@ -4489,21 +4431,10 @@
       "label": "Compare v3 against the labelled v2 edges (data/labeling_claude, LLM labels).\u2026",
       "_origin": "ast",
       "community": 21,
-      "community_name": "calibrate_verify.py",
+      "community_name": "collections",
       "file_type": "rationale",
       "norm_label": "compare v3 against the labelled v2 edges (data/labeling_claude, llm labels)....",
       "source_file": "scripts/compare_m2.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_download_data_rationale_1",
-      "label": "Download the Anthropic/AnthropicInterviewer transcripts into\u2026",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "calibrate_verify.py",
-      "file_type": "rationale",
-      "norm_label": "download the anthropic/anthropicinterviewer transcripts into...",
-      "source_file": "scripts/download_data.py",
       "source_location": "L1"
     },
     {
@@ -5425,6 +5356,18 @@
       "source_location": "L241"
     },
     {
+      "id": "docs_07_implementation_roadmap_groundedness_what_was_needed_written_2026_11_07_built_and_measured_below",
+      "label": "Groundedness: what was needed (written 2026-11-07; built and measured below)",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "07. Implementation roadmap",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "groundedness: what was needed (written 2026-11-07; built and measured below)",
+      "source_file": "docs/07-implementation-roadmap.md",
+      "source_location": "L298"
+    },
+    {
       "id": "docs_07_implementation_roadmap_m1_outcome_2026_11_05",
       "label": "M1 outcome (2026-11-05)",
       "_origin": "ast",
@@ -5557,6 +5500,30 @@
       "source_location": "L71"
     },
     {
+      "id": "docs_07_implementation_roadmap_open_items_closing_pass_2026_11_07",
+      "label": "Open items: closing pass (2026-11-07)",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "07. Implementation roadmap",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "open items: closing pass (2026-11-07)",
+      "source_file": "docs/07-implementation-roadmap.md",
+      "source_location": "L339"
+    },
+    {
+      "id": "docs_07_implementation_roadmap_open_items_second_pass_and_router_boundary_examples_2026_11_09",
+      "label": "Open items: second pass and router boundary examples (2026-11-09)",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "07. Implementation roadmap",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "open items: second pass and router boundary examples (2026-11-09)",
+      "source_file": "docs/07-implementation-roadmap.md",
+      "source_location": "L352"
+    },
+    {
       "id": "docs_07_implementation_roadmap_the_road",
       "label": "The road",
       "_origin": "ast",
@@ -5584,7 +5551,7 @@
       "label": "08. Evaluation results (M7)",
       "_origin": "ast",
       "community": 30,
-      "community_name": "08. Evaluation results (M7)",
+      "community_name": "Label confirmation",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "08. evaluation results (m7)",
@@ -5596,84 +5563,96 @@
       "label": "All 40",
       "_origin": "ast",
       "community": 30,
-      "community_name": "08. Evaluation results (M7)",
+      "community_name": "Label confirmation",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "all 40",
       "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L64"
+      "source_location": "L73"
     },
     {
       "id": "docs_08_evaluation_results_dev_half_tuning_allowed",
       "label": "Dev half (tuning allowed)",
       "_origin": "ast",
       "community": 30,
-      "community_name": "08. Evaluation results (M7)",
+      "community_name": "Label confirmation",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "dev half (tuning allowed)",
       "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L10"
+      "source_location": "L19"
     },
     {
       "id": "docs_08_evaluation_results_held_out_half",
       "label": "Held-out half",
       "_origin": "ast",
       "community": 30,
-      "community_name": "08. Evaluation results (M7)",
+      "community_name": "Label confirmation",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "held-out half",
       "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L37"
+      "source_location": "L46"
+    },
+    {
+      "id": "docs_08_evaluation_results_label_confirmation",
+      "label": "Label confirmation",
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "Label confirmation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "label confirmation",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L5"
     },
     {
       "id": "docs_08_evaluation_results_per_route_latency_median_s",
       "label": "Per-route latency (median s)",
       "_origin": "ast",
       "community": 30,
-      "community_name": "08. Evaluation results (M7)",
+      "community_name": "Label confirmation",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "per-route latency (median s)",
       "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L91"
+      "source_location": "L100"
     },
     {
       "id": "docs_08_evaluation_results_router_abstention_by_threshold_all_40_route_confidence_only",
       "label": "Router abstention by threshold (All 40, route confidence only)",
       "_origin": "ast",
       "community": 30,
-      "community_name": "08. Evaluation results (M7)",
+      "community_name": "Label confirmation",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "router abstention by threshold (all 40, route confidence only)",
       "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L82"
+      "source_location": "L91"
     },
     {
       "id": "docs_08_evaluation_results_router_abstention_by_threshold_dev_half_tuning_allowed_route_confidence_only",
       "label": "Router abstention by threshold (Dev half (tuning allowed), route confidence only)",
       "_origin": "ast",
       "community": 30,
-      "community_name": "08. Evaluation results (M7)",
+      "community_name": "Label confirmation",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "router abstention by threshold (dev half (tuning allowed), route confidence only)",
       "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L28"
+      "source_location": "L37"
     },
     {
       "id": "docs_08_evaluation_results_router_abstention_by_threshold_held_out_half_route_confidence_only",
       "label": "Router abstention by threshold (Held-out half, route confidence only)",
       "_origin": "ast",
       "community": 30,
-      "community_name": "08. Evaluation results (M7)",
+      "community_name": "Label confirmation",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "router abstention by threshold (held-out half, route confidence only)",
       "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L55"
+      "source_location": "L64"
     },
     {
       "id": "docs_decisions_0005_local_llm_selection_adr_0005_local_llm_selection",
@@ -5909,6 +5888,17 @@
       "file_type": "code",
       "norm_label": "test_grounded.py",
       "source_file": "tests/test_grounded.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "tests_test_themes",
+      "label": "test_themes.py",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "test_grounded.py",
+      "file_type": "code",
+      "norm_label": "test_themes.py",
+      "source_file": "tests/test_themes.py",
       "source_location": "L1"
     },
     {
@@ -6279,17 +6269,6 @@
       "source_location": "L1"
     },
     {
-      "id": "tests_test_m3_modules",
-      "label": "test_m3_modules.py",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_m3_modules.py",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L1"
-    },
-    {
       "id": "src_graphrag_normalise_rationale_1",
       "label": "Merge near-duplicate extracted names into canonical concepts using embeddings\u2026",
       "_origin": "ast",
@@ -6462,14 +6441,157 @@
       "source_location": "L1"
     },
     {
-      "id": "tests_test_themes",
-      "label": "test_themes.py",
+      "id": "eval_judge32b",
+      "label": "judge32b.py",
       "_origin": "ast",
       "community": 41,
-      "community_name": "test_themes.py",
+      "community_name": "judge32b.py",
       "file_type": "code",
-      "norm_label": "test_themes.py",
-      "source_file": "tests/test_themes.py",
+      "norm_label": "judge32b.py",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_decisions_0008_decision_model_router_adr_0008_decision_model_jev_style_as_the_question_router",
+      "label": "ADR-0008: Decision model (Jev-style) as the question router",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "adr-0008: decision model (jev-style) as the question router",
+      "source_file": "docs/decisions/0008-decision-model-router.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_decisions_0008_decision_model_router_confirmation",
+      "label": "Confirmation",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "confirmation",
+      "source_file": "docs/decisions/0008-decision-model-router.md",
+      "source_location": "L71"
+    },
+    {
+      "id": "docs_decisions_0008_decision_model_router_confirmation_result_2026_11_07",
+      "label": "Confirmation result (2026-11-07)",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "confirmation result (2026-11-07)",
+      "source_file": "docs/decisions/0008-decision-model-router.md",
+      "source_location": "L84"
+    },
+    {
+      "id": "docs_decisions_0008_decision_model_router_consequences",
+      "label": "Consequences",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "consequences",
+      "source_file": "docs/decisions/0008-decision-model-router.md",
+      "source_location": "L63"
+    },
+    {
+      "id": "docs_decisions_0008_decision_model_router_context",
+      "label": "Context",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "context",
+      "source_file": "docs/decisions/0008-decision-model-router.md",
+      "source_location": "L8"
+    },
+    {
+      "id": "docs_decisions_0008_decision_model_router_decision",
+      "label": "Decision",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "decision",
+      "source_file": "docs/decisions/0008-decision-model-router.md",
+      "source_location": "L53"
+    },
+    {
+      "id": "docs_decisions_0008_decision_model_router_decision_drivers",
+      "label": "Decision drivers",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "decision drivers",
+      "source_file": "docs/decisions/0008-decision-model-router.md",
+      "source_location": "L23"
+    },
+    {
+      "id": "docs_decisions_0008_decision_model_router_m3_note_2026_11_06",
+      "label": "M3 note (2026-11-06)",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "m3 note (2026-11-06)",
+      "source_file": "docs/decisions/0008-decision-model-router.md",
+      "source_location": "L79"
+    },
+    {
+      "id": "docs_decisions_0008_decision_model_router_options",
+      "label": "Options",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "options",
+      "source_file": "docs/decisions/0008-decision-model-router.md",
+      "source_location": "L32"
+    },
+    {
+      "id": "docs_decisions_0008_decision_model_router_revisit_when",
+      "label": "Revisit when",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "revisit when",
+      "source_file": "docs/decisions/0008-decision-model-router.md",
+      "source_location": "L75"
+    },
+    {
+      "id": "docs_decisions_0008_decision_model_router_weighted_decision_matrix",
+      "label": "Weighted decision matrix",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "weighted decision matrix",
+      "source_file": "docs/decisions/0008-decision-model-router.md",
+      "source_location": "L39"
+    },
+    {
+      "id": "eval_judge32b_rationale_1",
+      "label": "Independent checks by a larger model (qwen2.5:32b, run alone), so the 8B\u2026",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "judge32b.py",
+      "file_type": "rationale",
+      "norm_label": "independent checks by a larger model (qwen2.5:32b, run alone), so the 8b...",
+      "source_file": "eval/judge32b.py",
       "source_location": "L1"
     },
     {
@@ -6533,25 +6655,47 @@
       "source_location": "L32"
     },
     {
-      "id": "spike_05_make_label_sheets",
-      "label": "05_make_label_sheets.py",
+      "id": "eval_check_labels",
+      "label": "check_labels.py",
       "_origin": "ast",
       "community": 43,
-      "community_name": "05_make_label_sheets.py",
+      "community_name": "sys",
       "file_type": "code",
-      "norm_label": "05_make_label_sheets.py",
-      "source_file": "spike/05_make_label_sheets.py",
+      "norm_label": "check_labels.py",
+      "source_file": "eval/check_labels.py",
       "source_location": "L1"
     },
     {
-      "id": "spike_05_make_label_sheets_rationale_1",
-      "label": "Build blind labelling sheets under data/labeling/ (git-ignored: they contain\u2026",
+      "id": "spike_02_extract",
+      "label": "02_extract.py",
       "_origin": "ast",
       "community": 43,
-      "community_name": "05_make_label_sheets.py",
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "02_extract.py",
+      "source_file": "spike/02_extract.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "spike_02b_extract_v2",
+      "label": "02b_extract_v2.py",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "02b_extract_v2.py",
+      "source_file": "spike/02b_extract_v2.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "eval_check_labels_rationale_1",
+      "label": "Consistency checks on the model-judged label files (data/eval/judge/,\u2026",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "sys",
       "file_type": "rationale",
-      "norm_label": "build blind labelling sheets under data/labeling/ (git-ignored: they contain...",
-      "source_file": "spike/05_make_label_sheets.py",
+      "norm_label": "consistency checks on the model-judged label files (data/eval/judge/,...",
+      "source_file": "eval/check_labels.py",
       "source_location": "L1"
     },
     {
@@ -6610,6 +6754,17 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_download_data",
+      "label": "download_data.py",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "confirm_adr0008.py",
+      "file_type": "code",
+      "norm_label": "download_data.py",
+      "source_file": "scripts/download_data.py",
+      "source_location": "L1"
+    },
+    {
       "id": "eval_confirm_adr0008_rationale_1",
       "label": "ADR-0008 confirmation on questions written after the router changes were chosen\u2026",
       "_origin": "ast",
@@ -6618,6 +6773,17 @@
       "file_type": "rationale",
       "norm_label": "adr-0008 confirmation on questions written after the router changes were chosen...",
       "source_file": "eval/confirm_adr0008.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_download_data_rationale_1",
+      "label": "Download the Anthropic/AnthropicInterviewer transcripts into\u2026",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "confirm_adr0008.py",
+      "file_type": "rationale",
+      "norm_label": "download the anthropic/anthropicinterviewer transcripts into...",
+      "source_file": "scripts/download_data.py",
       "source_location": "L1"
     },
     {
@@ -7137,6 +7303,17 @@
       "source_location": "L67"
     },
     {
+      "id": "eval_concern_pass",
+      "label": "concern_pass.py",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "themes.py",
+      "file_type": "code",
+      "norm_label": "concern_pass.py",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L1"
+    },
+    {
       "id": "src_graphrag_themes",
       "label": "themes.py",
       "_origin": "ast",
@@ -7158,6 +7335,28 @@
       "norm_label": "m8 outcome (done 2026-11-07)",
       "source_file": "docs/07-implementation-roadmap.md",
       "source_location": "L282"
+    },
+    {
+      "id": "eval_concern_pass_rationale_1",
+      "label": "Second extraction pass for concerns with a looser prompt, on the 10 transcripts\u2026",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "themes.py",
+      "file_type": "rationale",
+      "norm_label": "second extraction pass for concerns with a looser prompt, on the 10 transcripts...",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "eval_concern_pass_rationale_76",
+      "label": "Kept new concern edges whose quote is not already the quote of an original kept\u2026",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "themes.py",
+      "file_type": "rationale",
+      "norm_label": "kept new concern edges whose quote is not already the quote of an original kept...",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L76"
     },
     {
       "id": "src_graphrag_themes_rationale_1",
@@ -7227,6 +7426,18 @@
       "type": "external"
     },
     {
+      "id": "re",
+      "label": "re",
+      "_origin": "semantic",
+      "community": 0,
+      "community_name": "extract.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "re",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "math",
       "label": "math",
       "_origin": "semantic",
@@ -7251,18 +7462,6 @@
       "type": "external"
     },
     {
-      "id": "ollama",
-      "label": "ollama",
-      "_origin": "semantic",
-      "community": 13,
-      "community_name": "json",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "ollama",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "pandas",
       "label": "pandas",
       "_origin": "semantic",
@@ -7283,42 +7482,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "random",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "re",
-      "label": "re",
-      "_origin": "semantic",
-      "community": 13,
-      "community_name": "json",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "re",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "requests",
-      "label": "requests",
-      "_origin": "semantic",
-      "community": 13,
-      "community_name": "json",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "requests",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "sys",
-      "label": "sys",
-      "_origin": "semantic",
-      "community": 13,
-      "community_name": "json",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "sys",
       "source_file": "",
       "type": "external"
     },
@@ -7371,14 +7534,38 @@
       "type": "external"
     },
     {
+      "id": "collections",
+      "label": "collections",
+      "_origin": "semantic",
+      "community": 21,
+      "community_name": "collections",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "collections",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "csv",
       "label": "csv",
       "_origin": "semantic",
       "community": 21,
-      "community_name": "calibrate_verify.py",
+      "community_name": "collections",
       "external": true,
       "file_type": "concept",
       "norm_label": "csv",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "requests",
+      "label": "requests",
+      "_origin": "semantic",
+      "community": 21,
+      "community_name": "collections",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "requests",
       "source_file": "",
       "type": "external"
     },
@@ -7387,34 +7574,10 @@
       "label": "statistics",
       "_origin": "semantic",
       "community": 21,
-      "community_name": "calibrate_verify.py",
+      "community_name": "collections",
       "external": true,
       "file_type": "concept",
       "norm_label": "statistics",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "urllib_request",
-      "label": "urllib_request",
-      "_origin": "semantic",
-      "community": 21,
-      "community_name": "calibrate_verify.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "urllib_request",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "collections",
-      "label": "collections",
-      "_origin": "semantic",
-      "community": 29,
-      "community_name": "__init__.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "collections",
       "source_file": "",
       "type": "external"
     },
@@ -7463,6 +7626,42 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "numpy",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "ollama",
+      "label": "ollama",
+      "_origin": "semantic",
+      "community": 43,
+      "community_name": "sys",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ollama",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "sys",
+      "label": "sys",
+      "_origin": "semantic",
+      "community": 43,
+      "community_name": "sys",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "sys",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "urllib_request",
+      "label": "urllib_request",
+      "_origin": "semantic",
+      "community": 46,
+      "community_name": "confirm_adr0008.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "urllib_request",
       "source_file": "",
       "type": "external"
     },
@@ -7552,6 +7751,174 @@
     }
   ],
   "links": [
+    {
+      "source": "eval_concern_pass_extract",
+      "target": "eval_concern_pass_jl",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_extract",
+      "target": "src_graphrag_pipeline_select",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_extract",
+      "target": "eval_concern_pass_ids",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_extract",
+      "target": "src_graphrag_parse_user_text",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_extract",
+      "target": "src_graphrag_ground_score",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_extract",
+      "target": "src_graphrag_ground_locate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_extract",
+      "target": "src_graphrag_pipeline_unload",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_judge",
+      "target": "src_graphrag_pipeline_unload",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_judge",
+      "target": "eval_concern_pass_jl",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_judge",
+      "target": "eval_concern_pass_new_edges",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_judge",
+      "target": "src_graphrag_pipeline_select",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_new_edges",
+      "target": "eval_concern_pass_jl",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_verify",
+      "target": "eval_concern_pass_jl",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_verify",
+      "target": "src_graphrag_pipeline_unload",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L72",
+      "weight": 1.0
+    },
     {
       "source": "eval_confirm_adr0008_b_row",
       "target": "eval_confirm_adr0008_timed_decide",
@@ -9425,6 +9792,18 @@
       "weight": 1.0
     },
     {
+      "source": "eval_concern_pass_judge",
+      "target": "eval_concern_pass_judge_cov",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
       "source": "eval_run_eval_run_tool",
       "target": "eval_run_eval_run_tool_res",
       "relation": "contains",
@@ -9554,6 +9933,102 @@
       "context": "generic_arg",
       "source_file": "scripts/prepush_check.py",
       "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_check_labels",
+      "target": "collections",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/check_labels.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_check_labels",
+      "target": "json",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/check_labels.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_check_labels",
+      "target": "sys",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/check_labels.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "json",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "pathlib",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "sys",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "time",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "ollama",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -9762,6 +10237,18 @@
     },
     {
       "source": "eval_judge32b",
+      "target": "os",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_judge32b",
       "target": "pathlib",
       "relation": "imports",
       "_origin": "ast",
@@ -9823,6 +10310,18 @@
     {
       "source": "eval_route_generated",
       "target": "json",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/route_generated.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_route_generated",
+      "target": "os",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -11570,6 +12069,66 @@
       "context": "import",
       "source_file": "tests/test_themes.py",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_check_labels",
+      "target": "src_graphrag_init",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/check_labels.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "src_graphrag_init",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "src_graphrag_parse",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "src_graphrag_pipeline",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "src_graphrag_ground",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -13347,6 +13906,28 @@
     },
     {
       "source": "docs_07_implementation_roadmap_07_implementation_roadmap",
+      "target": "docs_07_implementation_roadmap_open_items_closing_pass_2026_11_07",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/07-implementation-roadmap.md",
+      "source_location": "L339",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_07_implementation_roadmap_07_implementation_roadmap",
+      "target": "docs_07_implementation_roadmap_open_items_second_pass_and_router_boundary_examples_2026_11_09",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/07-implementation-roadmap.md",
+      "source_location": "L352",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_07_implementation_roadmap_07_implementation_roadmap",
       "target": "docs_07_implementation_roadmap_critical_path_and_parallel_work",
       "relation": "contains",
       "_origin": "ast",
@@ -13468,29 +14049,40 @@
     },
     {
       "source": "docs_08_evaluation_results_08_evaluation_results_m7",
+      "target": "docs_08_evaluation_results_label_confirmation",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_08_evaluation_results_label_confirmation",
+      "target": "docs_08_evaluation_results_per_route_latency_median_s",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_08_evaluation_results_label_confirmation",
       "target": "docs_08_evaluation_results_dev_half_tuning_allowed",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L10",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
-      "source": "docs_08_evaluation_results_08_evaluation_results_m7",
+      "source": "docs_08_evaluation_results_label_confirmation",
       "target": "docs_08_evaluation_results_router_abstention_by_threshold_dev_half_tuning_allowed_route_confidence_only",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L28",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_08_evaluation_results_08_evaluation_results_m7",
-      "target": "docs_08_evaluation_results_held_out_half",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -13500,19 +14092,19 @@
       "weight": 1.0
     },
     {
-      "source": "docs_08_evaluation_results_08_evaluation_results_m7",
-      "target": "docs_08_evaluation_results_router_abstention_by_threshold_held_out_half_route_confidence_only",
+      "source": "docs_08_evaluation_results_label_confirmation",
+      "target": "docs_08_evaluation_results_held_out_half",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L55",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
-      "source": "docs_08_evaluation_results_08_evaluation_results_m7",
-      "target": "docs_08_evaluation_results_all_40",
+      "source": "docs_08_evaluation_results_label_confirmation",
+      "target": "docs_08_evaluation_results_router_abstention_by_threshold_held_out_half_route_confidence_only",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -13522,19 +14114,19 @@
       "weight": 1.0
     },
     {
-      "source": "docs_08_evaluation_results_08_evaluation_results_m7",
-      "target": "docs_08_evaluation_results_router_abstention_by_threshold_all_40_route_confidence_only",
+      "source": "docs_08_evaluation_results_label_confirmation",
+      "target": "docs_08_evaluation_results_all_40",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L82",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
-      "source": "docs_08_evaluation_results_08_evaluation_results_m7",
-      "target": "docs_08_evaluation_results_per_route_latency_median_s",
+      "source": "docs_08_evaluation_results_label_confirmation",
+      "target": "docs_08_evaluation_results_router_abstention_by_threshold_all_40_route_confidence_only",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -15433,6 +16025,61 @@
       "confidence_score": 1.0,
       "source_file": "docs/spike-01-extraction.md",
       "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_check_labels",
+      "target": "eval_check_labels_jl",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "eval/check_labels.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_check_labels",
+      "target": "eval_check_labels_check",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "eval/check_labels.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "eval_concern_pass_ids",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "eval_concern_pass_jl",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "eval_concern_pass_new_edges",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L75",
       "weight": 1.0
     },
     {
@@ -17603,6 +18250,39 @@
       "weight": 1.0
     },
     {
+      "source": "eval_check_labels_rationale_1",
+      "target": "eval_check_labels",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "eval/check_labels.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_rationale_1",
+      "target": "eval_concern_pass",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass_rationale_76",
+      "target": "eval_concern_pass_new_edges",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
       "source": "eval_confirm_adr0008_rationale_1",
       "target": "eval_confirm_adr0008",
       "relation": "rationale_for",
@@ -19572,6 +20252,18 @@
       "weight": 1.0
     },
     {
+      "source": "eval_concern_pass_judge_cov",
+      "target": "src_graphrag_grounded_items",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
       "source": "eval_score_table",
       "target": "eval_confirm_adr0008_timed_decide_f",
       "relation": "indirect_call",
@@ -19620,6 +20312,18 @@
       "weight": 1.0
     },
     {
+      "source": "tests_test_m3_modules_test_verify_item_and_keep_threshold",
+      "target": "eval_concern_pass_verify",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
       "source": "tests_test_pipeline_stages_test_stages_resume_and_assemble",
       "target": "tests_test_pipeline_stages_test_stages_resume_and_assemble_ext",
       "relation": "indirect_call",
@@ -19629,6 +20333,42 @@
       "context": "argument",
       "source_file": "tests/test_pipeline_stages.py",
       "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "eval_concern_pass_extract",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "collection",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "eval_concern_pass_judge",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "collection",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "eval_concern_pass",
+      "target": "eval_concern_pass_verify",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "collection",
+      "source_file": "eval/concern_pass.py",
+      "source_location": "L132",
       "weight": 1.0
     },
     {
@@ -19933,5 +20673,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0283b4331bf96a6a9e0acf692fcafab54b8706c0"
+  "built_at_commit": "722b95cc235a0cd8b641ccbd769f0f7ae0d9e3c4"
 }

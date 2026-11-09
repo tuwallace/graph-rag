@@ -57,13 +57,13 @@ if __name__ == "__main__":
         ix = Q.ConceptIndex(d)
         b = [b_row(x, d, ix) for x in new]; a = [a_row(x, d, ix) for x in new]
         out = {"new": {"B": b, "A": a}}
-        summ(b, "B router v2 (20 new)"); summ(a, "A qwen3 picks (20 new)")
+        summ(b, f"B router {router.ROUTER_VERSION} (20 new)"); summ(a, "A qwen3 picks (20 new)")
         lat = [r["route_decision_secs"] for r in b]
         print(f"router route-decision latency, {len(lat)} unseen questions: p50 {statistics.median(lat):.2f}s p95 {sorted(lat)[int(round(0.95*(len(lat)-1)))]:.2f}s max {max(lat):.2f}s")
         if "--old" in sys.argv:
             old = json.loads((HERE / "questions.json").read_text())
             rows = [b_row(x, d, ix) for x in old]; out["old"] = rows
             for sp in ("dev", "held"):
-                summ([r for r, x in zip(rows, old) if x["split"] == sp], f"B router v2 on original {sp}")
-            summ(rows, "B router v2 on original 40")
+                summ([r for r, x in zip(rows, old) if x["split"] == sp], f"B router {router.ROUTER_VERSION} on original {sp}")
+            summ(rows, f"B router {router.ROUTER_VERSION} on original 40")
     json.dump(out, open(C.ROOT / "data" / "eval" / "confirm.json", "w"), indent=1)

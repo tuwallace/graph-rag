@@ -2,8 +2,8 @@
 
 Status: **built and evaluated as a demo** (milestones M1 to M8 done; M9 publish in progress, 2026-11-07). Public demo repository ([tuwallace/graph-rag](https://github.com/tuwallace/graph-rag)).
 
-The corpus is [Anthropic/AnthropicInterviewer](https://huggingface.co/datasets/Anthropic/AnthropicInterviewer): 1,250 transcripts of AI-led interviews about using AI at work
-(CC-BY per the dataset card body; the card's front matter says `mit`; attribute Anthropic). It replaced the earlier synthetic helpdesk-ticket data ([archive](archive/helpdesk/README.md)).
+The corpus is [Anthropic/AnthropicInterviewer](https://huggingface.co/datasets/Anthropic/AnthropicInterviewer): 1,250 transcripts of AI-led interviews about using AI at work (**this project uses 500 of them**: all 125 creatives, all 125 scientists and a fixed random 250 of the 1,000 workforce; all graph counts and results describe those 500)
+(the card's front matter says `mit` and its body says CC-BY; the owner decided on 2026-11-09 to treat it as MIT; attribute Anthropic). It replaced the earlier synthetic helpdesk-ticket data ([archive](archive/helpdesk/README.md)).
 Stack: Ollama (qwen3, `nimble` decision model, nomic-embed-text), ollmcp, Docker (Neo4j Community).
 
 ## Read in this order

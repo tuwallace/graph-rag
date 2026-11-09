@@ -2,7 +2,7 @@
 
 > God node · 11 connections · `docs/decisions/0008-decision-model-router.md`
 
-**Community:** [extract.py](extract.py.md)
+**Community:** [judge32b.py](judge32b.py.md)
 
 ## Connections by Relation
 

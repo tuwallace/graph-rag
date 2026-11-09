@@ -1,12 +1,13 @@
 # score()
 
-> God node · 9 connections · `src/graphrag/ground.py`
+> God node · 10 connections · `src/graphrag/ground.py`
 
 **Community:** [extract.py](extract.py.md)
 
 ## Connections by Relation
 
 ### calls
+- extract() `EXTRACTED`
 - extract() `EXTRACTED`
 - is_grounded() `EXTRACTED`
 - locate() `EXTRACTED`

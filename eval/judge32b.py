@@ -6,7 +6,7 @@ Stages (resumable, outputs in data/eval/judge/):
 Run: PYTHONPATH=src:. uv run python eval/judge32b.py [precision|recall|questions|all]
 Still model-judged: a human check of a subsample is needed to trust the labels (see docs/07 'Open items').
 """
-import json, random, sys, time, pathlib
+import json, os, random, sys, time, pathlib
 import ollama
 from graphrag import config as C
 from graphrag.parse import segments as parse_segments, user_text
@@ -101,17 +101,17 @@ ROUTES = {
 
 
 def questions():
-    path = OUT / "questions.json"
+    path = OUT / os.environ.get("QFILE", "questions.json"); seed = int(os.environ.get("QSEED", "3"))
     if path.exists(): return
     out = []
     for route, desc in ROUTES.items():
         a = ask("A dataset holds interviews in which workers, creative professionals and scientists describe how they use AI at work, what tasks they do and what worries them. "
                 f"Write 8 different, natural questions that a user might type to a chat assistant over this dataset, each {desc}. Vary the wording and length; do not name the dataset or mention the type of question. "
                 + ('For each, also give "kind" (ai_use, task or concern) and "group" (all, workforce, creatives or scientists) that the question asks about. ' if route == "concept_stats" else "")
-                + 'Return JSON {"questions": [{"q": "...", ' + ('"kind": "...", "group": "..."' if route == "concept_stats" else '') + "}]}.", 1200, temperature=0.9, seed=3)
+                + 'Return JSON {"questions": [{"q": "...", ' + ('"kind": "...", "group": "..."' if route == "concept_stats" else '') + "}]}.", 1200, temperature=0.9, seed=seed)
         for i, x in enumerate(a.get("questions") or []):
             if isinstance(x, dict) and isinstance(x.get("q"), str):
-                out.append({"id": f"g_{route}_{i}", "route": route, "q": x["q"].strip(), "kind": x.get("kind"), "group": x.get("group")})
+                out.append({"id": f"{os.environ.get('QPREFIX', 'g')}_{route}_{i}", "route": route, "q": x["q"].strip(), "kind": x.get("kind"), "group": x.get("group")})
         print(f"[questions {route}] {sum(o['route'] == route for o in out)}", flush=True)
     path.write_text(json.dumps(out, indent=1))
 

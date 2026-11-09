@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **pathlib** (13 connections)
+- **pathlib** (14 connections)
 - **mcp_smoke.py** (8 connections) — `scripts/mcp_smoke.py`
 - **test_pipeline_stages.py** (6 connections) — `tests/test_pipeline_stages.py`
 - **test_stages_resume_and_assemble()** (3 connections) — `tests/test_pipeline_stages.py`
@@ -20,15 +20,16 @@
 
 ## Relationships
 
-- [json](json.md) (4 shared connections)
+- [json](json.md) (3 shared connections)
 - [__init__.py](__init__.py.md) (2 shared connections)
+- [confirm_adr0008.py](confirm_adr0008.py.md) (2 shared connections)
 - [pipeline.py](pipeline.py.md) (2 shared connections)
+- [sys](sys.md) (1 shared connections)
 - [mcp_server.py](mcp_server.py.md) (1 shared connections)
-- [confirm_adr0008.py](confirm_adr0008.py.md) (1 shared connections)
-- [extract.py](extract.py.md) (1 shared connections)
+- [themes.py](themes.py.md) (1 shared connections)
+- [judge32b.py](judge32b.py.md) (1 shared connections)
 - [run_eval.py](run_eval.py.md) (1 shared connections)
 - [score.py](score.py.md) (1 shared connections)
-- [calibrate_verify.py](calibrate_verify.py.md) (1 shared connections)
 - [prepush_check.py](prepush_check.py.md) (1 shared connections)
 - [load.py](load.py.md) (1 shared connections)
 
@@ -39,7 +40,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 28 (97%)
+- EXTRACTED: 29 (97%)
 - INFERRED: 1 (3%)
 - AMBIGUOUS: 0 (0%)
 

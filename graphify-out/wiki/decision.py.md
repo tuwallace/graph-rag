@@ -1,10 +1,11 @@
 # decision.py
 
-> 29 nodes
+> 38 nodes
 
 ## Key Concepts
 
 - **decision.py** (11 connections) — `src/graphrag/decision.py`
+- **test_m3_modules.py** (11 connections) — `tests/test_m3_modules.py`
 - **decide()** (9 connections) — `src/graphrag/decision.py`
 - **verify.py** (9 connections) — `src/graphrag/verify.py`
 - **attributes()** (6 connections) — `src/graphrag/attributes.py`
@@ -15,6 +16,7 @@
 - **DecisionError** (3 connections) — `src/graphrag/decision.py`
 - **state_for()** (3 connections) — `src/graphrag/verify.py`
 - **verify_item()** (3 connections) — `src/graphrag/verify.py`
+- **test_attributes_is_one_call_per_segment()** (3 connections) — `tests/test_m3_modules.py`
 - **segment_state()** (2 connections) — `src/graphrag/attributes.py`
 - **claim_for()** (2 connections) — `src/graphrag/verify.py`
 - **keep()** (2 connections) — `src/graphrag/verify.py`
@@ -22,27 +24,25 @@
 - **Nodes** (2 connections) — `docs/03-graph-schema.md`
 - **Pipeline** (2 connections) — `docs/03-graph-schema.md`
 - **Throughput reality (measured, one machine)** (2 connections) — `docs/05-components.md`
-- **RuntimeError** (1 connections)
-- **Constraints and indexes** (1 connections) — `docs/03-graph-schema.md`
-- **Provenance rule** (1 connections) — `docs/03-graph-schema.md`
-- **Relationships (all carry provenance)** (1 connections) — `docs/03-graph-schema.md`
-- **What was removed from the helpdesk model** (1 connections) — `docs/03-graph-schema.md`
-- **Installed models and their role** (1 connections) — `docs/05-components.md`
-- **Neo4j container** (1 connections) — `docs/05-components.md`
-- *... and 4 more nodes in this community*
+- **fake()** (1 connections) — `tests/test_m3_modules.py`
+- **test_clean_names()** (1 connections) — `tests/test_m3_modules.py`
+- **test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical()** (1 connections) — `tests/test_m3_modules.py`
+- **test_decide_raises_after_retries()** (1 connections) — `tests/test_m3_modules.py`
+- **test_stage_is_resumable_and_ignores_half_written_line()** (1 connections) — `tests/test_m3_modules.py`
+- *... and 13 more nodes in this community*
 
 ## Relationships
 
 - [grounded.py](grounded.py.md) (3 shared connections)
 - [pipeline.py](pipeline.py.md) (3 shared connections)
+- [confirm_adr0008.py](confirm_adr0008.py.md) (2 shared connections)
+- [collections](collections.md) (2 shared connections)
+- [__init__.py](__init__.py.md) (2 shared connections)
 - [docs/README.md](docs-README.md.md) (2 shared connections)
-- [queries.py](queries.py.md) (1 shared connections)
-- [score.py](score.py.md) (1 shared connections)
-- [json](json.md) (1 shared connections)
-- [confirm_adr0008.py](confirm_adr0008.py.md) (1 shared connections)
-- [__init__.py](__init__.py.md) (1 shared connections)
 - [load.py](load.py.md) (1 shared connections)
-- [calibrate_verify.py](calibrate_verify.py.md) (1 shared connections)
+- [json](json.md) (1 shared connections)
+- [queries.py](queries.py.md) (1 shared connections)
+- [themes.py](themes.py.md) (1 shared connections)
 
 ## Source Files
 
@@ -51,11 +51,12 @@
 - `src/graphrag/attributes.py`
 - `src/graphrag/decision.py`
 - `src/graphrag/verify.py`
+- `tests/test_m3_modules.py`
 
 ## Audit Trail
 
-- EXTRACTED: 47 (90%)
-- INFERRED: 5 (10%)
+- EXTRACTED: 58 (91%)
+- INFERRED: 6 (9%)
 - AMBIGUOUS: 0 (0%)
 
 ---

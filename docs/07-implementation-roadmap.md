@@ -347,4 +347,30 @@ Independent checks by `qwen2.5:32b` (run alone; `eval/judge32b.py`, `eval/route_
 - **Latency bound:** p95 under 2 s accepted by the owner (ADR-0008).
 - **Licence (decided 2026-11-09):** the project owner chose to stay with MIT for the code and to treat the dataset as MIT, following the card's front matter; attribution to Anthropic stays. The card's body still says CC-BY, so this is a choice the owner made, not something the card settles.
 - **Router latency:** p95 under 2 s accepted by the owner (ADR-0008).
-- **Still open:** recall (34%) and `theme_overview` routing (see the next section).
+- **Follow-up (2026-11-09):** recall second pass and router v3 boundary examples were run; see "Open items: second pass and router boundary examples" below. Still open: applying the second pass to the graph.
+
+## Open items: second pass and router boundary examples (2026-11-09)
+
+All scores below are model-judged (`qwen2.5:32b`, run alone) on **the 500-interview graph**, one run each; the owner confirmed the labels (docs/08, "Label confirmation"). Nothing here changes the loaded graph.
+
+**Concern recall, looser second pass** (`eval/concern_pass.py`; prompt `concern-loose-v1`, same grounding and verify threshold 0.2, run on the same 10 transcripts):
+
+| Measure | Before | After |
+|---|---|---|
+| Judge-listed concerns covered (10 transcripts) | 21 of 74 (28%) | 38 of 74 (51%) |
+| Pooled coverage, all kinds (256 items) | 87 (34%) | 104 (41%) |
+| New concern concepts added | - | 27, from 67 raw items |
+| Precision of the 27 new edges (judge) | - | 15 correct (56%), 8 hypothetical, 4 wrong |
+
+The new edges are about as precise as the old concern edges (63% correct, 87% counting hypothetical) but more of them are hypothetical (30% against 23%). Only 22 of the 27 are `current` and `affirmed`, the only ones counted by queries. The pass costs about 30 s per transcript for extraction, plus verify; for 500 interviews roughly 4 h of extraction plus verify, normalise and a reload. **It has not been applied to the graph**; the figures describe 10 transcripts and are noisy. Applying it is a decision for the owner.
+
+**Router v3** (boundary examples in the route descriptions, written after reading the `theme_overview` misses on the first generated set, so that set is no longer a clean test):
+
+| Set | Router v2 | Router v3 | Config A |
+|---|---|---|---|
+| Original 40 (36 in scope) | 33/36 | 34/36 | 31/36 (M7) |
+| Confirmation 20 (18 in scope) | 17/18 | 18/18 | 16/18 |
+| Generated set 1 (40 in scope; seen) | 30/40 | 31/40 | 27/40 |
+| Generated set 2 (40 in scope; fresh, written afterwards with a different seed) | - | 30/40 | 23/40 |
+
+`theme_overview` on generated set 1 improved from 1 of 8 to 4 of 8 and on the fresh set is 5 of 8; the overall gain is small (within noise) and the fresh set shows the same general level of about 75%. Remaining errors are mostly `local_search` questions sent to `concept_stats` (for example "tasks scientists perform with AI"), where the generator's label is itself debatable. **Latency rose**: route decision p50 1.68 s, p95 1.98 s, max 4.21 s on 20 unseen questions (v2: 1.13 s and 1.57 s), because the descriptions are longer. That is just inside the accepted 2 s bound with n = 20 and one 4 s outlier, so the margin is thin.

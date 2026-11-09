@@ -38,7 +38,7 @@
 - [01. Data analysis: Anthropic Interviewer transcripts](01._Data_analysis-_Anthropic_Interviewer_transcripts.md) (1 shared connections)
 - [02. Architecture](02._Architecture.md) (1 shared connections)
 - [07. Implementation roadmap](07._Implementation_roadmap.md) (1 shared connections)
-- [08. Evaluation results (M7)](08._Evaluation_results_M7.md) (1 shared connections)
+- [Label confirmation](Label_confirmation.md) (1 shared connections)
 - [ADR-0001: Graph database](ADR-0001-_Graph_database.md) (1 shared connections)
 - [ADR-0002: How the graph is built](ADR-0002-_How_the_graph_is_built.md) (1 shared connections)
 - [ADR-0003: Vector retrieval and graph expansion](ADR-0003-_Vector_retrieval_and_graph_expansion.md) (1 shared connections)
