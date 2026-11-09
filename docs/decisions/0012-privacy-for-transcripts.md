@@ -40,3 +40,5 @@ The dataset card is corrected, or a larger PII scan finds identifying details.
 ## PII pass record (2026-11-07, before the first public commit)
 
 Checked over every file to be committed (docs, code, graphify map and wiki; 150 or so files): email addresses (none), URLs (domains only huggingface.co, ollama.com, github.com, anthropic.com, astral.sh and localhost), and capitalised multi-word names that also occur in participant turns of the 1,250 transcripts (one overlap, "Google Sheets", a product). `scripts/prepush_check.py` additionally fails on any run of 25 or more words shared with the corpus. Not checked: single first names, employers named in lowercase, phone-number formats, and anything in the data itself (the corpus is not redistributed). Quotes in docs are short attributed excerpts.
+
+Update 2026-11-09: the owner decided to stay with MIT (code and data), following the card's front matter. Attribution is unchanged.

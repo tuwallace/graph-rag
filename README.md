@@ -66,4 +66,4 @@ Tests: `uv run pytest`. Evaluation: `eval/`.
 
 ## License
 
-Code: MIT (see `LICENSE`). Data: not redistributed here; see the dataset card and Anthropic's terms.
+Code: MIT (see `LICENSE`). Data: not redistributed here. The dataset card's front matter says MIT and its body says data CC-BY; the project owner decided on 2026-11-09 to treat it as MIT. Attribution to Anthropic is kept regardless.

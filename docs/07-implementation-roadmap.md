@@ -345,4 +345,6 @@ Independent checks by `qwen2.5:32b` (run alone; `eval/judge32b.py`, `eval/route_
 - **Recall, 10 transcripts:** the judge listed 256 things participants say; the kept edges cover 87 (34%). Workforce 35%, creatives 36%, scientists 30%. This is low and noisy: the judge lists many fine-grained items and matching is strict, but recall is clearly well below precision. Counts and rankings therefore under-count.
 - **Router on 48 judge-written questions (40 in scope, 8 out of scope):** B (router v2) 30/40 (75%), 4 abstained, 28/36 (78%) when answered; A 27/40 (68%). Out of scope 8/8 for both. Stats kind and group: B 7/8, A 6/8. Weak spot: `theme_overview` questions are sent to `concept_stats` or `local_search` (7 of 8 wrong), which is lower than on the author-written set (19/21 overall).
 - **Latency bound:** p95 under 2 s accepted by the owner (ADR-0008).
-- **Still needing a human:** none of the independence items remain open on labels or questions per the owner's confirmation; the dataset licence ambiguity (card front matter says mit, body says CC-BY) and the decision to push remain with the owner.
+- **Licence (decided 2026-11-09):** the project owner chose to stay with MIT for the code and to treat the dataset as MIT, following the card's front matter; attribution to Anthropic stays. The card's body still says CC-BY, so this is a choice the owner made, not something the card settles.
+- **Router latency:** p95 under 2 s accepted by the owner (ADR-0008).
+- **Still open:** recall (34%) and `theme_overview` routing (see the next section).
