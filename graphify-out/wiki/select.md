@@ -12,7 +12,7 @@
 - main() `EXTRACTED`
 - main() `EXTRACTED`
 - judge() `EXTRACTED`
-- score() `EXTRACTED`
+- [score()](score.md) `EXTRACTED`
 - do_extract() `EXTRACTED`
 - ids() `EXTRACTED`
 - load_records() `EXTRACTED`

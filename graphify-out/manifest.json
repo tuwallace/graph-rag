@@ -588,9 +588,21 @@
     "semantic_hash": ""
   },
   "scripts/pii_residuals.py": {
-    "mtime": 1794341396.3248472,
-    "seen": 1794346302.593002,
-    "ast_hash": "a2c2f4de60998a91df7f12da16cabd09",
+    "mtime": 1794346459.450973,
+    "seen": 1794347417.133947,
+    "ast_hash": "a7f13ce6494cb2be6494501bf79d9a69",
+    "semantic_hash": ""
+  },
+  "BRAINS.md": {
+    "mtime": 1794347403.9677825,
+    "seen": 1794347417.133975,
+    "ast_hash": "b2a041d45516ef0cd01a504e60f605e9",
+    "semantic_hash": ""
+  },
+  "Session_Logs.md": {
+    "mtime": 1794347403.9711306,
+    "seen": 1794347417.1339772,
+    "ast_hash": "88ed29fdbb3f56d1de7281ba99b3021d",
     "semantic_hash": ""
   }
 }

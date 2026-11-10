@@ -1,6 +1,6 @@
 # ask_interviews()
 
-> God node · 17 connections · `src/graphrag/mcp_server.py`
+> God node · 18 connections · `src/graphrag/mcp_server.py`
 
 **Community:** [ask_interviews](ask_interviews.md)
 
@@ -30,6 +30,7 @@
 - What changed against the first run (all 40) `INFERRED`
 - Decisions at a glance `INFERRED`
 - What was built `INFERRED`
+- 2026-11-05 to 2026-11-10: build, evaluate, publish, close out `INFERRED`
 
 ---
 

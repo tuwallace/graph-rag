@@ -1,0 +1,4 @@
+data/
+.venv/
+graphify-out/cache/
+*.zip

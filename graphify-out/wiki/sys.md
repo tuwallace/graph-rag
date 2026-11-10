@@ -1,58 +1,46 @@
 # sys
 
-> 20 nodes
+> 12 nodes
 
 ## Key Concepts
 
 - **sys** (20 connections)
-- **re** (17 connections)
-- **time** (15 connections)
-- **pandas** (11 connections)
-- **02_extract.py** (8 connections) — `spike/02_extract.py`
-- **02b_extract_v2.py** (8 connections) — `spike/02b_extract_v2.py`
-- **03_nimble.py** (8 connections) — `spike/03_nimble.py`
-- **gate2_retrieval.py** (7 connections) — `eval/gate2_retrieval.py`
 - **live_ollmcp_session.py** (7 connections) — `scripts/live_ollmcp_session.py`
-- **statistics** (7 connections)
-- **run_m2.py** (6 connections) — `scripts/run_m2.py`
-- **01_profile.py** (5 connections) — `spike/01_profile.py`
+- **06_score_labels.py** (7 connections) — `spike/06_score_labels.py`
+- **download_data.py** (6 connections) — `scripts/download_data.py`
+- **fmt()** (2 connections) — `spike/06_score_labels.py`
+- **wilson()** (2 connections) — `spike/06_score_labels.py`
 - **wait_prompt()** (1 connections) — `scripts/live_ollmcp_session.py`
-- **norm()** (1 connections) — `spike/02_extract.py`
-- **norm()** (1 connections) — `spike/02b_extract_v2.py`
-- **pairs()** (1 connections) — `spike/03_nimble.py`
-- **Gate 2 proxy: do the top-5 vector hits for 10 queries contain answers that…** (1 connections) — `eval/gate2_retrieval.py`
+- **Download the Anthropic/AnthropicInterviewer transcripts into…** (1 connections) — `scripts/download_data.py`
 - **Drive a live ollmcp session (qwen3:8b-16k, routed profile, mcp.json) through a…** (1 connections) — `scripts/live_ollmcp_session.py`
-- **M2: rerun extraction v3 on the same 20 transcripts as the spike. Usage:…** (1 connections) — `scripts/run_m2.py`
+- **Score filled-in labelling sheets. Usage: python spike/06_score_labels.py…** (1 connections) — `spike/06_score_labels.py`
 - **pexpect** (1 connections)
+- **urllib_request** (1 connections)
 
 ## Relationships
 
-- [json](json.md) (17 shared connections)
-- [pathlib](pathlib.md) (7 shared connections)
-- [run_eval.py](run_eval.py.md) (6 shared connections)
-- [__init__.py](__init__.py.md) (6 shared connections)
-- [themes.py](themes.py.md) (5 shared connections)
-- [pipeline.py](pipeline.py.md) (5 shared connections)
-- [extract.py](extract.py.md) (4 shared connections)
-- [router.py](router.py.md) (3 shared connections)
-- [score.py](score.py.md) (3 shared connections)
-- [05_make_label_sheets.py](05_make_label_sheets.py.md) (2 shared connections)
-- [ground.py](ground.py.md) (2 shared connections)
-- [mcp_server.py](mcp_server.py.md) (2 shared connections)
+- [re](re.md) (5 shared connections)
+- [json](json.md) (4 shared connections)
+- [pipeline.py](pipeline.py.md) (3 shared connections)
+- [__init__.py](__init__.py.md) (3 shared connections)
+- [pathlib](pathlib.md) (2 shared connections)
+- [themes.py](themes.py.md) (2 shared connections)
+- [calibrate_verify.py](calibrate_verify.py.md) (1 shared connections)
+- [score.py](score.py.md) (1 shared connections)
+- [judge32b.py](judge32b.py.md) (1 shared connections)
+- [mcp_smoke.py](mcp_smoke.py.md) (1 shared connections)
+- [pii_residuals.py](pii_residuals.py.md) (1 shared connections)
+- [prepush_check.py](prepush_check.py.md) (1 shared connections)
 
 ## Source Files
 
-- `eval/gate2_retrieval.py`
+- `scripts/download_data.py`
 - `scripts/live_ollmcp_session.py`
-- `scripts/run_m2.py`
-- `spike/01_profile.py`
-- `spike/02_extract.py`
-- `spike/02b_extract_v2.py`
-- `spike/03_nimble.py`
+- `spike/06_score_labels.py`
 
 ## Audit Trail
 
-- EXTRACTED: 97 (100%)
+- EXTRACTED: 38 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

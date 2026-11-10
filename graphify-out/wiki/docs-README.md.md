@@ -1,6 +1,6 @@
 # docs/README.md
 
-> 38 nodes
+> 39 nodes
 
 ## Key Concepts
 
@@ -8,8 +8,8 @@
 - **decisions/README.md** (17 connections) — `docs/decisions/README.md`
 - **05-components.md** (13 connections) — `docs/05-components.md`
 - **06-evaluation-and-roadmap.md** (13 connections) — `docs/06-evaluation-and-roadmap.md`
+- **07-implementation-roadmap.md** (13 connections) — `docs/07-implementation-roadmap.md`
 - **0009-corpus-anthropic-interviewer.md** (13 connections) — `docs/decisions/0009-corpus-anthropic-interviewer.md`
-- **07-implementation-roadmap.md** (12 connections) — `docs/07-implementation-roadmap.md`
 - **0008-decision-model-router.md** (12 connections) — `docs/decisions/0008-decision-model-router.md`
 - **0010-extraction-pipeline.md** (12 connections) — `docs/decisions/0010-extraction-pipeline.md`
 - **spike-01-extraction.md** (12 connections) — `docs/spike-01-extraction.md`
@@ -19,8 +19,8 @@
 - **docs/01-data-analysis.md** (8 connections) — `docs/01-data-analysis.md`
 - **docs/04-query-and-tools.md** (8 connections) — `docs/04-query-and-tools.md`
 - **docs/03-graph-schema.md** (7 connections) — `docs/03-graph-schema.md`
+- **09-completion-status.md** (7 connections) — `docs/09-completion-status.md`
 - **README.md** (7 connections) — `README.md`
-- **09-completion-status.md** (6 connections) — `docs/09-completion-status.md`
 - **0001-graph-database.md** (6 connections) — `docs/decisions/0001-graph-database.md`
 - **0002-graph-construction.md** (6 connections) — `docs/decisions/0002-graph-construction.md`
 - **0004-query-interface.md** (6 connections) — `docs/decisions/0004-query-interface.md`
@@ -29,7 +29,7 @@
 - **labeling-guide.md** (6 connections) — `docs/labeling-guide.md`
 - **01. Data analysis: Anthropic Interviewer transcripts** (5 connections) — `docs/01-data-analysis.md`
 - **08-evaluation-results.md** (5 connections) — `docs/08-evaluation-results.md`
-- *... and 13 more nodes in this community*
+- *... and 14 more nodes in this community*
 
 ## Relationships
 
@@ -49,6 +49,7 @@
 ## Source Files
 
 - `README.md`
+- `Session_Logs.md`
 - `docs/01-data-analysis.md`
 - `docs/02-architecture.md`
 - `docs/03-graph-schema.md`
@@ -67,11 +68,10 @@
 - `docs/decisions/0005-local-llm-selection.md`
 - `docs/decisions/0006-deployment-topology.md`
 - `docs/decisions/0007-privacy-and-access.md`
-- `docs/decisions/0008-decision-model-router.md`
 
 ## Audit Trail
 
-- EXTRACTED: 148 (100%)
+- EXTRACTED: 151 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
