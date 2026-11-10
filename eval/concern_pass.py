@@ -5,7 +5,7 @@ against the original kept concepts, and against original + new concern edges. It
 Run: PYTHONPATH=src:. uv run python eval/concern_pass.py [extract|verify|judge|all]
 Model-judged, one run each, 10 transcripts: small and noisy.
 """
-import json, sys, time, pathlib
+import json, os, sys, time, pathlib
 import ollama
 from graphrag import config as C, extract as X, verify as V
 from graphrag.parse import segments as parse_segments, user_text
@@ -36,7 +36,10 @@ TRANSCRIPT:
 
 
 def ids():
-    return [json.loads(l)["key"] for l in open(JUDGE / "recall.jsonl")]
+    """The 10 recall transcripts first; with CONCERN_SCOPE=all, then every other transcript of the 500-interview demo scope."""
+    first = [json.loads(l)["key"] for l in open(JUDGE / "recall.jsonl")]
+    if os.environ.get("CONCERN_SCOPE") != "all": return first
+    return first + [tid for _, tid, _ in select("demo") if tid not in set(first)]
 
 
 def jl(path):
@@ -46,7 +49,8 @@ def jl(path):
 def extract():
     texts = {tid: (sp, t) for sp, tid, t in select("demo")}; path = OUT / "extract.jsonl"; done = {r["key"] for r in jl(path)}
     client = ollama.Client(host=C.OLLAMA_URL, timeout=900)
-    for j, tid in enumerate(ids(), 1):
+    todo = ids()
+    for j, tid in enumerate(todo, 1):
         if tid in done: continue
         text = texts[tid][1]; t0 = time.time()
         r = client.chat(model=C.GEN_MODEL, messages=[{"role": "user", "content": PROMPT + text}], format=X.SCHEMA, think=False,
@@ -59,7 +63,7 @@ def extract():
             it["ground_score"] = round(score(it["quote"], ut), 3); it["grounded"] = it["ground_score"] >= THRESHOLD
             idx, sc = locate(it["quote"], segs); it["segment_idx"] = idx if sc >= THRESHOLD else None
         open(path, "a").write(json.dumps({"key": tid, "group": texts[tid][0], "items": items, "secs": round(time.time() - t0, 1), "version": PASS_VERSION}) + "\n")
-        print(f"[extract {j}/10] {tid} {len(items)} items {time.time()-t0:.0f}s", flush=True)
+        print(f"[extract {j}/{len(todo)}] {tid} {len(items)} items {time.time()-t0:.0f}s", flush=True)
     unload(C.GEN_MODEL)
 
 
@@ -68,7 +72,7 @@ def verify():
     for j, r in enumerate(jl(OUT / "extract.jsonl"), 1):
         if r["key"] in done: continue
         sc = [V.verify_item(it) for it in r["items"]]
-        open(path, "a").write(json.dumps({"key": r["key"], "scores": sc}) + "\n"); print(f"[verify {j}/10] {r['key']} {len(sc)}", flush=True)
+        open(path, "a").write(json.dumps({"key": r["key"], "scores": sc}) + "\n"); print(f"[verify {j}] {r['key']} {len(sc)}", flush=True)
     unload(C.ROUTER_MODEL)
 
 

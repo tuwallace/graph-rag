@@ -1,6 +1,6 @@
 # docs/README.md
 
-> 32 nodes
+> 37 nodes
 
 ## Key Concepts
 
@@ -26,16 +26,15 @@
 - **0005-local-llm-selection.md** (6 connections) — `docs/decisions/0005-local-llm-selection.md`
 - **0007-privacy-and-access.md** (6 connections) — `docs/decisions/0007-privacy-and-access.md`
 - **labeling-guide.md** (6 connections) — `docs/labeling-guide.md`
+- **01. Data analysis: Anthropic Interviewer transcripts** (5 connections) — `docs/01-data-analysis.md`
 - **helpdesk/README.md** (5 connections) — `docs/archive/helpdesk/README.md`
 - **02-architecture.md** (4 connections) — `docs/02-architecture.md`
-- **08-evaluation-results.md** (4 connections) — `docs/08-evaluation-results.md`
-- *... and 7 more nodes in this community*
+- *... and 12 more nodes in this community*
 
 ## Relationships
 
 - [mcp_server.py](mcp_server.py.md) (4 shared connections)
-- [decision.py](decision.py.md) (2 shared connections)
-- [01. Data analysis: Anthropic Interviewer transcripts](01._Data_analysis-_Anthropic_Interviewer_transcripts.md) (1 shared connections)
+- [router.py](router.py.md) (2 shared connections)
 - [02. Architecture](02._Architecture.md) (1 shared connections)
 - [07. Implementation roadmap](07._Implementation_roadmap.md) (1 shared connections)
 - [Label confirmation](Label_confirmation.md) (1 shared connections)
@@ -45,6 +44,7 @@
 - [ADR-0004: Query interface the LLM uses](ADR-0004-_Query_interface_the_LLM_uses.md) (1 shared connections)
 - [ADR-0005: Local LLM selection](ADR-0005-_Local_LLM_selection.md) (1 shared connections)
 - [ADR-0006: Deployment topology](ADR-0006-_Deployment_topology.md) (1 shared connections)
+- [ADR-0007: Privacy and access control](ADR-0007-_Privacy_and_access_control.md) (1 shared connections)
 
 ## Source Files
 
@@ -71,7 +71,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 139 (100%)
+- EXTRACTED: 143 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

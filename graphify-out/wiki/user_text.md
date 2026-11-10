@@ -2,7 +2,7 @@
 
 > God node · 9 connections · `src/graphrag/parse.py`
 
-**Community:** [extract.py](extract.py.md)
+**Community:** [load.py](load.py.md)
 
 ## Connections by Relation
 
@@ -19,7 +19,7 @@
 - parse.py `EXTRACTED`
 
 ### imports
-- [extract.py](extract.py.md) `EXTRACTED`
+- extract.py `EXTRACTED`
 
 ---
 

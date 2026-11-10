@@ -100,8 +100,9 @@ def summarise(driver, themes, client=None, retries=2, log=print):
     for t in themes:
         quotes = sample_quotes(driver, [m["name"] for m in t["members"][:12]])
         for attempt in range(retries + 1):
-            r = client.chat(model=SUMMARY_MODEL, messages=[{"role": "user", "content": prompt_for(t, quotes, used)}], format="json",
-                            options={"temperature": 0, "num_predict": 500})
+            fb = f'\n\nYour previous answer was rejected ({"; ".join(errs)}); label was {out.get("label")!r}. Write a different label that does not contain the word "AI" or "A.I." and differs from the other labels.' if attempt else ""
+            r = client.chat(model=SUMMARY_MODEL, messages=[{"role": "user", "content": prompt_for(t, quotes, used) + fb}], format="json",
+                            options={"temperature": 0 if attempt == 0 else 0.5, "seed": attempt, "num_predict": 500})   # retries at temperature 0 repeat the same output
             try:
                 out = json.loads(r.message.content)
             except json.JSONDecodeError:

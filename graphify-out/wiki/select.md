@@ -1,6 +1,6 @@
 # select()
 
-> God node · 10 connections · `src/graphrag/pipeline.py`
+> God node · 11 connections · `src/graphrag/pipeline.py`
 
 **Community:** [pipeline.py](pipeline.py.md)
 
@@ -12,6 +12,7 @@
 - main() `EXTRACTED`
 - main() `EXTRACTED`
 - judge() `EXTRACTED`
+- ids() `EXTRACTED`
 - [score()](score.md) `EXTRACTED`
 - load_records() `EXTRACTED`
 

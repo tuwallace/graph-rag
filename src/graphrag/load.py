@@ -53,7 +53,7 @@ def build(run_dir, texts: dict[str, str]):
             edges[e["kind"]].append({"sid": sid, "key": e["canonical"], "eid": edge_id(sid, e["kind"], e["canonical"], e["quote"]),
                                      "raw_name": e["raw_name"], "quote": e["quote"], "status": e["status"], "polarity": e["polarity"],
                                      "supports": e["verify"]["supports"], "own_current": e["verify"].get("own_current"),
-                                     "model": rec["model"], "prompt_version": rec["prompt_version"]})
+                                     "model": rec["model"], "prompt_version": e.get("prompt_version", rec["prompt_version"])})
     return interviews, segs, edges, stats
 
 

@@ -1,45 +1,50 @@
 # __init__.py
 
-> 10 nodes
+> 14 nodes
 
 ## Key Concepts
 
-- **__init__.py** (32 connections) — `src/graphrag/__init__.py`
-- **neo4j** (11 connections)
-- **route_generated.py** (8 connections) — `eval/route_generated.py`
-- **gate2_retrieval.py** (7 connections) — `eval/gate2_retrieval.py`
+- **__init__.py** (34 connections) — `src/graphrag/__init__.py`
+- **calibrate_verify.py** (8 connections) — `scripts/calibrate_verify.py`
+- **compare_m2.py** (8 connections) — `scripts/compare_m2.py`
+- **make_label_sheet_v3.py** (8 connections) — `scripts/make_label_sheet_v3.py`
+- **csv** (6 connections)
+- **statistics** (6 connections)
 - **test_schema.py** (3 connections) — `tests/test_schema.py`
-- **pct()** (1 connections) — `eval/route_generated.py`
+- **match()** (2 connections) — `scripts/compare_m2.py`
+- **auc()** (1 connections) — `scripts/calibrate_verify.py`
 - **test_statements_are_idempotent_form()** (1 connections) — `tests/test_schema.py`
 - **test_vector_index_statement_uses_dimension()** (1 connections) — `tests/test_schema.py`
-- **Gate 2 proxy: do the top-5 vector hits for 10 queries contain answers that…** (1 connections) — `eval/gate2_retrieval.py`
-- **Routing accuracy on questions written by a different model (qwen2.5:32b) from…** (1 connections) — `eval/route_generated.py`
+- **Calibrate the verify step against the LLM-labelled v3.2 sheet (a calibration,…** (1 connections) — `scripts/calibrate_verify.py`
+- **Compare v3 against the labelled v2 edges (data/labeling_claude, LLM labels).…** (1 connections) — `scripts/compare_m2.py`
+- **Blind labelling sheet from extraction v3.2 output -> data/labeling_v3/ (git-…** (1 connections) — `scripts/make_label_sheet_v3.py`
 
 ## Relationships
 
-- [load.py](load.py.md) (5 shared connections)
-- [json](json.md) (4 shared connections)
+- [json](json.md) (8 shared connections)
+- [run_eval.py](run_eval.py.md) (8 shared connections)
+- [load.py](load.py.md) (6 shared connections)
 - [pipeline.py](pipeline.py.md) (4 shared connections)
-- [collections](collections.md) (3 shared connections)
-- [run_eval.py](run_eval.py.md) (3 shared connections)
-- [themes.py](themes.py.md) (3 shared connections)
+- [router.py](router.py.md) (3 shared connections)
+- [concern_merge.py](concern_merge.py.md) (3 shared connections)
 - [queries.py](queries.py.md) (3 shared connections)
-- [pathlib](pathlib.md) (2 shared connections)
-- [extract.py](extract.py.md) (2 shared connections)
-- [sys](sys.md) (2 shared connections)
-- [confirm_adr0008.py](confirm_adr0008.py.md) (2 shared connections)
+- [judge32b.py](judge32b.py.md) (2 shared connections)
 - [score.py](score.py.md) (2 shared connections)
+- [mcp_server.py](mcp_server.py.md) (2 shared connections)
+- [check_labels.py](check_labels.py.md) (1 shared connections)
+- [themes.py](themes.py.md) (1 shared connections)
 
 ## Source Files
 
-- `eval/gate2_retrieval.py`
-- `eval/route_generated.py`
+- `scripts/calibrate_verify.py`
+- `scripts/compare_m2.py`
+- `scripts/make_label_sheet_v3.py`
 - `src/graphrag/__init__.py`
 - `tests/test_schema.py`
 
 ## Audit Trail
 
-- EXTRACTED: 56 (100%)
+- EXTRACTED: 65 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

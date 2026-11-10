@@ -210,7 +210,7 @@ Against the projection (about 11 h total): total compute (10.7 h) was close, but
 |---|---|
 | Interviews, segments | 500, 5,450 (all with an embedding) |
 | `DOES_TASK` / `USES_AI_FOR` / `RAISES` edges | 600 / 3,020 / 1,358 (5,000 loaded of 5,000 kept) |
-| `Task` / `AIUse` / `Concern` nodes | 367 / 1,217 / 686 |
+| `Task` / `AIUse` / `Concern` nodes | 367 / 1,217 / 686 (Concern became 967 after the 2026-11-09 concern pass, below) |
 | Graph total | 8,223 nodes, 10,928 relationships |
 | Every edge has a quote; no orphan concept; vector index ONLINE | pass |
 | Reload changes nothing | pass (counts identical after a second run) |
@@ -362,7 +362,7 @@ All scores below are model-judged (`qwen2.5:32b`, run alone) on **the 500-interv
 | New concern concepts added | - | 27, from 67 raw items |
 | Precision of the 27 new edges (judge) | - | 15 correct (56%), 8 hypothetical, 4 wrong |
 
-The new edges are about as precise as the old concern edges (63% correct, 87% counting hypothetical) but more of them are hypothetical (30% against 23%). Only 22 of the 27 are `current` and `affirmed`, the only ones counted by queries. The pass costs about 30 s per transcript for extraction, plus verify; for 500 interviews roughly 4 h of extraction plus verify, normalise and a reload. **It has not been applied to the graph**; the figures describe 10 transcripts and are noisy. Applying it is a decision for the owner.
+The new edges are about as precise as the old concern edges (63% correct, 87% counting hypothetical) but more of them are hypothetical (30% against 23%). Only 22 of the 27 are `current` and `affirmed`, the only ones counted by queries. The pass costs about 30 s per transcript for extraction, plus verify; for 500 interviews roughly 4 h of extraction plus verify, normalise and a reload. **It has not been applied to the graph**; the figures describe 10 transcripts and are noisy. Applying it was the owner's decision, made after this section; see the next section.
 
 **Router v3** (boundary examples in the route descriptions, written after reading the `theme_overview` misses on the first generated set, so that set is no longer a clean test):
 
@@ -374,3 +374,21 @@ The new edges are about as precise as the old concern edges (63% correct, 87% co
 | Generated set 2 (40 in scope; fresh, written afterwards with a different seed) | - | 30/40 | 23/40 |
 
 `theme_overview` on generated set 1 improved from 1 of 8 to 4 of 8 and on the fresh set is 5 of 8; the overall gain is small (within noise) and the fresh set shows the same general level of about 75%. Remaining errors are mostly `local_search` questions sent to `concept_stats` (for example "tasks scientists perform with AI"), where the generator's label is itself debatable. **Latency rose**: route decision p50 1.68 s, p95 1.98 s, max 4.21 s on 20 unseen questions (v2: 1.13 s and 1.57 s), because the descriptions are longer. That is just inside the accepted 2 s bound with n = 20 and one 4 s outlier, so the margin is thin.
+
+## Concern pass applied to all 500 interviews (2026-11-09)
+
+Decision by the owner. `eval/concern_pass.py` (`CONCERN_SCOPE=all`) re-extracted concerns for all 500 interviews with the looser prompt `concern-loose-v1`, verified them at the same threshold (0.2), and `graphrag.concern_merge` added the ones whose quote was not already used in that interview (originals are kept as `graph_input.v1.jsonl` and `normalise.v1.json`). Existing edges and canonical names are unchanged; new names joined an existing canonical concern at cosine 0.85 or more, else clustered among themselves. Then Neo4j was reloaded (all checks pass) and the themes were rebuilt.
+
+| | Before | After |
+|---|---|---|
+| Concern edges (`RAISES`) | 1,358 | 2,566 (+1,208 across 428 interviews) |
+| Concern nodes | 686 | 967 (591 new names joined existing concerns, 281 became new ones) |
+| Task / AIUse edges | 600 / 3,020 | unchanged |
+| Most frequent concern (interviews) | hallucinations, 33 | ai inaccuracy 41, reliability 36, hallucinations 34 |
+| Themes | 12 | 11 (rebuilt; labels differ) |
+
+**Quality is only known from the 10-transcript test.** There 15 of 27 new edges (56%) were judged correct, 8 hypothetical and 4 wrong. The 1,208 new edges across 500 interviews were **not labelled**, so expect roughly the same mix: about a third are hypothetical or wrong, and the queries count only `current` and `affirmed` edges. Concern counts are higher and still lower bounds. Concern rankings changed, so any earlier concern figure in this file or in `08-evaluation-results.md` describes the graph before this pass.
+
+**Re-checks on the new graph:** router v3 gives the same routing results on the original 40 (34 of 36 in scope) and the confirmation 20 (18 of 18); route-decision p50 1.68 s, p95 1.97 s (max 4.29 s), just under the accepted 2 s bound. `scripts/mcp_smoke.py` passes (all six routes). The M7 scores in `08-evaluation-results.md`, the 32b precision and recall figures, and the groundedness results were **not re-run** on the new graph and describe the graph before this pass.
+
+**Theme rebuild bug fixed:** label retries ran at temperature 0 and repeated the same invalid output, which dropped the largest theme. Retries now use a small temperature and tell the model why its answer was rejected.

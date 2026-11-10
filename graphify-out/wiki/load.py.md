@@ -1,61 +1,64 @@
 # load.py
 
-> 27 nodes
+> 52 nodes
 
 ## Key Concepts
 
 - **load.py** (24 connections) — `src/graphrag/load.py`
-- **config.py** (15 connections) — `src/graphrag/config.py`
-- **schema.py** (9 connections) — `src/graphrag/schema.py`
+- **extract.py** (22 connections) — `src/graphrag/extract.py`
+- **re** (15 connections)
+- **ground.py** (14 connections) — `src/graphrag/ground.py`
+- **parse.py** (14 connections) — `src/graphrag/parse.py`
+- **test_pipeline_core.py** (13 connections) — `tests/test_pipeline_core.py`
+- **segments()** (11 connections) — `src/graphrag/parse.py`
+- **score()** (10 connections) — `src/graphrag/ground.py`
+- **user_text()** (9 connections) — `src/graphrag/parse.py`
+- **extract()** (8 connections) — `src/graphrag/extract.py`
 - **build()** (8 connections) — `src/graphrag/load.py`
 - **main()** (8 connections) — `src/graphrag/load.py`
-- **apply()** (5 connections) — `src/graphrag/schema.py`
-- **os** (4 connections)
+- **is_grounded()** (7 connections) — `src/graphrag/ground.py`
+- **locate()** (7 connections) — `src/graphrag/ground.py`
+- **parse_turns()** (7 connections) — `src/graphrag/parse.py`
+- **dedupe()** (5 connections) — `src/graphrag/extract.py`
+- **hygiene_failures()** (3 connections) — `src/graphrag/extract.py`
 - **checks()** (3 connections) — `src/graphrag/load.py`
 - **embed_segments()** (3 connections) — `src/graphrag/load.py`
 - **write()** (3 connections) — `src/graphrag/load.py`
-- **embedding_dim()** (3 connections) — `src/graphrag/schema.py`
-- **argparse** (3 connections)
-- **chunks()** (2 connections) — `src/graphrag/load.py`
-- **counts()** (2 connections) — `src/graphrag/load.py`
-- **edge_id()** (2 connections) — `src/graphrag/load.py`
-- **seg_id()** (2 connections) — `src/graphrag/load.py`
-- **main()** (2 connections) — `src/graphrag/schema.py`
-- **vector_index_stmt()** (2 connections) — `src/graphrag/schema.py`
-- **hashlib** (2 connections)
-- **Settings from environment / .env. No secrets in code.** (1 connections) — `src/graphrag/config.py`
-- **M5: load an assembled run (graph_input.jsonl) into Neo4j. Idempotent (MERGE…** (1 connections) — `src/graphrag/load.py`
-- **Post-load invariants. Returns {name: (ok, detail)}.** (1 connections) — `src/graphrag/load.py`
-- **Return (interviews, segments, edges_by_kind, stats) ready for UNWIND. Pure: no…** (1 connections) — `src/graphrag/load.py`
-- **Embed question+answer per segment; cached on disk so a reload or crash does not…** (1 connections) — `src/graphrag/load.py`
-- **Constraints and indexes (idempotent). Run: PYTHONPATH=src uv run python -m…** (1 connections) — `src/graphrag/schema.py`
-- *... and 2 more nodes in this community*
+- **test_fuzzy_grounding_tolerates_punctuation_and_case()** (3 connections) — `tests/test_pipeline_core.py`
+- **test_interviewer_text_is_not_user_text()** (3 connections) — `tests/test_pipeline_core.py`
+- **test_locate_finds_the_segment()** (3 connections) — `tests/test_pipeline_core.py`
+- **build_prompt()** (2 connections) — `src/graphrag/extract.py`
+- **tokens()** (2 connections) — `src/graphrag/ground.py`
+- *... and 27 more nodes in this community*
 
 ## Relationships
 
-- [extract.py](extract.py.md) (8 shared connections)
-- [pipeline.py](pipeline.py.md) (6 shared connections)
-- [__init__.py](__init__.py.md) (5 shared connections)
-- [queries.py](queries.py.md) (3 shared connections)
-- [mcp_server.py](mcp_server.py.md) (2 shared connections)
+- [pipeline.py](pipeline.py.md) (13 shared connections)
+- [json](json.md) (9 shared connections)
+- [__init__.py](__init__.py.md) (6 shared connections)
+- [queries.py](queries.py.md) (6 shared connections)
+- [run_eval.py](run_eval.py.md) (6 shared connections)
+- [concern_merge.py](concern_merge.py.md) (3 shared connections)
+- [mcp_server.py](mcp_server.py.md) (3 shared connections)
+- [score.py](score.py.md) (3 shared connections)
+- [judge32b.py](judge32b.py.md) (2 shared connections)
 - [themes.py](themes.py.md) (2 shared connections)
-- [pathlib](pathlib.md) (1 shared connections)
-- [decision.py](decision.py.md) (1 shared connections)
-- [grounded.py](grounded.py.md) (1 shared connections)
-- [json](json.md) (1 shared connections)
-- [sys](sys.md) (1 shared connections)
-- [judge32b.py](judge32b.py.md) (1 shared connections)
+- [07. Implementation roadmap](07._Implementation_roadmap.md) (1 shared connections)
+- [05_make_label_sheets.py](05_make_label_sheets.py.md) (1 shared connections)
 
 ## Source Files
 
-- `src/graphrag/config.py`
+- `docs/07-implementation-roadmap.md`
+- `src/graphrag/extract.py`
+- `src/graphrag/ground.py`
 - `src/graphrag/load.py`
-- `src/graphrag/schema.py`
+- `src/graphrag/parse.py`
+- `tests/test_pipeline_core.py`
 
 ## Audit Trail
 
-- EXTRACTED: 71 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 148 (99%)
+- INFERRED: 1 (1%)
 - AMBIGUOUS: 0 (0%)
 
 ---

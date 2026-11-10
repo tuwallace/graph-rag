@@ -1,6 +1,6 @@
 # Stage
 
-> God node · 12 connections · `src/graphrag/manifest.py`
+> God node · 13 connections · `src/graphrag/manifest.py`
 
 **Community:** [pipeline.py](pipeline.py.md)
 
@@ -18,6 +18,7 @@
 
 ### imports
 - [pipeline.py](pipeline.py.md) `EXTRACTED`
+- [concern_merge.py](concern_merge.py.md) `EXTRACTED`
 
 ### method
 - .__init__() `EXTRACTED`
