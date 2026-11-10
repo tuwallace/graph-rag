@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **docs/README.md** (28 connections) — `docs/README.md`
+- **docs/README.md** (27 connections) — `docs/README.md`
 - **decisions/README.md** (17 connections) — `docs/decisions/README.md`
 - **05-components.md** (13 connections) — `docs/05-components.md`
 - **06-evaluation-and-roadmap.md** (13 connections) — `docs/06-evaluation-and-roadmap.md`
@@ -20,6 +20,7 @@
 - **docs/04-query-and-tools.md** (8 connections) — `docs/04-query-and-tools.md`
 - **docs/03-graph-schema.md** (7 connections) — `docs/03-graph-schema.md`
 - **README.md** (7 connections) — `README.md`
+- **09-completion-status.md** (6 connections) — `docs/09-completion-status.md`
 - **0001-graph-database.md** (6 connections) — `docs/decisions/0001-graph-database.md`
 - **0002-graph-construction.md** (6 connections) — `docs/decisions/0002-graph-construction.md`
 - **0004-query-interface.md** (6 connections) — `docs/decisions/0004-query-interface.md`
@@ -28,18 +29,17 @@
 - **labeling-guide.md** (6 connections) — `docs/labeling-guide.md`
 - **01. Data analysis: Anthropic Interviewer transcripts** (5 connections) — `docs/01-data-analysis.md`
 - **08-evaluation-results.md** (5 connections) — `docs/08-evaluation-results.md`
-- **09-completion-status.md** (5 connections) — `docs/09-completion-status.md`
 - *... and 13 more nodes in this community*
 
 ## Relationships
 
-- [decision.py](decision.py.md) (3 shared connections)
-- [grounded.py](grounded.py.md) (2 shared connections)
+- [router.py](router.py.md) (3 shared connections)
 - [02. Architecture](02._Architecture.md) (1 shared connections)
 - [04. Query routing and MCP tool surface (Interviewer corpus)](04._Query_routing_and_MCP_tool_surface_Interviewer_corpus.md) (1 shared connections)
 - [06. Evaluation and roadmap](06._Evaluation_and_roadmap.md) (1 shared connections)
 - [07. Implementation roadmap](07._Implementation_roadmap.md) (1 shared connections)
-- [ask_interviews](ask_interviews.md) (1 shared connections)
+- [08. Evaluation results (M7)](08._Evaluation_results_M7.md) (1 shared connections)
+- [09. Completion status (2026-11-10, final update: all planned tests run)](09._Completion_status_2026-11-10,_final_update-_all_planned_tests_run.md) (1 shared connections)
 - [ADR-0001: Graph database](ADR-0001-_Graph_database.md) (1 shared connections)
 - [ADR-0002: How the graph is built](ADR-0002-_How_the_graph_is_built.md) (1 shared connections)
 - [ADR-0003: Vector retrieval and graph expansion](ADR-0003-_Vector_retrieval_and_graph_expansion.md) (1 shared connections)

@@ -1,6 +1,6 @@
 # select()
 
-> God node · 11 connections · `src/graphrag/pipeline.py`
+> God node · 12 connections · `src/graphrag/pipeline.py`
 
 **Community:** [pipeline.py](pipeline.py.md)
 
@@ -12,8 +12,9 @@
 - main() `EXTRACTED`
 - main() `EXTRACTED`
 - judge() `EXTRACTED`
+- score() `EXTRACTED`
+- do_extract() `EXTRACTED`
 - ids() `EXTRACTED`
-- [score()](score.md) `EXTRACTED`
 - load_records() `EXTRACTED`
 
 ### contains

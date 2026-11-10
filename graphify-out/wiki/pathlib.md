@@ -1,49 +1,59 @@
 # pathlib
 
-> 15 nodes
+> 27 nodes
 
 ## Key Concepts
 
-- **pathlib** (14 connections)
-- **grounded_eval.py** (13 connections) — `eval/grounded_eval.py`
-- **neo4j** (11 connections)
-- **gate2_retrieval.py** (7 connections) — `eval/gate2_retrieval.py`
+- **pathlib** (16 connections)
+- **pii_residuals.py** (10 connections) — `scripts/pii_residuals.py`
+- **prepush_check.py** (10 connections) — `scripts/prepush_check.py`
+- **mcp_smoke.py** (8 connections) — `scripts/mcp_smoke.py`
 - **test_pipeline_stages.py** (6 connections) — `tests/test_pipeline_stages.py`
-- **score()** (4 connections) — `eval/grounded_eval.py`
+- **main()** (4 connections) — `scripts/pii_residuals.py`
+- **main()** (3 connections) — `scripts/prepush_check.py`
+- **tracked()** (3 connections) — `scripts/prepush_check.py`
 - **test_stages_resume_and_assemble()** (3 connections) — `tests/test_pipeline_stages.py`
-- **quality()** (2 connections) — `eval/grounded_eval.py`
+- **participant_text()** (2 connections) — `scripts/pii_residuals.py`
+- **tracked()** (2 connections) — `scripts/pii_residuals.py`
+- **shingles()** (2 connections) — `scripts/prepush_check.py`
 - **fake_extract()** (2 connections) — `tests/test_pipeline_stages.py`
 - **ext()** (2 connections) — `tests/test_pipeline_stages.py`
-- **run()** (1 connections) — `eval/grounded_eval.py`
+- **fastmcp** (2 connections)
+- **shutil** (2 connections)
+- **subprocess** (2 connections)
+- **main()** (1 connections) — `scripts/mcp_smoke.py`
+- **look()** (1 connections) — `scripts/pii_residuals.py`
 - **test_scope_sizes_are_deterministic()** (1 connections) — `tests/test_pipeline_stages.py`
 - **embed()** (1 connections) — `tests/test_pipeline_stages.py`
-- **Gate 2 proxy: do the top-5 vector hits for 10 queries contain answers that…** (1 connections) — `eval/gate2_retrieval.py`
-- **Re-measure groundedness with answer generation, through the grounded path…** (1 connections) — `eval/grounded_eval.py`
+- **Path** (1 connections)
+- **Start the MCP server over stdio and call it like a client would. Usage:…** (1 connections) — `scripts/mcp_smoke.py`
+- **PII residual checks from ADR-0012: phone formats, first names on their own,…** (1 connections) — `scripts/pii_residuals.py`
+- **Pre-push check (ADR-0012). Fails when a tracked file could expose the…** (1 connections) — `scripts/prepush_check.py`
+- *... and 2 more nodes in this community*
 
 ## Relationships
 
-- [__init__.py](__init__.py.md) (7 shared connections)
-- [pipeline.py](pipeline.py.md) (5 shared connections)
-- [sys](sys.md) (5 shared connections)
-- [score.py](score.py.md) (3 shared connections)
-- [extract.py](extract.py.md) (2 shared connections)
-- [confirm_adr0008.py](confirm_adr0008.py.md) (2 shared connections)
+- [sys](sys.md) (7 shared connections)
+- [json](json.md) (4 shared connections)
+- [__init__.py](__init__.py.md) (3 shared connections)
+- [mcp_server.py](mcp_server.py.md) (2 shared connections)
+- [pipeline.py](pipeline.py.md) (2 shared connections)
 - [run_eval.py](run_eval.py.md) (2 shared connections)
-- [load.py](load.py.md) (2 shared connections)
-- [mcp_server.py](mcp_server.py.md) (1 shared connections)
-- [queries.py](queries.py.md) (1 shared connections)
-- [themes.py](themes.py.md) (1 shared connections)
+- [score.py](score.py.md) (2 shared connections)
+- [grounded_eval.py](grounded_eval.py.md) (1 shared connections)
 - [judge32b.py](judge32b.py.md) (1 shared connections)
+- [concern_merge.py](concern_merge.py.md) (1 shared connections)
 
 ## Source Files
 
-- `eval/gate2_retrieval.py`
-- `eval/grounded_eval.py`
+- `scripts/mcp_smoke.py`
+- `scripts/pii_residuals.py`
+- `scripts/prepush_check.py`
 - `tests/test_pipeline_stages.py`
 
 ## Audit Trail
 
-- EXTRACTED: 51 (98%)
+- EXTRACTED: 56 (98%)
 - INFERRED: 1 (2%)
 - AMBIGUOUS: 0 (0%)
 

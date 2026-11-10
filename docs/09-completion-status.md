@@ -1,4 +1,4 @@
-# 09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)
+# 09. Completion status (2026-11-10, final update: all planned tests run)
 
 What is done, what is open, and what still needs a decision or a test before the project is marked complete. All results describe the **500-interview** graph (500 of the 1,250 interviews in the dataset). Model-judged means judged by `qwen2.5:32b`; the owner has stated they confirmed the labels (see [08](08-evaluation-results.md)).
 
@@ -39,20 +39,19 @@ All ADRs accepted; precision target met; Gates G1 and G2 stay closed; router v3 
 4. **Router latency.** p95 of 1.98 s leaves almost no margin to 2 s. Keep v3 (your earlier decision) or trim the examples.
 5. **Scope.** 500 of 1,250 interviews. Declare 500 final, or schedule the remaining 750 (roughly 15 to 20 h of extraction, verify and attributes at the measured rates).
 
-## Open: tests not yet run (after Test 1)
+## Tests: all run (2026-11-10)
 
-1. ~~Re-run the end-to-end evaluation on the final graph~~ **Done 2026-11-10** (M7 table, groundedness, end-to-end latency per route; see 08).
-2. ~~Hygiene check on the concern-loose prompt~~ **Done:** 2 of 500 transcripts flagged ("human connection", a phrase in the prompt; 31 raw items, none kept in the graph).
-3. ~~Live session check~~ **Done 2026-11-10** (see 08). The server now returns an `answer` field with relay instructions; with thinking off and context cleared the relay is faithful (2 of 2 runs), otherwise `qwen3:8b-16k` skipped the tool in 3 of 5 runs and invented quotes. This is a limit of the small client model that the server cannot enforce; it is documented in the README.
-4. ~~PII residuals~~ **Done 2026-11-10** (see ADR-0012 and `scripts/pii_residuals.py`; also part of the pre-push check).
-5. **Run-to-run stability:** every result is one run; the larger-model judge was run once per item.
-6. **Normalisation error rate:** merge errors and missed merges on a sample, as the plan in 06 asks; the new concern names were merged by the same 0.85 threshold without a sample review.
-7. **Attitude labels:** agreement was 0.63 in M3 and no calibration curve was reported.
+| Test | State |
+|---|---|
+| Final-graph evaluation (M7, groundedness, latency) | Done; see 08 |
+| Hygiene check on the loose concern prompt | Done; 2 of 500 flagged, none kept |
+| Live `ollmcp` session | Done; faithful only with thinking off and context cleared (README) |
+| PII residuals | Done; none in the public repo or history (ADR-0012) |
+| Run-to-run stability | Done; router stable, extraction stable at temperature 0 (one divergence in 10), judge stable |
+| Normalisation merges | Done; 6 of 80 false merges (all concerns, 15%), no missed duplicates in the near-miss band |
+| Attitude calibration | Done; 82.5% agreement with the 32b judge, under-confident at low confidence, `mixed` weakest |
 
-## Closed after the last update (2026-11-10)
-
-- `theme_overview` latency lead: explained, not a regression (the first run had no themes; see 08).
-- PII residuals: scan run; see ADR-0012 and `scripts/pii_residuals.py`.
+No planned test remains. Known limits are listed in the README and in 08: model-judged labels (owner-confirmed), one run per result, 500 of 1,250 interviews, small client model unvalidated in free chat.
 
 ## Housekeeping
 

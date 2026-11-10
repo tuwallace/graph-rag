@@ -102,9 +102,9 @@
     "semantic_hash": ""
   },
   "scripts/prepush_check.py": {
-    "mtime": 1794082210.927384,
-    "seen": 1794082635.4038851,
-    "ast_hash": "74884a1e64b70b3a5759f437bcd05cca",
+    "mtime": 1794341396.3255067,
+    "seen": 1794346302.593003,
+    "ast_hash": "24bfd5a87b1a3060726892e1eddc6d36",
     "semantic_hash": ""
   },
   "scripts/run_m2.py": {
@@ -318,9 +318,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1794340415.8926759,
-    "seen": 1794340420.7297149,
-    "ast_hash": "ba88ea654c1c5054e26889c2925f09f2",
+    "mtime": 1794346297.8310566,
+    "seen": 1794346302.593032,
+    "ast_hash": "477c5a93d143367b51eaad94685d085c",
     "semantic_hash": ""
   },
   "docker-compose.yml": {
@@ -372,9 +372,9 @@
     "semantic_hash": ""
   },
   "docs/08-evaluation-results.md": {
-    "mtime": 1794340415.8930235,
-    "seen": 1794340420.729721,
-    "ast_hash": "1e19fb160eba3e11685673e9737201d5",
+    "mtime": 1794346290.0024767,
+    "seen": 1794346302.593039,
+    "ast_hash": "96f9664068a50194f99699acc15e61f0",
     "semantic_hash": ""
   },
   "docs/README.md": {
@@ -480,9 +480,9 @@
     "semantic_hash": ""
   },
   "docs/decisions/0012-privacy-for-transcripts.md": {
-    "mtime": 1794332408.7221751,
-    "seen": 1794333672.238528,
-    "ast_hash": "cda0ad97bcec5cb9b200a8bfdc391faa",
+    "mtime": 1794341544.728401,
+    "seen": 1794346302.593054,
+    "ast_hash": "feeb95929d1cc3116c20ee046e451164",
     "semantic_hash": ""
   },
   "docs/decisions/0013-waive-human-labels.md": {
@@ -558,15 +558,39 @@
     "semantic_hash": ""
   },
   "docs/09-completion-status.md": {
-    "mtime": 1794340415.8938675,
-    "seen": 1794340420.729722,
-    "ast_hash": "a30704dce4681583a6c017c39b0c080e",
+    "mtime": 1794346290.0032134,
+    "seen": 1794346302.59304,
+    "ast_hash": "639047204db3caee340fde4795fcc1b0",
     "semantic_hash": ""
   },
   "scripts/live_ollmcp_session.py": {
     "mtime": 1794340066.9147391,
     "seen": 1794340420.7296839,
     "ast_hash": "e19b8c68fa015a4f1e1f23a509c22903",
+    "semantic_hash": ""
+  },
+  "eval/attitude_calibration.py": {
+    "mtime": 1794342729.148375,
+    "seen": 1794346302.592979,
+    "ast_hash": "a438e1163a01b1a71ab0951291c3e808",
+    "semantic_hash": ""
+  },
+  "eval/normalisation_check.py": {
+    "mtime": 1794342729.144811,
+    "seen": 1794346302.592989,
+    "ast_hash": "f8ee825a7cd6512aa9331a2d710be7cb",
+    "semantic_hash": ""
+  },
+  "eval/stability.py": {
+    "mtime": 1794342705.4932985,
+    "seen": 1794346302.5929952,
+    "ast_hash": "4696538fdfb719b4c31fe372d5f0db6f",
+    "semantic_hash": ""
+  },
+  "scripts/pii_residuals.py": {
+    "mtime": 1794341396.3248472,
+    "seen": 1794346302.593002,
+    "ast_hash": "a2c2f4de60998a91df7f12da16cabd09",
     "semantic_hash": ""
   }
 }

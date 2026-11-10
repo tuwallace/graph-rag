@@ -1,8 +1,8 @@
 # answer()
 
-> God node · 12 connections · `src/graphrag/router.py`
+> God node · 11 connections · `src/graphrag/router.py`
 
-**Community:** [grounded.py](grounded.py.md)
+**Community:** [router.py](router.py.md)
 
 ## Connections by Relation
 
@@ -14,7 +14,7 @@
 - clarify() `EXTRACTED`
 
 ### contains
-- router.py `EXTRACTED`
+- [router.py](router.py.md) `EXTRACTED`
 - done() `EXTRACTED`
 
 ### rationale_for
@@ -23,7 +23,6 @@
 ### references
 - Nodes `INFERRED`
 - Fix attempt and re-test (2026-11-10) `INFERRED`
-- Open: tests not yet run (after Test 1) `INFERRED`
 - Run it `INFERRED`
 
 ---

@@ -18,7 +18,7 @@
 
 ### imports
 - [pipeline.py](pipeline.py.md) `EXTRACTED`
-- concern_merge.py `EXTRACTED`
+- [concern_merge.py](concern_merge.py.md) `EXTRACTED`
 
 ### method
 - .__init__() `EXTRACTED`

@@ -187,3 +187,57 @@ Change: `ask_interviews` now returns the validated facts in an `answer` field pl
 | 7 | off | yes | 4/4 | 9/9 | same as run 6 |
 
 **Result.** With thinking off and the conversation cleared before each question (`/tm`, `/cc` in `ollmcp`) the relay is faithful in two of two runs: the tool is called every time, quotes are verbatim, no unsupported figures or added sections. Without that, `qwen3:8b-16k` skipped the tool in a long conversation in 3 of 5 runs and wrote quotes with invented ids. **The server cannot enforce this:** the client model decides whether to call the tool and what to say. Treat free-form `ollmcp` chat with this model as unvalidated; the validated path is `grounded.py` and the evaluation harness. Out-of-scope questions are sometimes answered by the model itself without the tool (runs 6 and 7: "4"). Latency with thinking off and context cleared: 24 to 59 s per in-scope question (51 to 105 s with thinking on), still far above the 7 s of the grounded path because the client model has to read and rewrite long tool output. Small n (7 runs of 5 questions), one model.
+
+## Remaining tests (2026-11-10): stability, normalisation, attitude
+
+Final graph, 500 of the 1,250 interviews. Scripts: `eval/stability.py`, `eval/normalisation_check.py`, `eval/attitude_calibration.py`; raw outputs in `data/eval/final/` (git-ignored). The judge for normalisation and attitude is `qwen2.5:32b` run alone, so these measure **agreement with a larger model, not with a human**. One run each; small samples.
+
+### Run-to-run stability
+
+| Step | Perturbation | Result |
+|---|---|---|
+| Router (60 labelled questions) | lowercase; "Please " in front; " Thanks." behind | Same route as the original wording on 60/60, 59/60 and 59/60 questions; mean confidence change at most 0.021; in-scope accuracy 52/54, 51/54, 51/54 against 52/54 as asked |
+| Extraction (10 recall transcripts, production prompt) | rerun at temperature 0 | Identical item set to the stored run on 10/10 transcripts; a second rerun matched on 9/10 and differed on one (13 vs 11 items, Jaccard 0.41), so temperature 0 is not perfectly deterministic (mean Jaccard 0.94 between the two reruns) |
+| Extraction | temperature 0.3, two seeds | Mean Jaccard of the (kind, quote) item set 0.60 against the stored run and 0.61 between the two sampled runs; item counts per transcript stay close, but about 40% of the items differ. Production uses temperature 0, so this shows how much a sampled rerun would move the graph |
+| 32b judge (40 of the 120 precision labels) | relabelled at temperature 0.3, different seed | Same label on 40/40 (26 correct, 8 hypothetical, 6 wrong) |
+
+The router is stable to trivial rewording. Extraction is stable at temperature 0 with rare divergence, and sensitive to sampling. The judge's stability says nothing about whether its labels are right.
+
+### Normalisation (merges and missed merges)
+
+Merges, 80 raw-name to canonical pairs (20 per stratum):
+
+| Stratum | Same | Related | Different |
+|---|---|---|---|
+| AI uses | 4 | 16 | 0 |
+| Tasks | 5 | 15 | 0 |
+| Concerns, original pass | 1 | 15 | 4 |
+| Concerns, loose pass | 6 | 12 | 2 |
+| All | 16 (20%) | 58 (72%) | 6 (8%) |
+
+"Related" means connected but broader or narrower, which is how a 0.85 embedding threshold behaves: it lumps. The 6 judged "different" are false merges, for example "ownership and credit" into "loss of ownership" and "code style mismatch" into "code coupling". The false-merge rate is 0 of 40 for AI uses and tasks and 6 of 40 (15%) for concerns, so concern counts mix some distinct ideas.
+
+Missed merges, 40 pairs of distinct canonical names just under the threshold (cosine 0.75 to 0.85; 21,395 such pairs exist: AI uses 13,428, tasks 1,643, concerns 6,324): 0 same, 22 related (55%), 18 different. So no clear duplicates are being missed in that band; a lower threshold would only merge related or different ideas.
+
+### Attitude labels and calibration
+
+160 segments, 40 per predicted attitude (the graph holds 2,284 none, 1,811 positive, 1,062 mixed, 293 negative), so the figures below are balanced by class, not population accuracy.
+
+| Predicted | Agreement with the 32b judge |
+|---|---|
+| positive | 35/40 (88%) |
+| negative | 37/40 (93%) |
+| mixed | 28/40 (70%) |
+| none | 32/40 (80%) |
+| All | 132/160 (82.5%) |
+
+Main disagreements: `none` judged positive (8), `mixed` judged negative (6). Calibration of the stored confidence:
+
+| Confidence | n | Mean confidence | Agreement |
+|---|---|---|---|
+| under 0.6 | 47 | 0.45 | 60% |
+| 0.6 to 0.8 | 31 | 0.72 | 84% |
+| 0.8 to 0.95 | 46 | 0.89 | 91% |
+| 0.95 and above | 36 | 0.97 | 100% |
+
+The confidence is ordered correctly (higher means more agreement) and is under-confident at the low end; expected calibration error 0.08. The earlier 0.63 agreement (M3, 20 transcripts, overall attitude per transcript) measured something different. `mixed` is the weakest class.

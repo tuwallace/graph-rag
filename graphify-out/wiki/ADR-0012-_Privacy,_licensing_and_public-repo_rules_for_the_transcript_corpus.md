@@ -1,15 +1,16 @@
 # ADR-0012: Privacy, licensing and public-repo rules for the transcript corpus
 
-> 7 nodes
+> 8 nodes
 
 ## Key Concepts
 
-- **ADR-0012: Privacy, licensing and public-repo rules for the transcript corpus** (7 connections) — `docs/decisions/0012-privacy-for-transcripts.md`
+- **ADR-0012: Privacy, licensing and public-repo rules for the transcript corpus** (8 connections) — `docs/decisions/0012-privacy-for-transcripts.md`
 - **Confirmation** (1 connections) — `docs/decisions/0012-privacy-for-transcripts.md`
 - **Consequences** (1 connections) — `docs/decisions/0012-privacy-for-transcripts.md`
 - **Context** (1 connections) — `docs/decisions/0012-privacy-for-transcripts.md`
 - **Decision** (1 connections) — `docs/decisions/0012-privacy-for-transcripts.md`
 - **PII pass record (2026-11-07, before the first public commit)** (1 connections) — `docs/decisions/0012-privacy-for-transcripts.md`
+- **PII residual pass (2026-11-10)** (1 connections) — `docs/decisions/0012-privacy-for-transcripts.md`
 - **Revisit when** (1 connections) — `docs/decisions/0012-privacy-for-transcripts.md`
 
 ## Relationships
@@ -22,7 +23,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 7 (100%)
+- EXTRACTED: 8 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
