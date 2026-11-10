@@ -1,3 +1,6 @@
+"""Drive a live ollmcp session (qwen3:8b-16k, routed profile, mcp.json) through a pseudo-terminal with five fixed questions, confirming each tool call.
+Run: uv run --with pexpect python scripts/live_ollmcp_session.py data/live_ollmcp.log   (needs Ollama, Neo4j and the models running; the log is git-ignored)
+"""
 import pexpect, sys, re, time, json
 Q = ["What are the main themes across the interviews?",
      "What are the top concerns among scientists?",
