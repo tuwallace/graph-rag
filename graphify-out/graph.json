@@ -10,7 +10,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "decisionerror",
       "source_file": "src/graphrag/decision.py",
@@ -260,30 +260,6 @@
       "source_location": "L59"
     },
     {
-      "id": "scripts_mcp_smoke_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "scripts/mcp_smoke.py",
-      "source_location": "L11"
-    },
-    {
-      "id": "src_graphrag_mcp_server_ask_interviews",
-      "label": "ask_interviews()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "code",
-      "norm_label": "ask_interviews()",
-      "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L37"
-    },
-    {
       "id": "src_graphrag_mcp_server_compare_groups",
       "label": "compare_groups()",
       "_callable": true,
@@ -293,7 +269,7 @@
       "file_type": "code",
       "norm_label": "compare_groups()",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L55"
+      "source_location": "L58"
     },
     {
       "id": "src_graphrag_mcp_server_concept_stats",
@@ -305,7 +281,7 @@
       "file_type": "code",
       "norm_label": "concept_stats()",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L48"
+      "source_location": "L51"
     },
     {
       "id": "src_graphrag_mcp_server_driver",
@@ -317,7 +293,7 @@
       "file_type": "code",
       "norm_label": "driver()",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L19"
+      "source_location": "L20"
     },
     {
       "id": "src_graphrag_mcp_server_index",
@@ -329,7 +305,7 @@
       "file_type": "code",
       "norm_label": "index()",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "src_graphrag_mcp_server_quotes",
@@ -341,7 +317,7 @@
       "file_type": "code",
       "norm_label": "quotes()",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L61"
+      "source_location": "L64"
     },
     {
       "id": "src_graphrag_mcp_server_resolve",
@@ -353,7 +329,7 @@
       "file_type": "code",
       "norm_label": "_resolve()",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "src_graphrag_mcp_server_search_segments",
@@ -365,7 +341,7 @@
       "file_type": "code",
       "norm_label": "search_segments()",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L43"
+      "source_location": "L46"
     },
     {
       "id": "src_graphrag_mcp_server_theme_summary",
@@ -377,7 +353,7 @@
       "file_type": "code",
       "norm_label": "theme_summary()",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L67"
+      "source_location": "L70"
     },
     {
       "id": "eval_confirm_adr0008_timed_decide_f",
@@ -793,7 +769,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "label()",
       "source_file": "eval/new_concern_check.py",
@@ -805,7 +781,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "attributes()",
       "source_file": "src/graphrag/attributes.py",
@@ -817,7 +793,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "segment_state()",
       "source_file": "src/graphrag/attributes.py",
@@ -829,71 +805,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "decide()",
       "source_file": "src/graphrag/decision.py",
       "source_location": "L8"
-    },
-    {
-      "id": "src_graphrag_router_answer",
-      "label": "answer()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "router.py",
-      "file_type": "code",
-      "norm_label": "answer()",
-      "source_file": "src/graphrag/router.py",
-      "source_location": "L48"
-    },
-    {
-      "id": "src_graphrag_router_answer_done",
-      "label": "done()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "router.py",
-      "file_type": "code",
-      "norm_label": "done()",
-      "source_file": "src/graphrag/router.py",
-      "source_location": "L54"
-    },
-    {
-      "id": "src_graphrag_router_clarify",
-      "label": "clarify()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "router.py",
-      "file_type": "code",
-      "norm_label": "clarify()",
-      "source_file": "src/graphrag/router.py",
-      "source_location": "L38"
-    },
-    {
-      "id": "src_graphrag_router_pick",
-      "label": "_pick()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "router.py",
-      "file_type": "code",
-      "norm_label": "_pick()",
-      "source_file": "src/graphrag/router.py",
-      "source_location": "L34"
-    },
-    {
-      "id": "src_graphrag_router_route_question",
-      "label": "route_question()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "router.py",
-      "file_type": "code",
-      "norm_label": "route_question()",
-      "source_file": "src/graphrag/router.py",
-      "source_location": "L42"
     },
     {
       "id": "src_graphrag_verify_claim_for",
@@ -901,7 +817,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "claim_for()",
       "source_file": "src/graphrag/verify.py",
@@ -913,7 +829,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "keep()",
       "source_file": "src/graphrag/verify.py",
@@ -925,7 +841,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "state_for()",
       "source_file": "src/graphrag/verify.py",
@@ -937,7 +853,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "verify_item()",
       "source_file": "src/graphrag/verify.py",
@@ -1040,64 +956,52 @@
       "source_location": "L24"
     },
     {
-      "id": "eval_confirm_adr0008_a_row",
-      "label": "a_row()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "confirm_adr0008.py",
-      "file_type": "code",
-      "norm_label": "a_row()",
-      "source_file": "eval/confirm_adr0008.py",
-      "source_location": "L33"
-    },
-    {
-      "id": "eval_confirm_adr0008_b_row",
-      "label": "b_row()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "confirm_adr0008.py",
-      "file_type": "code",
-      "norm_label": "b_row()",
-      "source_file": "eval/confirm_adr0008.py",
-      "source_location": "L23"
-    },
-    {
-      "id": "eval_confirm_adr0008_summ",
-      "label": "summ()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "confirm_adr0008.py",
-      "file_type": "code",
-      "norm_label": "summ()",
-      "source_file": "eval/confirm_adr0008.py",
-      "source_location": "L46"
-    },
-    {
-      "id": "eval_confirm_adr0008_timed_decide",
-      "label": "timed_decide()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "confirm_adr0008.py",
-      "file_type": "code",
-      "norm_label": "timed_decide()",
-      "source_file": "eval/confirm_adr0008.py",
-      "source_location": "L16"
-    },
-    {
       "id": "scripts_calibrate_verify_auc",
       "label": "auc()",
       "_callable": true,
       "_origin": "ast",
       "community": 21,
-      "community_name": "confirm_adr0008.py",
+      "community_name": "sys",
       "file_type": "code",
       "norm_label": "auc()",
       "source_file": "scripts/calibrate_verify.py",
       "source_location": "L17"
+    },
+    {
+      "id": "scripts_live_ollmcp_session_wait_prompt",
+      "label": "wait_prompt()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "wait_prompt()",
+      "source_file": "scripts/live_ollmcp_session.py",
+      "source_location": "L14"
+    },
+    {
+      "id": "spike_02_extract_norm",
+      "label": "norm()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "norm()",
+      "source_file": "spike/02_extract.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "spike_02b_extract_v2_norm",
+      "label": "norm()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "norm()",
+      "source_file": "spike/02b_extract_v2.py",
+      "source_location": "L24"
     },
     {
       "id": "spike_03_nimble_pairs",
@@ -1105,7 +1009,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 21,
-      "community_name": "confirm_adr0008.py",
+      "community_name": "sys",
       "file_type": "code",
       "norm_label": "pairs()",
       "source_file": "spike/03_nimble.py",
@@ -1472,6 +1376,66 @@
       "source_location": "L84"
     },
     {
+      "id": "src_graphrag_router_answer",
+      "label": "answer()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "code",
+      "norm_label": "answer()",
+      "source_file": "src/graphrag/router.py",
+      "source_location": "L48"
+    },
+    {
+      "id": "src_graphrag_router_answer_done",
+      "label": "done()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "code",
+      "norm_label": "done()",
+      "source_file": "src/graphrag/router.py",
+      "source_location": "L54"
+    },
+    {
+      "id": "src_graphrag_router_clarify",
+      "label": "clarify()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "code",
+      "norm_label": "clarify()",
+      "source_file": "src/graphrag/router.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "src_graphrag_router_pick",
+      "label": "_pick()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "code",
+      "norm_label": "_pick()",
+      "source_file": "src/graphrag/router.py",
+      "source_location": "L34"
+    },
+    {
+      "id": "src_graphrag_router_route_question",
+      "label": "route_question()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "code",
+      "norm_label": "route_question()",
+      "source_file": "src/graphrag/router.py",
+      "source_location": "L42"
+    },
+    {
       "id": "tests_test_load_e",
       "label": "E()",
       "_callable": true,
@@ -1542,6 +1506,54 @@
       "norm_label": "embed()",
       "source_file": "tests/test_load.py",
       "source_location": "L32"
+    },
+    {
+      "id": "src_graphrag_concern_merge_assign",
+      "label": "assign()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "queries.py",
+      "file_type": "code",
+      "norm_label": "assign()",
+      "source_file": "src/graphrag/concern_merge.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "src_graphrag_concern_merge_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "queries.py",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "src/graphrag/concern_merge.py",
+      "source_location": "L50"
+    },
+    {
+      "id": "src_graphrag_concern_merge_new_items",
+      "label": "new_items()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "queries.py",
+      "file_type": "code",
+      "norm_label": "new_items()",
+      "source_file": "src/graphrag/concern_merge.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "src_graphrag_extract_nq",
+      "label": "_nq()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "queries.py",
+      "file_type": "code",
+      "norm_label": "_nq()",
+      "source_file": "src/graphrag/extract.py",
+      "source_location": "L63"
     },
     {
       "id": "src_graphrag_normalise_canonicalise",
@@ -1760,208 +1772,16 @@
       "source_location": "L17"
     },
     {
-      "id": "tests_test_m3_modules_test_attributes_is_one_call_per_segment",
-      "label": "test_attributes_is_one_call_per_segment()",
+      "id": "src_graphrag_mcp_server_ask_interviews",
+      "label": "ask_interviews()",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
+      "community": 42,
+      "community_name": "ask_interviews",
       "file_type": "code",
-      "norm_label": "test_attributes_is_one_call_per_segment()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L24"
-    },
-    {
-      "id": "tests_test_m3_modules_test_attributes_is_one_call_per_segment_fake",
-      "label": "fake()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "fake()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L26"
-    },
-    {
-      "id": "tests_test_m3_modules_test_clean_names",
-      "label": "test_clean_names()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_clean_names()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L32"
-    },
-    {
-      "id": "tests_test_m3_modules_test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical",
-      "label": "test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L35"
-    },
-    {
-      "id": "tests_test_m3_modules_test_decide_raises_after_retries",
-      "label": "test_decide_raises_after_retries()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_decide_raises_after_retries()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L42"
-    },
-    {
-      "id": "tests_test_m3_modules_test_stage_is_resumable_and_ignores_half_written_line",
-      "label": "test_stage_is_resumable_and_ignores_half_written_line()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_stage_is_resumable_and_ignores_half_written_line()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L5"
-    },
-    {
-      "id": "tests_test_m3_modules_test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty",
-      "label": "test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L49"
-    },
-    {
-      "id": "tests_test_m3_modules_test_verify_claim_text_per_kind_and_underscore_cleanup",
-      "label": "test_verify_claim_text_per_kind_and_underscore_cleanup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_verify_claim_text_per_kind_and_underscore_cleanup()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L13"
-    },
-    {
-      "id": "tests_test_m3_modules_test_verify_item_and_keep_threshold",
-      "label": "test_verify_item_and_keep_threshold()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_verify_item_and_keep_threshold()",
-      "source_file": "tests/test_m3_modules.py",
-      "source_location": "L18"
-    },
-    {
-      "id": "eval_judge32b_ask",
-      "label": "ask()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "judge32b.py",
-      "file_type": "code",
-      "norm_label": "ask()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L21"
-    },
-    {
-      "id": "eval_judge32b_done_ids",
-      "label": "done_ids()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "judge32b.py",
-      "file_type": "code",
-      "norm_label": "done_ids()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L36"
-    },
-    {
-      "id": "eval_judge32b_load_records",
-      "label": "load_records()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "judge32b.py",
-      "file_type": "code",
-      "norm_label": "load_records()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L30"
-    },
-    {
-      "id": "eval_judge32b_precision",
-      "label": "precision()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "judge32b.py",
-      "file_type": "code",
-      "norm_label": "precision()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L40"
-    },
-    {
-      "id": "eval_judge32b_questions",
-      "label": "questions()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "judge32b.py",
-      "file_type": "code",
-      "norm_label": "questions()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L103"
-    },
-    {
-      "id": "eval_judge32b_recall",
-      "label": "recall()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "judge32b.py",
-      "file_type": "code",
-      "norm_label": "recall()",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L68"
-    },
-    {
-      "id": "spike_02_extract_norm",
-      "label": "norm()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "sys",
-      "file_type": "code",
-      "norm_label": "norm()",
-      "source_file": "spike/02_extract.py",
-      "source_location": "L24"
-    },
-    {
-      "id": "spike_02b_extract_v2_norm",
-      "label": "norm()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "sys",
-      "file_type": "code",
-      "norm_label": "norm()",
-      "source_file": "spike/02b_extract_v2.py",
-      "source_location": "L24"
+      "norm_label": "ask_interviews()",
+      "source_file": "src/graphrag/mcp_server.py",
+      "source_location": "L38"
     },
     {
       "id": "spike_06_score_labels_fmt",
@@ -1969,7 +1789,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 43,
-      "community_name": "sys",
+      "community_name": "06_score_labels.py",
       "file_type": "code",
       "norm_label": "fmt()",
       "source_file": "spike/06_score_labels.py",
@@ -1981,7 +1801,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 43,
-      "community_name": "sys",
+      "community_name": "06_score_labels.py",
       "file_type": "code",
       "norm_label": "wilson()",
       "source_file": "spike/06_score_labels.py",
@@ -2010,6 +1830,246 @@
       "norm_label": "test_vector_index_statement_uses_dimension()",
       "source_file": "tests/test_schema.py",
       "source_location": "L3"
+    },
+    {
+      "id": "tests_test_m3_modules_test_attributes_is_one_call_per_segment",
+      "label": "test_attributes_is_one_call_per_segment()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "test_m3_modules.py",
+      "file_type": "code",
+      "norm_label": "test_attributes_is_one_call_per_segment()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "tests_test_m3_modules_test_attributes_is_one_call_per_segment_fake",
+      "label": "fake()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "test_m3_modules.py",
+      "file_type": "code",
+      "norm_label": "fake()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L26"
+    },
+    {
+      "id": "tests_test_m3_modules_test_clean_names",
+      "label": "test_clean_names()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "test_m3_modules.py",
+      "file_type": "code",
+      "norm_label": "test_clean_names()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L32"
+    },
+    {
+      "id": "tests_test_m3_modules_test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical",
+      "label": "test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "test_m3_modules.py",
+      "file_type": "code",
+      "norm_label": "test_cluster_merges_close_names_and_keeps_most_frequent_as_canonical()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "tests_test_m3_modules_test_decide_raises_after_retries",
+      "label": "test_decide_raises_after_retries()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "test_m3_modules.py",
+      "file_type": "code",
+      "norm_label": "test_decide_raises_after_retries()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L42"
+    },
+    {
+      "id": "tests_test_m3_modules_test_stage_is_resumable_and_ignores_half_written_line",
+      "label": "test_stage_is_resumable_and_ignores_half_written_line()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "test_m3_modules.py",
+      "file_type": "code",
+      "norm_label": "test_stage_is_resumable_and_ignores_half_written_line()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "tests_test_m3_modules_test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty",
+      "label": "test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "test_m3_modules.py",
+      "file_type": "code",
+      "norm_label": "test_strip_ai_before_embedding_keeps_meaning_and_never_returns_empty()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L49"
+    },
+    {
+      "id": "tests_test_m3_modules_test_verify_claim_text_per_kind_and_underscore_cleanup",
+      "label": "test_verify_claim_text_per_kind_and_underscore_cleanup()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "test_m3_modules.py",
+      "file_type": "code",
+      "norm_label": "test_verify_claim_text_per_kind_and_underscore_cleanup()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "tests_test_m3_modules_test_verify_item_and_keep_threshold",
+      "label": "test_verify_item_and_keep_threshold()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "test_m3_modules.py",
+      "file_type": "code",
+      "norm_label": "test_verify_item_and_keep_threshold()",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L18"
+    },
+    {
+      "id": "eval_judge32b_ask",
+      "label": "ask()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "judge32b.py",
+      "file_type": "code",
+      "norm_label": "ask()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L21"
+    },
+    {
+      "id": "eval_judge32b_done_ids",
+      "label": "done_ids()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "judge32b.py",
+      "file_type": "code",
+      "norm_label": "done_ids()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L36"
+    },
+    {
+      "id": "eval_judge32b_load_records",
+      "label": "load_records()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "judge32b.py",
+      "file_type": "code",
+      "norm_label": "load_records()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L30"
+    },
+    {
+      "id": "eval_judge32b_precision",
+      "label": "precision()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "judge32b.py",
+      "file_type": "code",
+      "norm_label": "precision()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L40"
+    },
+    {
+      "id": "eval_judge32b_questions",
+      "label": "questions()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "judge32b.py",
+      "file_type": "code",
+      "norm_label": "questions()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L103"
+    },
+    {
+      "id": "eval_judge32b_recall",
+      "label": "recall()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "judge32b.py",
+      "file_type": "code",
+      "norm_label": "recall()",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L68"
+    },
+    {
+      "id": "scripts_mcp_smoke_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "mcp_smoke.py",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "scripts/mcp_smoke.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "eval_confirm_adr0008_a_row",
+      "label": "a_row()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 52,
+      "community_name": "confirm_adr0008.py",
+      "file_type": "code",
+      "norm_label": "a_row()",
+      "source_file": "eval/confirm_adr0008.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "eval_confirm_adr0008_b_row",
+      "label": "b_row()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 52,
+      "community_name": "confirm_adr0008.py",
+      "file_type": "code",
+      "norm_label": "b_row()",
+      "source_file": "eval/confirm_adr0008.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "eval_confirm_adr0008_summ",
+      "label": "summ()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 52,
+      "community_name": "confirm_adr0008.py",
+      "file_type": "code",
+      "norm_label": "summ()",
+      "source_file": "eval/confirm_adr0008.py",
+      "source_location": "L46"
+    },
+    {
+      "id": "eval_confirm_adr0008_timed_decide",
+      "label": "timed_decide()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 52,
+      "community_name": "confirm_adr0008.py",
+      "file_type": "code",
+      "norm_label": "timed_decide()",
+      "source_file": "eval/confirm_adr0008.py",
+      "source_location": "L16"
     },
     {
       "id": "scripts_prepush_check_main",
@@ -2118,54 +2178,6 @@
       "norm_label": "verify()",
       "source_file": "eval/concern_pass.py",
       "source_location": "L70"
-    },
-    {
-      "id": "src_graphrag_concern_merge_assign",
-      "label": "assign()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "pipeline.py",
-      "file_type": "code",
-      "norm_label": "assign()",
-      "source_file": "src/graphrag/concern_merge.py",
-      "source_location": "L33"
-    },
-    {
-      "id": "src_graphrag_concern_merge_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "pipeline.py",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "src/graphrag/concern_merge.py",
-      "source_location": "L50"
-    },
-    {
-      "id": "src_graphrag_concern_merge_new_items",
-      "label": "new_items()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "pipeline.py",
-      "file_type": "code",
-      "norm_label": "new_items()",
-      "source_file": "src/graphrag/concern_merge.py",
-      "source_location": "L19"
-    },
-    {
-      "id": "src_graphrag_extract_nq",
-      "label": "_nq()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "pipeline.py",
-      "file_type": "code",
-      "norm_label": "_nq()",
-      "source_file": "src/graphrag/extract.py",
-      "source_location": "L63"
     },
     {
       "id": "src_graphrag_manifest_stage_done",
@@ -2725,17 +2737,6 @@
       "source_location": "L23"
     },
     {
-      "id": "scripts_mcp_smoke",
-      "label": "mcp_smoke.py",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "code",
-      "norm_label": "mcp_smoke.py",
-      "source_file": "scripts/mcp_smoke.py",
-      "source_location": "L1"
-    },
-    {
       "id": "src_graphrag_mcp_server",
       "label": "mcp_server.py",
       "_origin": "ast",
@@ -2758,317 +2759,6 @@
       "source_location": ""
     },
     {
-      "id": "docs_04_query_and_tools_04_query_routing_and_mcp_tool_surface_interviewer_corpus",
-      "label": "04. Query routing and MCP tool surface (Interviewer corpus)",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "04. query routing and mcp tool surface (interviewer corpus)",
-      "source_file": "docs/04-query-and-tools.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_04_query_and_tools_answer_rules_system_prompt_sketch",
-      "label": "Answer rules (system prompt sketch)",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "answer rules (system prompt sketch)",
-      "source_file": "docs/04-query-and-tools.md",
-      "source_location": "L62"
-    },
-    {
-      "id": "docs_04_query_and_tools_example_cypher_parameterised_read_only",
-      "label": "Example Cypher (parameterised, read-only)",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "example cypher (parameterised, read-only)",
-      "source_file": "docs/04-query-and-tools.md",
-      "source_location": "L43"
-    },
-    {
-      "id": "docs_04_query_and_tools_global_questions",
-      "label": "Global questions",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "global questions",
-      "source_file": "docs/04-query-and-tools.md",
-      "source_location": "L70"
-    },
-    {
-      "id": "docs_04_query_and_tools_ollmcp_wiring",
-      "label": "ollmcp wiring",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "ollmcp wiring",
-      "source_file": "docs/04-query-and-tools.md",
-      "source_location": "L80"
-    },
-    {
-      "id": "docs_04_query_and_tools_optional_gated_text_to_cypher",
-      "label": "Optional: gated text-to-Cypher",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "optional: gated text-to-cypher",
-      "source_file": "docs/04-query-and-tools.md",
-      "source_location": "L75"
-    },
-    {
-      "id": "docs_04_query_and_tools_routes",
-      "label": "Routes",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "routes",
-      "source_file": "docs/04-query-and-tools.md",
-      "source_location": "L6"
-    },
-    {
-      "id": "docs_04_query_and_tools_tool_surface",
-      "label": "Tool surface",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "tool surface",
-      "source_file": "docs/04-query-and-tools.md",
-      "source_location": "L30"
-    },
-    {
-      "id": "docs_06_evaluation_and_roadmap_06_evaluation_and_roadmap",
-      "label": "06. Evaluation and roadmap",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "06. evaluation and roadmap",
-      "source_file": "docs/06-evaluation-and-roadmap.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_06_evaluation_and_roadmap_labelling_plan_as_run_model_labels_confirmed_by_the_owner_see_adr_0013_decisions_0013_waive_human_labels_md_and_09_09_completion_status_md",
-      "label": "Labelling plan (as run: model labels, confirmed by the owner; see [ADR-0013](decisions/0013-waive-human-labels.md) and [09](09-completion-status.md))",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "labelling plan (as run: model labels, confirmed by the owner; see [adr-0013](decisions/0013-waive-human-labels.md) and [09](09-completion-status.md))",
-      "source_file": "docs/06-evaluation-and-roadmap.md",
-      "source_location": "L7"
-    },
-    {
-      "id": "docs_06_evaluation_and_roadmap_metrics",
-      "label": "Metrics",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "metrics",
-      "source_file": "docs/06-evaluation-and-roadmap.md",
-      "source_location": "L21"
-    },
-    {
-      "id": "docs_06_evaluation_and_roadmap_phases_all_done_see_07_07_implementation_roadmap_md_for_dates_and_outcomes",
-      "label": "Phases (all done; see [07](07-implementation-roadmap.md) for dates and outcomes)",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phases (all done; see [07](07-implementation-roadmap.md) for dates and outcomes)",
-      "source_file": "docs/06-evaluation-and-roadmap.md",
-      "source_location": "L39"
-    },
-    {
-      "id": "docs_06_evaluation_and_roadmap_risks",
-      "label": "Risks",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "risks",
-      "source_file": "docs/06-evaluation-and-roadmap.md",
-      "source_location": "L52"
-    },
-    {
-      "id": "docs_06_evaluation_and_roadmap_the_honest_problem",
-      "label": "The honest problem",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "the honest problem",
-      "source_file": "docs/06-evaluation-and-roadmap.md",
-      "source_location": "L3"
-    },
-    {
-      "id": "docs_readme_decisions_at_a_glance",
-      "label": "Decisions at a glance",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "decisions at a glance",
-      "source_file": "docs/README.md",
-      "source_location": "L34"
-    },
-    {
-      "id": "docs_readme_graph_rag_demo_anthropic_interviewer_transcripts",
-      "label": "Graph RAG demo: Anthropic Interviewer transcripts",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "graph rag demo: anthropic interviewer transcripts",
-      "source_file": "docs/README.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_readme_read_in_this_order",
-      "label": "Read in this order",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "read in this order",
-      "source_file": "docs/README.md",
-      "source_location": "L9"
-    },
-    {
-      "id": "docs_readme_what_i_need_from_you",
-      "label": "What I need from you",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "what i need from you",
-      "source_file": "docs/README.md",
-      "source_location": "L48"
-    },
-    {
-      "id": "docs_readme_what_the_spike_found_20_transcripts_one_machine",
-      "label": "What the spike found (20 transcripts, one machine)",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "what the spike found (20 transcripts, one machine)",
-      "source_file": "docs/README.md",
-      "source_location": "L26"
-    },
-    {
-      "id": "readme_findings_so_far_one_machine_one_run_each",
-      "label": "Findings so far (one machine, one run each)",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "findings so far (one machine, one run each)",
-      "source_file": "README.md",
-      "source_location": "L23"
-    },
-    {
-      "id": "readme_graph_rag",
-      "label": "graph-rag",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "graph-rag",
-      "source_file": "README.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "readme_license",
-      "label": "License",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "license",
-      "source_file": "README.md",
-      "source_location": "L67"
-    },
-    {
-      "id": "readme_privacy_and_safety",
-      "label": "Privacy and safety",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "privacy and safety",
-      "source_file": "README.md",
-      "source_location": "L61"
-    },
-    {
-      "id": "readme_run_it",
-      "label": "Run it",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "run it",
-      "source_file": "README.md",
-      "source_location": "L32"
-    },
-    {
-      "id": "readme_what_was_built",
-      "label": "What was built",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "what was built",
-      "source_file": "README.md",
-      "source_location": "L9"
-    },
-    {
-      "id": "scripts_mcp_smoke_rationale_1",
-      "label": "Start the MCP server over stdio and call it like a client would. Usage:\u2026",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "rationale",
-      "norm_label": "start the mcp server over stdio and call it like a client would. usage:...",
-      "source_file": "scripts/mcp_smoke.py",
-      "source_location": "L1"
-    },
-    {
       "id": "src_graphrag_mcp_server_rationale_1",
       "label": "MCP server over the interview graph. stdio transport: nothing may print to\u2026",
       "_origin": "ast",
@@ -3080,18 +2770,7 @@
       "source_location": "L1"
     },
     {
-      "id": "src_graphrag_mcp_server_rationale_38",
-      "label": "Answer a question about the AI interview transcripts (1,250 interviews across\u2026",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "file_type": "rationale",
-      "norm_label": "answer a question about the ai interview transcripts (1,250 interviews across...",
-      "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L38"
-    },
-    {
-      "id": "src_graphrag_mcp_server_rationale_44",
+      "id": "src_graphrag_mcp_server_rationale_47",
       "label": "Top 5 interview answers semantically similar to the query, with group, excerpt\u2026",
       "_origin": "ast",
       "community": 1,
@@ -3099,10 +2778,10 @@
       "file_type": "rationale",
       "norm_label": "top 5 interview answers semantically similar to the query, with group, excerpt...",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L44"
+      "source_location": "L47"
     },
     {
-      "id": "src_graphrag_mcp_server_rationale_49",
+      "id": "src_graphrag_mcp_server_rationale_52",
       "label": "Rank concepts by number of interviews mentioning them. kind: task | ai_use |\u2026",
       "_origin": "ast",
       "community": 1,
@@ -3110,10 +2789,10 @@
       "file_type": "rationale",
       "norm_label": "rank concepts by number of interviews mentioning them. kind: task | ai_use |...",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L49"
+      "source_location": "L52"
     },
     {
-      "id": "src_graphrag_mcp_server_rationale_56",
+      "id": "src_graphrag_mcp_server_rationale_59",
       "label": "Per-group interview counts and two quotes for one concept (free text; matched\u2026",
       "_origin": "ast",
       "community": 1,
@@ -3121,10 +2800,10 @@
       "file_type": "rationale",
       "norm_label": "per-group interview counts and two quotes for one concept (free text; matched...",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L56"
+      "source_location": "L59"
     },
     {
-      "id": "src_graphrag_mcp_server_rationale_62",
+      "id": "src_graphrag_mcp_server_rationale_65",
       "label": "Up to 5 verbatim participant quotes with interview ids for one concept (free\u2026",
       "_origin": "ast",
       "community": 1,
@@ -3132,10 +2811,10 @@
       "file_type": "rationale",
       "norm_label": "up to 5 verbatim participant quotes with interview ids for one concept (free...",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L62"
+      "source_location": "L65"
     },
     {
-      "id": "src_graphrag_mcp_server_rationale_68",
+      "id": "src_graphrag_mcp_server_rationale_71",
       "label": "Pre-built theme summaries (available after milestone M8).",
       "_origin": "ast",
       "community": 1,
@@ -3143,7 +2822,7 @@
       "file_type": "rationale",
       "norm_label": "pre-built theme summaries (available after milestone m8).",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L68"
+      "source_location": "L71"
     },
     {
       "id": "eval_score",
@@ -3369,6 +3048,17 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_make_label_sheet_v3",
+      "label": "make_label_sheet_v3.py",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "05_make_label_sheets.py",
+      "file_type": "code",
+      "norm_label": "make_label_sheet_v3.py",
+      "source_file": "scripts/make_label_sheet_v3.py",
+      "source_location": "L1"
+    },
+    {
       "id": "spike_05_make_label_sheets",
       "label": "05_make_label_sheets.py",
       "_origin": "ast",
@@ -3388,6 +3078,17 @@
       "file_type": "rationale",
       "norm_label": "download the anthropic/anthropicinterviewer transcripts into...",
       "source_file": "scripts/download_data.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_make_label_sheet_v3_rationale_1",
+      "label": "Blind labelling sheet from extraction v3.2 output -> data/labeling_v3/ (git-\u2026",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "05_make_label_sheets.py",
+      "file_type": "rationale",
+      "norm_label": "blind labelling sheet from extraction v3.2 output -> data/labeling_v3/ (git-...",
+      "source_file": "scripts/make_label_sheet_v3.py",
       "source_location": "L1"
     },
     {
@@ -3590,14 +3291,14 @@
       "source_location": "L1"
     },
     {
-      "id": "scripts_make_label_sheet_v3",
-      "label": "make_label_sheet_v3.py",
+      "id": "spike_04_analyze",
+      "label": "04_analyze.py",
       "_origin": "ast",
       "community": 15,
       "community_name": "__init__.py",
       "file_type": "code",
-      "norm_label": "make_label_sheet_v3.py",
-      "source_file": "scripts/make_label_sheet_v3.py",
+      "norm_label": "04_analyze.py",
+      "source_file": "spike/04_analyze.py",
       "source_location": "L1"
     },
     {
@@ -3653,17 +3354,6 @@
       "file_type": "rationale",
       "norm_label": "compare v3 against the labelled v2 edges (data/labeling_claude, llm labels)....",
       "source_file": "scripts/compare_m2.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_make_label_sheet_v3_rationale_1",
-      "label": "Blind labelling sheet from extraction v3.2 output -> data/labeling_v3/ (git-\u2026",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "__init__.py",
-      "file_type": "rationale",
-      "norm_label": "blind labelling sheet from extraction v3.2 output -> data/labeling_v3/ (git-...",
-      "source_file": "scripts/make_label_sheet_v3.py",
       "source_location": "L1"
     },
     {
@@ -4076,7 +3766,7 @@
       "label": "RuntimeError",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "runtimeerror",
       "source_file": "",
@@ -4087,7 +3777,7 @@
       "label": "attributes.py",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "attributes.py",
       "source_file": "src/graphrag/attributes.py",
@@ -4098,21 +3788,10 @@
       "label": "decision.py",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "decision.py",
       "source_file": "src/graphrag/decision.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_graphrag_router",
-      "label": "router.py",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "router.py",
-      "file_type": "code",
-      "norm_label": "router.py",
-      "source_file": "src/graphrag/router.py",
       "source_location": "L1"
     },
     {
@@ -4120,7 +3799,7 @@
       "label": "verify.py",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "code",
       "norm_label": "verify.py",
       "source_file": "src/graphrag/verify.py",
@@ -4131,7 +3810,7 @@
       "label": "03. Graph schema (Interviewer corpus)",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "03. graph schema (interviewer corpus)",
@@ -4143,7 +3822,7 @@
       "label": "Constraints and indexes",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "constraints and indexes",
@@ -4155,7 +3834,7 @@
       "label": "Decision-model attributes on `Segment` (properties, not nodes)",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "decision-model attributes on `segment` (properties, not nodes)",
@@ -4167,7 +3846,7 @@
       "label": "Model",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "model",
@@ -4179,7 +3858,7 @@
       "label": "Nodes",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "nodes",
@@ -4191,7 +3870,7 @@
       "label": "Pipeline",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "pipeline",
@@ -4203,7 +3882,7 @@
       "label": "Provenance rule",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "provenance rule",
@@ -4215,7 +3894,7 @@
       "label": "Relationships (all carry provenance)",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "relationships (all carry provenance)",
@@ -4227,7 +3906,7 @@
       "label": "What was removed from the helpdesk model",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "what was removed from the helpdesk model",
@@ -4239,7 +3918,7 @@
       "label": "05. Component recommendations",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "05. component recommendations",
@@ -4251,7 +3930,7 @@
       "label": "Installed models and their role",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "installed models and their role",
@@ -4263,7 +3942,7 @@
       "label": "Neo4j container",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "neo4j container",
@@ -4275,7 +3954,7 @@
       "label": "Throughput reality (measured, one machine)",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "throughput reality (measured, one machine)",
@@ -4287,7 +3966,7 @@
       "label": "Files",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "files",
@@ -4299,7 +3978,7 @@
       "label": "How to fill in the CSV",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "how to fill in the csv",
@@ -4311,7 +3990,7 @@
       "label": "Labelling guide (v3.2 sheets, about 2 hours)",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "labelling guide (v3.2 sheets, about 2 hours)",
@@ -4323,7 +4002,7 @@
       "label": "Reading the result",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "reading the result",
@@ -4335,7 +4014,7 @@
       "label": "Score it",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "score it",
@@ -4347,7 +4026,7 @@
       "label": "Sheet 1: edges",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "sheet 1: edges",
@@ -4359,7 +4038,7 @@
       "label": "Sheet 2: attitude (30 rows)",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "sheet 2: attitude (30 rows)",
@@ -4371,7 +4050,7 @@
       "label": "Per-segment attitude from the decision model: one call per segment. M3 finding:\u2026",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "rationale",
       "norm_label": "per-segment attitude from the decision model: one call per segment. m3 finding:...",
       "source_file": "src/graphrag/attributes.py",
@@ -4382,7 +4061,7 @@
       "label": "Thin client for Ollama's /v1/systemone decision-model endpoint (typed choice /\u2026",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "rationale",
       "norm_label": "thin client for ollama's /v1/systemone decision-model endpoint (typed choice /...",
       "source_file": "src/graphrag/decision.py",
@@ -4393,40 +4072,18 @@
       "label": "Returns the 'answers' dict. 'choice' answers carry\u2026",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "rationale",
       "norm_label": "returns the 'answers' dict. 'choice' answers carry...",
       "source_file": "src/graphrag/decision.py",
       "source_location": "L9"
     },
     {
-      "id": "src_graphrag_router_rationale_1",
-      "label": "Question router: a decision model (`nimble`, /v1/systemone) picks a route and\u2026",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "router.py",
-      "file_type": "rationale",
-      "norm_label": "question router: a decision model (`nimble`, /v1/systemone) picks a route and...",
-      "source_file": "src/graphrag/router.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_graphrag_router_rationale_49",
-      "label": "Route, gate, dispatch. Returns compact JSON-able payload with the routing\u2026",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "router.py",
-      "file_type": "rationale",
-      "norm_label": "route, gate, dispatch. returns compact json-able payload with the routing...",
-      "source_file": "src/graphrag/router.py",
-      "source_location": "L49"
-    },
-    {
       "id": "src_graphrag_verify_rationale_1",
       "label": "Verify extracted items with the decision model: does the quote support this\u2026",
       "_origin": "ast",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "file_type": "rationale",
       "norm_label": "verify extracted items with the decision model: does the quote support this...",
       "source_file": "src/graphrag/verify.py",
@@ -4444,25 +4101,36 @@
       "source_location": "L1"
     },
     {
-      "id": "eval_confirm_adr0008",
-      "label": "confirm_adr0008.py",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "confirm_adr0008.py",
-      "file_type": "code",
-      "norm_label": "confirm_adr0008.py",
-      "source_file": "eval/confirm_adr0008.py",
-      "source_location": "L1"
-    },
-    {
       "id": "scripts_calibrate_verify",
       "label": "calibrate_verify.py",
       "_origin": "ast",
       "community": 21,
-      "community_name": "confirm_adr0008.py",
+      "community_name": "sys",
       "file_type": "code",
       "norm_label": "calibrate_verify.py",
       "source_file": "scripts/calibrate_verify.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_live_ollmcp_session",
+      "label": "live_ollmcp_session.py",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "live_ollmcp_session.py",
+      "source_file": "scripts/live_ollmcp_session.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_run_m2",
+      "label": "run_m2.py",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "run_m2.py",
+      "source_file": "scripts/run_m2.py",
       "source_location": "L1"
     },
     {
@@ -4470,10 +4138,32 @@
       "label": "01_profile.py",
       "_origin": "ast",
       "community": 21,
-      "community_name": "confirm_adr0008.py",
+      "community_name": "sys",
       "file_type": "code",
       "norm_label": "01_profile.py",
       "source_file": "spike/01_profile.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "spike_02_extract",
+      "label": "02_extract.py",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "02_extract.py",
+      "source_file": "spike/02_extract.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "spike_02b_extract_v2",
+      "label": "02b_extract_v2.py",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "sys",
+      "file_type": "code",
+      "norm_label": "02b_extract_v2.py",
+      "source_file": "spike/02b_extract_v2.py",
       "source_location": "L1"
     },
     {
@@ -4481,21 +4171,10 @@
       "label": "03_nimble.py",
       "_origin": "ast",
       "community": 21,
-      "community_name": "confirm_adr0008.py",
+      "community_name": "sys",
       "file_type": "code",
       "norm_label": "03_nimble.py",
       "source_file": "spike/03_nimble.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "eval_confirm_adr0008_rationale_1",
-      "label": "ADR-0008 confirmation on questions written after the router changes were chosen\u2026",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "confirm_adr0008.py",
-      "file_type": "rationale",
-      "norm_label": "adr-0008 confirmation on questions written after the router changes were chosen...",
-      "source_file": "eval/confirm_adr0008.py",
       "source_location": "L1"
     },
     {
@@ -4503,10 +4182,32 @@
       "label": "Calibrate the verify step against the LLM-labelled v3.2 sheet (a calibration,\u2026",
       "_origin": "ast",
       "community": 21,
-      "community_name": "confirm_adr0008.py",
+      "community_name": "sys",
       "file_type": "rationale",
       "norm_label": "calibrate the verify step against the llm-labelled v3.2 sheet (a calibration,...",
       "source_file": "scripts/calibrate_verify.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_live_ollmcp_session_rationale_1",
+      "label": "Drive a live ollmcp session (qwen3:8b-16k, routed profile, mcp.json) through a\u2026",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "sys",
+      "file_type": "rationale",
+      "norm_label": "drive a live ollmcp session (qwen3:8b-16k, routed profile, mcp.json) through a...",
+      "source_file": "scripts/live_ollmcp_session.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_run_m2_rationale_1",
+      "label": "M2: rerun extraction v3 on the same 20 transcripts as the spike. Usage:\u2026",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "sys",
+      "file_type": "rationale",
+      "norm_label": "m2: rerun extraction v3 on the same 20 transcripts as the spike. usage:...",
+      "source_file": "scripts/run_m2.py",
       "source_location": "L1"
     },
     {
@@ -5561,18 +5262,6 @@
       "source_location": "L326"
     },
     {
-      "id": "docs_07_implementation_roadmap_milestones",
-      "label": "Milestones",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "07. Implementation roadmap",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "milestones",
-      "source_file": "docs/07-implementation-roadmap.md",
-      "source_location": "L27"
-    },
-    {
       "id": "docs_07_implementation_roadmap_not_on_the_road_deliberately",
       "label": "Not on the road (deliberately)",
       "_origin": "ast",
@@ -5644,18 +5333,6 @@
       "source_location": "L125"
     },
     {
-      "id": "docs_08_evaluation_results_08_evaluation_results_m7",
-      "label": "08. Evaluation results (M7)",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "Label confirmation",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "08. evaluation results (m7)",
-      "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L1"
-    },
-    {
       "id": "docs_08_evaluation_results_all_40",
       "label": "All 40",
       "_origin": "ast",
@@ -5668,18 +5345,6 @@
       "source_location": "L73"
     },
     {
-      "id": "docs_08_evaluation_results_all_40_final_graph",
-      "label": "All 40, final graph",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "Label confirmation",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "all 40, final graph",
-      "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L110"
-    },
-    {
       "id": "docs_08_evaluation_results_dev_half_tuning_allowed",
       "label": "Dev half (tuning allowed)",
       "_origin": "ast",
@@ -5690,18 +5355,6 @@
       "norm_label": "dev half (tuning allowed)",
       "source_file": "docs/08-evaluation-results.md",
       "source_location": "L19"
-    },
-    {
-      "id": "docs_08_evaluation_results_groundedness_on_the_final_graph_60_questions_eval_grounded_eval_py_router_v3",
-      "label": "Groundedness on the final graph (60 questions, `eval/grounded_eval.py`, router v3)",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "Label confirmation",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "groundedness on the final graph (60 questions, `eval/grounded_eval.py`, router v3)",
-      "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L148"
     },
     {
       "id": "docs_08_evaluation_results_held_out_half",
@@ -5728,18 +5381,6 @@
       "source_location": "L5"
     },
     {
-      "id": "docs_08_evaluation_results_per_route_end_to_end_latency_median_s_final_graph",
-      "label": "Per-route end-to-end latency (median s), final graph",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "Label confirmation",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "per-route end-to-end latency (median s), final graph",
-      "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L128"
-    },
-    {
       "id": "docs_08_evaluation_results_per_route_latency_median_s",
       "label": "Per-route latency (median s)",
       "_origin": "ast",
@@ -5750,18 +5391,6 @@
       "norm_label": "per-route latency (median s)",
       "source_file": "docs/08-evaluation-results.md",
       "source_location": "L100"
-    },
-    {
-      "id": "docs_08_evaluation_results_re_run_on_the_final_graph_2026_11_10",
-      "label": "Re-run on the final graph (2026-11-10)",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "Label confirmation",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "re-run on the final graph (2026-11-10)",
-      "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L106"
     },
     {
       "id": "docs_08_evaluation_results_router_abstention_by_threshold_all_40_route_confidence_only",
@@ -5798,18 +5427,6 @@
       "norm_label": "router abstention by threshold (held-out half, route confidence only)",
       "source_file": "docs/08-evaluation-results.md",
       "source_location": "L64"
-    },
-    {
-      "id": "docs_08_evaluation_results_what_changed_against_the_first_run_all_40",
-      "label": "What changed against the first run (all 40)",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "Label confirmation",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "what changed against the first run (all 40)",
-      "source_file": "docs/08-evaluation-results.md",
-      "source_location": "L134"
     },
     {
       "id": "docs_decisions_0005_local_llm_selection_adr_0005_local_llm_selection",
@@ -6125,6 +5742,17 @@
       "source_location": "L1"
     },
     {
+      "id": "src_graphrag_router",
+      "label": "router.py",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "code",
+      "norm_label": "router.py",
+      "source_file": "src/graphrag/router.py",
+      "source_location": "L1"
+    },
+    {
       "id": "docs_07_implementation_roadmap_groundedness_built_and_measured_2026_11_07",
       "label": "Groundedness: built and measured (2026-11-07)",
       "_origin": "ast",
@@ -6135,6 +5763,162 @@
       "norm_label": "groundedness: built and measured (2026-11-07)",
       "source_file": "docs/07-implementation-roadmap.md",
       "source_location": "L310"
+    },
+    {
+      "id": "docs_09_completion_status_09_completion_status_2026_11_10_updated_after_the_owner_s_decisions_and_test_1",
+      "label": "09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "09. completion status (2026-11-10, updated after the owner's decisions and test 1)",
+      "source_file": "docs/09-completion-status.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_09_completion_status_decided_by_the_owner_2026_11_10",
+      "label": "Decided by the owner (2026-11-10)",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "decided by the owner (2026-11-10)",
+      "source_file": "docs/09-completion-status.md",
+      "source_location": "L30"
+    },
+    {
+      "id": "docs_09_completion_status_done",
+      "label": "Done",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "done",
+      "source_file": "docs/09-completion-status.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "docs_09_completion_status_housekeeping",
+      "label": "Housekeeping",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "housekeeping",
+      "source_file": "docs/09-completion-status.md",
+      "source_location": "L52"
+    },
+    {
+      "id": "docs_09_completion_status_open_needs_your_decision_superseded_by_the_section_above_kept_for_the_record",
+      "label": "Open: needs your decision (superseded by the section above; kept for the record)",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "open: needs your decision (superseded by the section above; kept for the record)",
+      "source_file": "docs/09-completion-status.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "docs_09_completion_status_open_tests_not_yet_run_after_test_1",
+      "label": "Open: tests not yet run (after Test 1)",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "open: tests not yet run (after test 1)",
+      "source_file": "docs/09-completion-status.md",
+      "source_location": "L42"
+    },
+    {
+      "id": "docs_09_completion_status_targets_in_06_against_the_evidence",
+      "label": "Targets in 06 against the evidence",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "targets in 06 against the evidence",
+      "source_file": "docs/09-completion-status.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "readme_findings_so_far_one_machine_one_run_each",
+      "label": "Findings so far (one machine, one run each)",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "findings so far (one machine, one run each)",
+      "source_file": "README.md",
+      "source_location": "L23"
+    },
+    {
+      "id": "readme_graph_rag",
+      "label": "graph-rag",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "graph-rag",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_license",
+      "label": "License",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "license",
+      "source_file": "README.md",
+      "source_location": "L69"
+    },
+    {
+      "id": "readme_privacy_and_safety",
+      "label": "Privacy and safety",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "privacy and safety",
+      "source_file": "README.md",
+      "source_location": "L63"
+    },
+    {
+      "id": "readme_run_it",
+      "label": "Run it",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "run it",
+      "source_file": "README.md",
+      "source_location": "L32"
+    },
+    {
+      "id": "readme_what_was_built",
+      "label": "What was built",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what was built",
+      "source_file": "README.md",
+      "source_location": "L9"
     },
     {
       "id": "src_graphrag_grounded_rationale_1",
@@ -6168,6 +5952,28 @@
       "norm_label": "(interview id, verbatim text) for every quote or excerpt in the payload.",
       "source_file": "src/graphrag/grounded.py",
       "source_location": "L48"
+    },
+    {
+      "id": "src_graphrag_router_rationale_1",
+      "label": "Question router: a decision model (`nimble`, /v1/systemone) picks a route and\u2026",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "rationale",
+      "norm_label": "question router: a decision model (`nimble`, /v1/systemone) picks a route and...",
+      "source_file": "src/graphrag/router.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_graphrag_router_rationale_49",
+      "label": "Route, gate, dispatch. Returns compact JSON-able payload with the routing\u2026",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "grounded.py",
+      "file_type": "rationale",
+      "norm_label": "route, gate, dispatch. returns compact json-able payload with the routing...",
+      "source_file": "src/graphrag/router.py",
+      "source_location": "L49"
     },
     {
       "id": "tests_test_load",
@@ -6420,6 +6226,17 @@
       "source_location": ""
     },
     {
+      "id": "src_graphrag_concern_merge",
+      "label": "concern_merge.py",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "queries.py",
+      "file_type": "code",
+      "norm_label": "concern_merge.py",
+      "source_file": "src/graphrag/concern_merge.py",
+      "source_location": "L1"
+    },
+    {
       "id": "src_graphrag_normalise",
       "label": "normalise.py",
       "_origin": "ast",
@@ -6464,15 +6281,26 @@
       "source_location": "L1"
     },
     {
-      "id": "tests_test_m3_modules",
-      "label": "test_m3_modules.py",
+      "id": "src_graphrag_concern_merge_rationale_1",
+      "label": "Merge the looser concern pass (eval/concern_pass.py) into an assembled run\u2026",
       "_origin": "ast",
       "community": 4,
       "community_name": "queries.py",
-      "file_type": "code",
-      "norm_label": "test_m3_modules.py",
-      "source_file": "tests/test_m3_modules.py",
+      "file_type": "rationale",
+      "norm_label": "merge the looser concern pass (eval/concern_pass.py) into an assembled run...",
+      "source_file": "src/graphrag/concern_merge.py",
       "source_location": "L1"
+    },
+    {
+      "id": "src_graphrag_concern_merge_rationale_34",
+      "label": "Map each new cleaned name to an existing canonical name (cos >= threshold) or\u2026",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "queries.py",
+      "file_type": "rationale",
+      "norm_label": "map each new cleaned name to an existing canonical name (cos >= threshold) or...",
+      "source_file": "src/graphrag/concern_merge.py",
+      "source_location": "L34"
     },
     {
       "id": "src_graphrag_normalise_rationale_1",
@@ -6647,22 +6475,11 @@
       "source_location": "L1"
     },
     {
-      "id": "eval_judge32b",
-      "label": "judge32b.py",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "judge32b.py",
-      "file_type": "code",
-      "norm_label": "judge32b.py",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L1"
-    },
-    {
       "id": "docs_decisions_0008_decision_model_router_adr_0008_decision_model_jev_style_as_the_question_router",
       "label": "ADR-0008: Decision model (Jev-style) as the question router",
       "_origin": "ast",
       "community": 41,
-      "community_name": "judge32b.py",
+      "community_name": "ADR-0008: Decision model (Jev-style) as the question router",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "adr-0008: decision model (jev-style) as the question router",
@@ -6674,7 +6491,7 @@
       "label": "Confirmation",
       "_origin": "ast",
       "community": 41,
-      "community_name": "judge32b.py",
+      "community_name": "ADR-0008: Decision model (Jev-style) as the question router",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "confirmation",
@@ -6686,7 +6503,7 @@
       "label": "Confirmation result (2026-11-07)",
       "_origin": "ast",
       "community": 41,
-      "community_name": "judge32b.py",
+      "community_name": "ADR-0008: Decision model (Jev-style) as the question router",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "confirmation result (2026-11-07)",
@@ -6698,7 +6515,7 @@
       "label": "Consequences",
       "_origin": "ast",
       "community": 41,
-      "community_name": "judge32b.py",
+      "community_name": "ADR-0008: Decision model (Jev-style) as the question router",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "consequences",
@@ -6710,7 +6527,7 @@
       "label": "Context",
       "_origin": "ast",
       "community": 41,
-      "community_name": "judge32b.py",
+      "community_name": "ADR-0008: Decision model (Jev-style) as the question router",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "context",
@@ -6722,7 +6539,7 @@
       "label": "Decision",
       "_origin": "ast",
       "community": 41,
-      "community_name": "judge32b.py",
+      "community_name": "ADR-0008: Decision model (Jev-style) as the question router",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "decision",
@@ -6734,7 +6551,7 @@
       "label": "Decision drivers",
       "_origin": "ast",
       "community": 41,
-      "community_name": "judge32b.py",
+      "community_name": "ADR-0008: Decision model (Jev-style) as the question router",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "decision drivers",
@@ -6746,7 +6563,7 @@
       "label": "M3 note (2026-11-06)",
       "_origin": "ast",
       "community": 41,
-      "community_name": "judge32b.py",
+      "community_name": "ADR-0008: Decision model (Jev-style) as the question router",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "m3 note (2026-11-06)",
@@ -6758,7 +6575,7 @@
       "label": "Options",
       "_origin": "ast",
       "community": 41,
-      "community_name": "judge32b.py",
+      "community_name": "ADR-0008: Decision model (Jev-style) as the question router",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "options",
@@ -6770,7 +6587,7 @@
       "label": "Revisit when",
       "_origin": "ast",
       "community": 41,
-      "community_name": "judge32b.py",
+      "community_name": "ADR-0008: Decision model (Jev-style) as the question router",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "revisit when",
@@ -6782,7 +6599,7 @@
       "label": "Weighted decision matrix",
       "_origin": "ast",
       "community": 41,
-      "community_name": "judge32b.py",
+      "community_name": "ADR-0008: Decision model (Jev-style) as the question router",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "weighted decision matrix",
@@ -6790,164 +6607,133 @@
       "source_location": "L39"
     },
     {
-      "id": "eval_judge32b_rationale_1",
-      "label": "Independent checks by a larger model (qwen2.5:32b, run alone), so the 8B\u2026",
+      "id": "docs_07_implementation_roadmap_milestones",
+      "label": "Milestones",
       "_origin": "ast",
-      "community": 41,
-      "community_name": "judge32b.py",
+      "community": 42,
+      "community_name": "ask_interviews",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "milestones",
+      "source_file": "docs/07-implementation-roadmap.md",
+      "source_location": "L27"
+    },
+    {
+      "id": "docs_08_evaluation_results_08_evaluation_results_m7",
+      "label": "08. Evaluation results (M7)",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "ask_interviews",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "08. evaluation results (m7)",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_08_evaluation_results_all_40_final_graph",
+      "label": "All 40, final graph",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "ask_interviews",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "all 40, final graph",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L110"
+    },
+    {
+      "id": "docs_08_evaluation_results_fix_attempt_and_re_test_2026_11_10",
+      "label": "Fix attempt and re-test (2026-11-10)",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "ask_interviews",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "fix attempt and re-test (2026-11-10)",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L175"
+    },
+    {
+      "id": "docs_08_evaluation_results_groundedness_on_the_final_graph_60_questions_eval_grounded_eval_py_router_v3",
+      "label": "Groundedness on the final graph (60 questions, `eval/grounded_eval.py`, router v3)",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "ask_interviews",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "groundedness on the final graph (60 questions, `eval/grounded_eval.py`, router v3)",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L148"
+    },
+    {
+      "id": "docs_08_evaluation_results_live_ollmcp_session_on_the_final_graph_2026_11_10",
+      "label": "Live `ollmcp` session on the final graph (2026-11-10)",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "ask_interviews",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "live `ollmcp` session on the final graph (2026-11-10)",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L161"
+    },
+    {
+      "id": "docs_08_evaluation_results_per_route_end_to_end_latency_median_s_final_graph",
+      "label": "Per-route end-to-end latency (median s), final graph",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "ask_interviews",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "per-route end-to-end latency (median s), final graph",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L128"
+    },
+    {
+      "id": "docs_08_evaluation_results_re_run_on_the_final_graph_2026_11_10",
+      "label": "Re-run on the final graph (2026-11-10)",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "ask_interviews",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "re-run on the final graph (2026-11-10)",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L106"
+    },
+    {
+      "id": "docs_08_evaluation_results_what_changed_against_the_first_run_all_40",
+      "label": "What changed against the first run (all 40)",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "ask_interviews",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what changed against the first run (all 40)",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L134"
+    },
+    {
+      "id": "src_graphrag_mcp_server_rationale_39",
+      "label": "Answer any user message about the AI interview transcripts (a 500-interview\u2026",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "ask_interviews",
       "file_type": "rationale",
-      "norm_label": "independent checks by a larger model (qwen2.5:32b, run alone), so the 8b...",
-      "source_file": "eval/judge32b.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_09_completion_status_09_completion_status_2026_11_10_updated_after_the_owner_s_decisions_and_test_1",
-      "label": "09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "09. completion status (2026-11-10, updated after the owner's decisions and test 1)",
-      "source_file": "docs/09-completion-status.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_09_completion_status_decided_by_the_owner_2026_11_10",
-      "label": "Decided by the owner (2026-11-10)",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "decided by the owner (2026-11-10)",
-      "source_file": "docs/09-completion-status.md",
-      "source_location": "L30"
-    },
-    {
-      "id": "docs_09_completion_status_done",
-      "label": "Done",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "done",
-      "source_file": "docs/09-completion-status.md",
-      "source_location": "L5"
-    },
-    {
-      "id": "docs_09_completion_status_housekeeping",
-      "label": "Housekeeping",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "housekeeping",
-      "source_file": "docs/09-completion-status.md",
-      "source_location": "L52"
-    },
-    {
-      "id": "docs_09_completion_status_open_needs_your_decision_superseded_by_the_section_above_kept_for_the_record",
-      "label": "Open: needs your decision (superseded by the section above; kept for the record)",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "open: needs your decision (superseded by the section above; kept for the record)",
-      "source_file": "docs/09-completion-status.md",
-      "source_location": "L34"
-    },
-    {
-      "id": "docs_09_completion_status_open_tests_not_yet_run_after_test_1",
-      "label": "Open: tests not yet run (after Test 1)",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "open: tests not yet run (after test 1)",
-      "source_file": "docs/09-completion-status.md",
-      "source_location": "L42"
-    },
-    {
-      "id": "docs_09_completion_status_targets_in_06_against_the_evidence",
-      "label": "Targets in 06 against the evidence",
-      "_origin": "ast",
-      "community": 42,
-      "community_name": "09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "targets in 06 against the evidence",
-      "source_file": "docs/09-completion-status.md",
-      "source_location": "L17"
-    },
-    {
-      "id": "scripts_run_m2",
-      "label": "run_m2.py",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "sys",
-      "file_type": "code",
-      "norm_label": "run_m2.py",
-      "source_file": "scripts/run_m2.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "spike_02_extract",
-      "label": "02_extract.py",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "sys",
-      "file_type": "code",
-      "norm_label": "02_extract.py",
-      "source_file": "spike/02_extract.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "spike_02b_extract_v2",
-      "label": "02b_extract_v2.py",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "sys",
-      "file_type": "code",
-      "norm_label": "02b_extract_v2.py",
-      "source_file": "spike/02b_extract_v2.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "spike_04_analyze",
-      "label": "04_analyze.py",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "sys",
-      "file_type": "code",
-      "norm_label": "04_analyze.py",
-      "source_file": "spike/04_analyze.py",
-      "source_location": "L1"
+      "norm_label": "answer any user message about the ai interview transcripts (a 500-interview...",
+      "source_file": "src/graphrag/mcp_server.py",
+      "source_location": "L39"
     },
     {
       "id": "spike_06_score_labels",
       "label": "06_score_labels.py",
       "_origin": "ast",
       "community": 43,
-      "community_name": "sys",
+      "community_name": "06_score_labels.py",
       "file_type": "code",
       "norm_label": "06_score_labels.py",
       "source_file": "spike/06_score_labels.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "scripts_run_m2_rationale_1",
-      "label": "M2: rerun extraction v3 on the same 20 transcripts as the spike. Usage:\u2026",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "sys",
-      "file_type": "rationale",
-      "norm_label": "m2: rerun extraction v3 on the same 20 transcripts as the spike. usage:...",
-      "source_file": "scripts/run_m2.py",
       "source_location": "L1"
     },
     {
@@ -6955,7 +6741,7 @@
       "label": "Score filled-in labelling sheets. Usage: python spike/06_score_labels.py\u2026",
       "_origin": "ast",
       "community": 43,
-      "community_name": "sys",
+      "community_name": "06_score_labels.py",
       "file_type": "rationale",
       "norm_label": "score filled-in labelling sheets. usage: python spike/06_score_labels.py...",
       "source_file": "spike/06_score_labels.py",
@@ -7014,6 +6800,135 @@
       "file_type": "code",
       "norm_label": "test_schema.py",
       "source_file": "tests/test_schema.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "tests_test_m3_modules",
+      "label": "test_m3_modules.py",
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "test_m3_modules.py",
+      "file_type": "code",
+      "norm_label": "test_m3_modules.py",
+      "source_file": "tests/test_m3_modules.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_04_query_and_tools_04_query_routing_and_mcp_tool_surface_interviewer_corpus",
+      "label": "04. Query routing and MCP tool surface (Interviewer corpus)",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "04. Query routing and MCP tool surface (Interviewer corpus)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "04. query routing and mcp tool surface (interviewer corpus)",
+      "source_file": "docs/04-query-and-tools.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_04_query_and_tools_answer_rules_system_prompt_sketch",
+      "label": "Answer rules (system prompt sketch)",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "04. Query routing and MCP tool surface (Interviewer corpus)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "answer rules (system prompt sketch)",
+      "source_file": "docs/04-query-and-tools.md",
+      "source_location": "L62"
+    },
+    {
+      "id": "docs_04_query_and_tools_example_cypher_parameterised_read_only",
+      "label": "Example Cypher (parameterised, read-only)",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "04. Query routing and MCP tool surface (Interviewer corpus)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "example cypher (parameterised, read-only)",
+      "source_file": "docs/04-query-and-tools.md",
+      "source_location": "L43"
+    },
+    {
+      "id": "docs_04_query_and_tools_global_questions",
+      "label": "Global questions",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "04. Query routing and MCP tool surface (Interviewer corpus)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "global questions",
+      "source_file": "docs/04-query-and-tools.md",
+      "source_location": "L70"
+    },
+    {
+      "id": "docs_04_query_and_tools_ollmcp_wiring",
+      "label": "ollmcp wiring",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "04. Query routing and MCP tool surface (Interviewer corpus)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "ollmcp wiring",
+      "source_file": "docs/04-query-and-tools.md",
+      "source_location": "L80"
+    },
+    {
+      "id": "docs_04_query_and_tools_optional_gated_text_to_cypher",
+      "label": "Optional: gated text-to-Cypher",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "04. Query routing and MCP tool surface (Interviewer corpus)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "optional: gated text-to-cypher",
+      "source_file": "docs/04-query-and-tools.md",
+      "source_location": "L75"
+    },
+    {
+      "id": "docs_04_query_and_tools_routes",
+      "label": "Routes",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "04. Query routing and MCP tool surface (Interviewer corpus)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "routes",
+      "source_file": "docs/04-query-and-tools.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "docs_04_query_and_tools_tool_surface",
+      "label": "Tool surface",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "04. Query routing and MCP tool surface (Interviewer corpus)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "tool surface",
+      "source_file": "docs/04-query-and-tools.md",
+      "source_location": "L30"
+    },
+    {
+      "id": "eval_judge32b",
+      "label": "judge32b.py",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "judge32b.py",
+      "file_type": "code",
+      "norm_label": "judge32b.py",
+      "source_file": "eval/judge32b.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "eval_judge32b_rationale_1",
+      "label": "Independent checks by a larger model (qwen2.5:32b, run alone), so the 8B\u2026",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "judge32b.py",
+      "file_type": "rationale",
+      "norm_label": "independent checks by a larger model (qwen2.5:32b, run alone), so the 8b...",
+      "source_file": "eval/judge32b.py",
       "source_location": "L1"
     },
     {
@@ -7473,6 +7388,182 @@
       "source_location": "L1"
     },
     {
+      "id": "scripts_mcp_smoke",
+      "label": "mcp_smoke.py",
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "mcp_smoke.py",
+      "file_type": "code",
+      "norm_label": "mcp_smoke.py",
+      "source_file": "scripts/mcp_smoke.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_mcp_smoke_rationale_1",
+      "label": "Start the MCP server over stdio and call it like a client would. Usage:\u2026",
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "mcp_smoke.py",
+      "file_type": "rationale",
+      "norm_label": "start the mcp server over stdio and call it like a client would. usage:...",
+      "source_file": "scripts/mcp_smoke.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_06_evaluation_and_roadmap_06_evaluation_and_roadmap",
+      "label": "06. Evaluation and roadmap",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "06. Evaluation and roadmap",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "06. evaluation and roadmap",
+      "source_file": "docs/06-evaluation-and-roadmap.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_06_evaluation_and_roadmap_labelling_plan_as_run_model_labels_confirmed_by_the_owner_see_adr_0013_decisions_0013_waive_human_labels_md_and_09_09_completion_status_md",
+      "label": "Labelling plan (as run: model labels, confirmed by the owner; see [ADR-0013](decisions/0013-waive-human-labels.md) and [09](09-completion-status.md))",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "06. Evaluation and roadmap",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "labelling plan (as run: model labels, confirmed by the owner; see [adr-0013](decisions/0013-waive-human-labels.md) and [09](09-completion-status.md))",
+      "source_file": "docs/06-evaluation-and-roadmap.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "docs_06_evaluation_and_roadmap_metrics",
+      "label": "Metrics",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "06. Evaluation and roadmap",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "metrics",
+      "source_file": "docs/06-evaluation-and-roadmap.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "docs_06_evaluation_and_roadmap_phases_all_done_see_07_07_implementation_roadmap_md_for_dates_and_outcomes",
+      "label": "Phases (all done; see [07](07-implementation-roadmap.md) for dates and outcomes)",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "06. Evaluation and roadmap",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phases (all done; see [07](07-implementation-roadmap.md) for dates and outcomes)",
+      "source_file": "docs/06-evaluation-and-roadmap.md",
+      "source_location": "L39"
+    },
+    {
+      "id": "docs_06_evaluation_and_roadmap_risks",
+      "label": "Risks",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "06. Evaluation and roadmap",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "risks",
+      "source_file": "docs/06-evaluation-and-roadmap.md",
+      "source_location": "L52"
+    },
+    {
+      "id": "docs_06_evaluation_and_roadmap_the_honest_problem",
+      "label": "The honest problem",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "06. Evaluation and roadmap",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "the honest problem",
+      "source_file": "docs/06-evaluation-and-roadmap.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "eval_confirm_adr0008",
+      "label": "confirm_adr0008.py",
+      "_origin": "ast",
+      "community": 52,
+      "community_name": "confirm_adr0008.py",
+      "file_type": "code",
+      "norm_label": "confirm_adr0008.py",
+      "source_file": "eval/confirm_adr0008.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "eval_confirm_adr0008_rationale_1",
+      "label": "ADR-0008 confirmation on questions written after the router changes were chosen\u2026",
+      "_origin": "ast",
+      "community": 52,
+      "community_name": "confirm_adr0008.py",
+      "file_type": "rationale",
+      "norm_label": "adr-0008 confirmation on questions written after the router changes were chosen...",
+      "source_file": "eval/confirm_adr0008.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_readme_decisions_at_a_glance",
+      "label": "Decisions at a glance",
+      "_origin": "ast",
+      "community": 53,
+      "community_name": "Graph RAG demo: Anthropic Interviewer transcripts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "decisions at a glance",
+      "source_file": "docs/README.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "docs_readme_graph_rag_demo_anthropic_interviewer_transcripts",
+      "label": "Graph RAG demo: Anthropic Interviewer transcripts",
+      "_origin": "ast",
+      "community": 53,
+      "community_name": "Graph RAG demo: Anthropic Interviewer transcripts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "graph rag demo: anthropic interviewer transcripts",
+      "source_file": "docs/README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_readme_read_in_this_order",
+      "label": "Read in this order",
+      "_origin": "ast",
+      "community": 53,
+      "community_name": "Graph RAG demo: Anthropic Interviewer transcripts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "read in this order",
+      "source_file": "docs/README.md",
+      "source_location": "L9"
+    },
+    {
+      "id": "docs_readme_what_i_need_from_you",
+      "label": "What I need from you",
+      "_origin": "ast",
+      "community": 53,
+      "community_name": "Graph RAG demo: Anthropic Interviewer transcripts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what i need from you",
+      "source_file": "docs/README.md",
+      "source_location": "L48"
+    },
+    {
+      "id": "docs_readme_what_the_spike_found_20_transcripts_one_machine",
+      "label": "What the spike found (20 transcripts, one machine)",
+      "_origin": "ast",
+      "community": 53,
+      "community_name": "Graph RAG demo: Anthropic Interviewer transcripts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what the spike found (20 transcripts, one machine)",
+      "source_file": "docs/README.md",
+      "source_location": "L26"
+    },
+    {
       "id": "scripts_prepush_check",
       "label": "prepush_check.py",
       "_origin": "ast",
@@ -7514,17 +7605,6 @@
       "file_type": "code",
       "norm_label": "concern_pass.py",
       "source_file": "eval/concern_pass.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_graphrag_concern_merge",
-      "label": "concern_merge.py",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "pipeline.py",
-      "file_type": "code",
-      "norm_label": "concern_merge.py",
-      "source_file": "src/graphrag/concern_merge.py",
       "source_location": "L1"
     },
     {
@@ -7603,28 +7683,6 @@
       "norm_label": "kept new concern edges whose quote is not already the quote of an original kept...",
       "source_file": "eval/concern_pass.py",
       "source_location": "L80"
-    },
-    {
-      "id": "src_graphrag_concern_merge_rationale_1",
-      "label": "Merge the looser concern pass (eval/concern_pass.py) into an assembled run\u2026",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "pipeline.py",
-      "file_type": "rationale",
-      "norm_label": "merge the looser concern pass (eval/concern_pass.py) into an assembled run...",
-      "source_file": "src/graphrag/concern_merge.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_graphrag_concern_merge_rationale_34",
-      "label": "Map each new cleaned name to an existing canonical name (cos >= threshold) or\u2026",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "pipeline.py",
-      "file_type": "rationale",
-      "norm_label": "map each new cleaned name to an existing canonical name (cos >= threshold) or...",
-      "source_file": "src/graphrag/concern_merge.py",
-      "source_location": "L34"
     },
     {
       "id": "src_graphrag_config_rationale_1",
@@ -7849,42 +7907,6 @@
       "type": "external"
     },
     {
-      "id": "asyncio",
-      "label": "asyncio",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "asyncio",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "fastmcp",
-      "label": "fastmcp",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "fastmcp",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "fastmcp_client_transports",
-      "label": "fastmcp_client_transports",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "mcp_server.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "fastmcp_client_transports",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "csv",
       "label": "csv",
       "_origin": "semantic",
@@ -7893,6 +7915,18 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "csv",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "random",
+      "label": "random",
+      "_origin": "semantic",
+      "community": 13,
+      "community_name": "05_make_label_sheets.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "random",
       "source_file": "",
       "type": "external"
     },
@@ -7937,10 +7971,34 @@
       "label": "requests",
       "_origin": "semantic",
       "community": 2,
-      "community_name": "router.py",
+      "community_name": "decision.py",
       "external": true,
       "file_type": "concept",
       "norm_label": "requests",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "pandas",
+      "label": "pandas",
+      "_origin": "semantic",
+      "community": 21,
+      "community_name": "sys",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "pandas",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "re",
+      "label": "re",
+      "_origin": "semantic",
+      "community": 21,
+      "community_name": "sys",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "re",
       "source_file": "",
       "type": "external"
     },
@@ -7949,10 +8007,22 @@
       "label": "statistics",
       "_origin": "semantic",
       "community": 21,
-      "community_name": "confirm_adr0008.py",
+      "community_name": "sys",
       "external": true,
       "file_type": "concept",
       "norm_label": "statistics",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "sys",
+      "label": "sys",
+      "_origin": "semantic",
+      "community": 21,
+      "community_name": "sys",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "sys",
       "source_file": "",
       "type": "external"
     },
@@ -7961,7 +8031,7 @@
       "label": "time",
       "_origin": "semantic",
       "community": 21,
-      "community_name": "confirm_adr0008.py",
+      "community_name": "sys",
       "external": true,
       "file_type": "concept",
       "norm_label": "time",
@@ -8005,30 +8075,6 @@
       "type": "external"
     },
     {
-      "id": "re",
-      "label": "re",
-      "_origin": "semantic",
-      "community": 33,
-      "community_name": "extract.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "re",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "hashlib",
-      "label": "hashlib",
-      "_origin": "semantic",
-      "community": 4,
-      "community_name": "queries.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "hashlib",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "numpy",
       "label": "numpy",
       "_origin": "semantic",
@@ -8041,38 +8087,38 @@
       "type": "external"
     },
     {
-      "id": "pandas",
-      "label": "pandas",
+      "id": "asyncio",
+      "label": "asyncio",
       "_origin": "semantic",
-      "community": 43,
-      "community_name": "sys",
+      "community": 50,
+      "community_name": "mcp_smoke.py",
       "external": true,
       "file_type": "concept",
-      "norm_label": "pandas",
+      "norm_label": "asyncio",
       "source_file": "",
       "type": "external"
     },
     {
-      "id": "random",
-      "label": "random",
+      "id": "fastmcp",
+      "label": "fastmcp",
       "_origin": "semantic",
-      "community": 43,
-      "community_name": "sys",
+      "community": 50,
+      "community_name": "mcp_smoke.py",
       "external": true,
       "file_type": "concept",
-      "norm_label": "random",
+      "norm_label": "fastmcp",
       "source_file": "",
       "type": "external"
     },
     {
-      "id": "sys",
-      "label": "sys",
+      "id": "fastmcp_client_transports",
+      "label": "fastmcp_client_transports",
       "_origin": "semantic",
-      "community": 43,
-      "community_name": "sys",
+      "community": 50,
+      "community_name": "mcp_smoke.py",
       "external": true,
       "file_type": "concept",
-      "norm_label": "sys",
+      "norm_label": "fastmcp_client_transports",
       "source_file": "",
       "type": "external"
     },
@@ -8101,18 +8147,6 @@
       "type": "external"
     },
     {
-      "id": "argparse",
-      "label": "argparse",
-      "_origin": "semantic",
-      "community": 7,
-      "community_name": "pipeline.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "argparse",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "dotenv",
       "label": "dotenv",
       "_origin": "semantic",
@@ -8133,6 +8167,18 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "os",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "argparse",
+      "label": "argparse",
+      "_origin": "semantic",
+      "community": 8,
+      "community_name": "themes.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "argparse",
       "source_file": "",
       "type": "external"
     },
@@ -8169,6 +8215,29 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "networkx",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "hashlib",
+      "label": "hashlib",
+      "_origin": "semantic",
+      "community": 9,
+      "community_name": "load.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "hashlib",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "pexpect",
+      "label": "pexpect",
+      "community": 21,
+      "community_name": "sys",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "pexpect",
       "source_file": "",
       "type": "external"
     }
@@ -9287,7 +9356,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -9299,7 +9368,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -9311,7 +9380,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -9323,7 +9392,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -9335,7 +9404,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L57",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -9347,7 +9416,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L58",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -9359,7 +9428,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L52",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -9371,7 +9440,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -9383,7 +9452,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L63",
+      "source_location": "L66",
       "weight": 1.0
     },
     {
@@ -9395,7 +9464,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L64",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
@@ -9407,7 +9476,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -9419,7 +9488,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L45",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -9431,7 +9500,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L69",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -10343,7 +10412,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -10355,7 +10424,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L54",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -10367,7 +10436,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L47",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -10379,7 +10448,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L60",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -10391,7 +10460,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L42",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -10403,7 +10472,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L66",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -11184,6 +11253,66 @@
       "context": "import",
       "source_file": "scripts/download_data.py",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_live_ollmcp_session",
+      "target": "json",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/live_ollmcp_session.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_live_ollmcp_session",
+      "target": "pexpect",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/live_ollmcp_session.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_live_ollmcp_session",
+      "target": "re",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/live_ollmcp_session.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_live_ollmcp_session",
+      "target": "sys",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/live_ollmcp_session.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_live_ollmcp_session",
+      "target": "time",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "scripts/live_ollmcp_session.py",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -14935,6 +15064,17 @@
     },
     {
       "source": "docs_08_evaluation_results_08_evaluation_results_m7",
+      "target": "docs_08_evaluation_results_live_ollmcp_session_on_the_final_graph_2026_11_10",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L161",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_08_evaluation_results_08_evaluation_results_m7",
       "target": "docs_08_evaluation_results_label_confirmation",
       "relation": "contains",
       "_origin": "ast",
@@ -15019,6 +15159,17 @@
       "confidence_score": 1.0,
       "source_file": "docs/08-evaluation-results.md",
       "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_08_evaluation_results_live_ollmcp_session_on_the_final_graph_2026_11_10",
+      "target": "docs_08_evaluation_results_fix_attempt_and_re_test_2026_11_10",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L175",
       "weight": 1.0
     },
     {
@@ -17471,7 +17622,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L61",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -17482,7 +17633,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L67",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -17527,6 +17678,17 @@
       "confidence_score": 1.0,
       "source_file": "scripts/download_data.py",
       "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_live_ollmcp_session",
+      "target": "scripts_live_ollmcp_session_wait_prompt",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/live_ollmcp_session.py",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -18076,7 +18238,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -18087,7 +18249,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -18098,7 +18260,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -18109,7 +18271,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L37",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -18120,7 +18282,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L43",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
@@ -18131,7 +18293,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L48",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -18142,7 +18304,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L55",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -18153,7 +18315,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L61",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -18164,7 +18326,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L67",
+      "source_location": "L70",
       "weight": 1.0
     },
     {
@@ -19565,6 +19727,17 @@
       "weight": 1.0
     },
     {
+      "source": "scripts_live_ollmcp_session_rationale_1",
+      "target": "scripts_live_ollmcp_session",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/live_ollmcp_session.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "scripts_make_label_sheet_v3_rationale_1",
       "target": "scripts_make_label_sheet_v3",
       "relation": "rationale_for",
@@ -19873,69 +20046,69 @@
       "weight": 1.0
     },
     {
-      "source": "src_graphrag_mcp_server_rationale_38",
+      "source": "src_graphrag_mcp_server_rationale_39",
       "target": "src_graphrag_mcp_server_ask_interviews",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L38",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
-      "source": "src_graphrag_mcp_server_rationale_44",
+      "source": "src_graphrag_mcp_server_rationale_47",
       "target": "src_graphrag_mcp_server_search_segments",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L44",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
-      "source": "src_graphrag_mcp_server_rationale_49",
+      "source": "src_graphrag_mcp_server_rationale_52",
       "target": "src_graphrag_mcp_server_concept_stats",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L49",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
-      "source": "src_graphrag_mcp_server_rationale_56",
+      "source": "src_graphrag_mcp_server_rationale_59",
       "target": "src_graphrag_mcp_server_compare_groups",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L56",
+      "source_location": "L59",
       "weight": 1.0
     },
     {
-      "source": "src_graphrag_mcp_server_rationale_62",
+      "source": "src_graphrag_mcp_server_rationale_65",
       "target": "src_graphrag_mcp_server_quotes",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L62",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
-      "source": "src_graphrag_mcp_server_rationale_68",
+      "source": "src_graphrag_mcp_server_rationale_71",
       "target": "src_graphrag_mcp_server_theme_summary",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/graphrag/mcp_server.py",
-      "source_location": "L68",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -21420,7 +21593,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L65",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
@@ -21720,6 +21893,42 @@
       "weight": 1.0
     },
     {
+      "source": "docs_08_evaluation_results_fix_attempt_and_re_test_2026_11_10",
+      "target": "src_graphrag_router_answer",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "answer",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L177",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_09_completion_status_open_tests_not_yet_run_after_test_1",
+      "target": "src_graphrag_router_answer",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "answer",
+      "source_file": "docs/09-completion-status.md",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_run_it",
+      "target": "src_graphrag_router_answer",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "answer",
+      "source_file": "README.md",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
       "source": "docs_04_query_and_tools_tool_surface",
       "target": "src_graphrag_mcp_server_ask_interviews",
       "relation": "references",
@@ -21777,6 +21986,30 @@
       "context": "ask_interviews",
       "source_file": "docs/07-implementation-roadmap.md",
       "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_08_evaluation_results_fix_attempt_and_re_test_2026_11_10",
+      "target": "src_graphrag_mcp_server_ask_interviews",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "ask_interviews",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L177",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_08_evaluation_results_live_ollmcp_session_on_the_final_graph_2026_11_10",
+      "target": "src_graphrag_mcp_server_ask_interviews",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "ask_interviews",
+      "source_file": "docs/08-evaluation-results.md",
+      "source_location": "L163",
       "weight": 1.0
     },
     {
@@ -21949,5 +22182,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "64db036cba501ff758f782c3217e701871d72732"
+  "built_at_commit": "0f96bae2bf5d405e94a56129f021e5f843adfb39"
 }

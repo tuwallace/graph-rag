@@ -216,9 +216,9 @@
     "semantic_hash": ""
   },
   "src/graphrag/mcp_server.py": {
-    "mtime": 1794082145.2992048,
-    "seen": 1794082635.403896,
-    "ast_hash": "b0e691548fe58cc6e3bc9bd52139eab1",
+    "mtime": 1794339629.0221696,
+    "seen": 1794340420.729702,
+    "ast_hash": "ac807a795f0e528c25f646f598738ec3",
     "semantic_hash": ""
   },
   "src/graphrag/normalise.py": {
@@ -318,9 +318,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1794330834.4397585,
-    "seen": 1794333672.238508,
-    "ast_hash": "5c9224cb6be1233930c8f1b82f00eac0",
+    "mtime": 1794340415.8926759,
+    "seen": 1794340420.7297149,
+    "ast_hash": "ba88ea654c1c5054e26889c2925f09f2",
     "semantic_hash": ""
   },
   "docker-compose.yml": {
@@ -372,9 +372,9 @@
     "semantic_hash": ""
   },
   "docs/08-evaluation-results.md": {
-    "mtime": 1794333668.8211424,
-    "seen": 1794333672.238514,
-    "ast_hash": "18e8ff59f75adce6faa70f433b0237d2",
+    "mtime": 1794340415.8930235,
+    "seen": 1794340420.729721,
+    "ast_hash": "1e19fb160eba3e11685673e9737201d5",
     "semantic_hash": ""
   },
   "docs/README.md": {
@@ -558,9 +558,15 @@
     "semantic_hash": ""
   },
   "docs/09-completion-status.md": {
-    "mtime": 1794333668.821431,
-    "seen": 1794333672.238515,
-    "ast_hash": "f3630ddbc5b9dd4cbce4f0622b749a65",
+    "mtime": 1794340415.8938675,
+    "seen": 1794340420.729722,
+    "ast_hash": "a30704dce4681583a6c017c39b0c080e",
+    "semantic_hash": ""
+  },
+  "scripts/live_ollmcp_session.py": {
+    "mtime": 1794340066.9147391,
+    "seen": 1794340420.7296839,
+    "ast_hash": "e19b8c68fa015a4f1e1f23a509c22903",
     "semantic_hash": ""
   }
 }

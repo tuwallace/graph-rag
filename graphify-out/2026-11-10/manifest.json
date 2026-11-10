@@ -318,9 +318,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1794327162.7137198,
-    "seen": 1794327166.954091,
-    "ast_hash": "89cef5910d67b8919251418262eacb9f",
+    "mtime": 1794330834.4397585,
+    "seen": 1794333672.238508,
+    "ast_hash": "5c9224cb6be1233930c8f1b82f00eac0",
     "semantic_hash": ""
   },
   "docker-compose.yml": {
@@ -360,27 +360,27 @@
     "semantic_hash": ""
   },
   "docs/06-evaluation-and-roadmap.md": {
-    "mtime": 1793983331.4506285,
-    "seen": 1794082635.4039109,
-    "ast_hash": "d8796171ef1a22de08677c7d46c4b390",
+    "mtime": 1794332439.6774173,
+    "seen": 1794333672.238513,
+    "ast_hash": "f3507d350b320488f4cf87e7b5ae2453",
     "semantic_hash": ""
   },
   "docs/07-implementation-roadmap.md": {
-    "mtime": 1794327162.7133338,
-    "seen": 1794327166.9540968,
-    "ast_hash": "861064051fef415e23170633491df4b7",
+    "mtime": 1794330834.4393516,
+    "seen": 1794333672.238513,
+    "ast_hash": "d443d6461e01c92e7e78f633d9d3d5c8",
     "semantic_hash": ""
   },
   "docs/08-evaluation-results.md": {
-    "mtime": 1794245361.9506495,
-    "seen": 1794245376.963976,
-    "ast_hash": "536455caa410d1aa9543aeb1825564a2",
+    "mtime": 1794333668.8211424,
+    "seen": 1794333672.238514,
+    "ast_hash": "18e8ff59f75adce6faa70f433b0237d2",
     "semantic_hash": ""
   },
   "docs/README.md": {
-    "mtime": 1794236859.918033,
-    "seen": 1794245376.9639769,
-    "ast_hash": "98d0cde78a0c8538bf0f09c13994f6d1",
+    "mtime": 1794332430.1624477,
+    "seen": 1794333672.2385159,
+    "ast_hash": "f5977b076b10d46f75235255d4e8c03b",
     "semantic_hash": ""
   },
   "docs/archive/helpdesk/01-data-analysis.md": {
@@ -414,9 +414,9 @@
     "semantic_hash": ""
   },
   "docs/decisions/0001-graph-database.md": {
-    "mtime": 1793900790.5817916,
-    "seen": 1794082635.4039161,
-    "ast_hash": "8c4e2c50288056ff56afdab5097b090e",
+    "mtime": 1794332408.7205486,
+    "seen": 1794333672.2385201,
+    "ast_hash": "2f246c622019e25f89d71940f94dbf9f",
     "semantic_hash": ""
   },
   "docs/decisions/0002-graph-construction.md": {
@@ -432,21 +432,21 @@
     "semantic_hash": ""
   },
   "docs/decisions/0004-query-interface.md": {
-    "mtime": 1793900790.5822275,
-    "seen": 1794082635.403918,
-    "ast_hash": "446ed3102d3edeebfb680b319b31e340",
+    "mtime": 1794332408.7208798,
+    "seen": 1794333672.238522,
+    "ast_hash": "aacfdb7b46c07cbcc7c6128c3e61030b",
     "semantic_hash": ""
   },
   "docs/decisions/0005-local-llm-selection.md": {
-    "mtime": 1793900790.5827072,
-    "seen": 1794082635.4039192,
-    "ast_hash": "798c059c89409e14f423b12e81d5731b",
+    "mtime": 1794332408.721079,
+    "seen": 1794333672.2385228,
+    "ast_hash": "47ea4b9c37a4c260db43fa880bf3ec39",
     "semantic_hash": ""
   },
   "docs/decisions/0006-deployment-topology.md": {
-    "mtime": 1793900790.5829566,
-    "seen": 1794082635.4039192,
-    "ast_hash": "45af48636e87556f1ba6dfba420b4bce",
+    "mtime": 1794332408.7212584,
+    "seen": 1794333672.238524,
+    "ast_hash": "66e6a259c180c6008a352dbd4aa1019e",
     "semantic_hash": ""
   },
   "docs/decisions/0007-privacy-and-access.md": {
@@ -456,9 +456,9 @@
     "semantic_hash": ""
   },
   "docs/decisions/0008-decision-model-router.md": {
-    "mtime": 1794245361.9503136,
-    "seen": 1794245376.9639869,
-    "ast_hash": "7bbedc0b368ad6b15a2d7eae92093ce8",
+    "mtime": 1794332439.6781235,
+    "seen": 1794333672.238525,
+    "ast_hash": "e069ed28a3abb74d1c4c6c756755897c",
     "semantic_hash": ""
   },
   "docs/decisions/0009-corpus-anthropic-interviewer.md": {
@@ -468,33 +468,33 @@
     "semantic_hash": ""
   },
   "docs/decisions/0010-extraction-pipeline.md": {
-    "mtime": 1793984293.335843,
-    "seen": 1794082635.4039218,
-    "ast_hash": "36b1c1cfd458bd7c54d456e7acb16d93",
+    "mtime": 1794332439.6777163,
+    "seen": 1794333672.2385259,
+    "ast_hash": "5ed3012b69be2f521cd7ffbf4b055b8e",
     "semantic_hash": ""
   },
   "docs/decisions/0011-retrieval-in-neo4j.md": {
-    "mtime": 1793900695.2772522,
-    "seen": 1794082635.403923,
-    "ast_hash": "099315fec4414148ee1e439188cdd552",
+    "mtime": 1794332408.721899,
+    "seen": 1794333672.238527,
+    "ast_hash": "8d875d1b38110aef7162154d98e8ef63",
     "semantic_hash": ""
   },
   "docs/decisions/0012-privacy-for-transcripts.md": {
-    "mtime": 1794234757.4538026,
-    "seen": 1794245376.96399,
-    "ast_hash": "594b7416a18ec3010ae8e4d6fab60086",
+    "mtime": 1794332408.7221751,
+    "seen": 1794333672.238528,
+    "ast_hash": "cda0ad97bcec5cb9b200a8bfdc391faa",
     "semantic_hash": ""
   },
   "docs/decisions/0013-waive-human-labels.md": {
-    "mtime": 1793983331.401289,
-    "seen": 1794082635.403924,
-    "ast_hash": "ab073594a2c645df88389452ae0087d8",
+    "mtime": 1794332439.6786208,
+    "seen": 1794333672.238528,
+    "ast_hash": "dbdce96440265990b722c882ca315f49",
     "semantic_hash": ""
   },
   "docs/decisions/README.md": {
-    "mtime": 1794079404.5659902,
-    "seen": 1794082635.403924,
-    "ast_hash": "7be2d6f97d4631d1272a4a500208053d",
+    "mtime": 1794332439.676853,
+    "seen": 1794333672.238529,
+    "ast_hash": "6cf4a8f5542375b97fb5e6e3bd355a0b",
     "semantic_hash": ""
   },
   "docs/labeling-guide.md": {
@@ -549,6 +549,18 @@
     "mtime": 1794324437.2809265,
     "seen": 1794327166.9540522,
     "ast_hash": "97e47b136a7a99cb273143a3880b9d87",
+    "semantic_hash": ""
+  },
+  "eval/recall_remeasure.py": {
+    "mtime": 1794329554.2388353,
+    "seen": 1794333672.2384698,
+    "ast_hash": "53dde3533df9b8d35b1f1da074ea48ec",
+    "semantic_hash": ""
+  },
+  "docs/09-completion-status.md": {
+    "mtime": 1794333668.821431,
+    "seen": 1794333672.238515,
+    "ast_hash": "f3630ddbc5b9dd4cbce4f0622b749a65",
     "semantic_hash": ""
   }
 }

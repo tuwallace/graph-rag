@@ -24,12 +24,13 @@
 
 ## Relationships
 
-- [extract.py](extract.py.md) (3 shared connections)
 - [pathlib](pathlib.md) (3 shared connections)
-- [confirm_adr0008.py](confirm_adr0008.py.md) (2 shared connections)
+- [extract.py](extract.py.md) (2 shared connections)
 - [pipeline.py](pipeline.py.md) (2 shared connections)
 - [__init__.py](__init__.py.md) (2 shared connections)
-- [router.py](router.py.md) (1 shared connections)
+- [sys](sys.md) (2 shared connections)
+- [decision.py](decision.py.md) (1 shared connections)
+- [confirm_adr0008.py](confirm_adr0008.py.md) (1 shared connections)
 - [05_make_label_sheets.py](05_make_label_sheets.py.md) (1 shared connections)
 
 ## Source Files

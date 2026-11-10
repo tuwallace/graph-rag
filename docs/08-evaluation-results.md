@@ -171,3 +171,19 @@ Fallback reasons: quote not in tool output 10, figures not in tool output 2, quo
 | What is 2+2? | none | 0 | 12 s | The model answered "4" itself and never called the tool, so the `out_of_scope` route was not exercised |
 
 **What it shows.** The wiring works end to end: `ollmcp` lists the tool, the router picks the right route with high confidence on four of four in-scope questions, each answer rests on the stored data, and the quotes are real. But in this path `qwen3` writes the final text, so **the guarantees of `grounded.py` (validated quotes, no unsupported figures) do not apply**: the model added a false "2x" and unsupported explanations, lightly edited two quotes, and answered an out-of-scope question from its own knowledge. Latency is 51 to 72 s per in-scope question with thinking on, against about 7 s through the grounded path in the evaluation. Fixing this is a decision: for example return the grounded text from the server with an instruction to relay it unchanged, or turn thinking off in `ollmcp`.
+
+### Fix attempt and re-test (2026-11-10)
+
+Change: `ask_interviews` now returns the validated facts in an `answer` field plus an `instruction`, and the server instructions tell the client to call the tool for every message (also unrelated ones), pass the message word for word, relay `answer` unchanged, and never invent quotes. `tests` and `scripts/mcp_smoke.py` pass; the out-of-scope route now returns its refusal through the tool. The same five questions were then run through `ollmcp` several times (`scripts/live_ollmcp_session.py`; one run per row; a quote counts as valid only if it appears in that answer's tool output).
+
+| Run | Thinking | Context cleared before each question | In-scope questions where the tool was called | Quotes in answers found in tool output | Notes |
+|---|---|---|---|---|---|
+| 1 (before the fix) | on | no | 4/4 | 8/8 in the checked answers, 2 with bracketed edits | false "2x", added explanations, 2+2 answered by the model |
+| 2 | on | no | 3/4 | 4/11 | skipped the tool on the quotes question and **invented seven quotes with made-up interview ids** |
+| 3 | off | no | 4/4 | 4/4 | clean relay; the model shortened the last query, so the router asked for clarification; 2+2 refused through the tool |
+| 4 | off | no | 1/4 | 0/9 | skipped the tool for three questions and invented quotes |
+| 5 | off | no | 2/4 | 0/9 | skipped the tool for two questions and invented quotes |
+| 6 | off | yes | 4/4 | 9/9 | all figures in the tool output, no added sections; 2+2 answered by the model |
+| 7 | off | yes | 4/4 | 9/9 | same as run 6 |
+
+**Result.** With thinking off and the conversation cleared before each question (`/tm`, `/cc` in `ollmcp`) the relay is faithful in two of two runs: the tool is called every time, quotes are verbatim, no unsupported figures or added sections. Without that, `qwen3:8b-16k` skipped the tool in a long conversation in 3 of 5 runs and wrote quotes with invented ids. **The server cannot enforce this:** the client model decides whether to call the tool and what to say. Treat free-form `ollmcp` chat with this model as unvalidated; the validated path is `grounded.py` and the evaluation harness. Out-of-scope questions are sometimes answered by the model itself without the tool (runs 6 and 7: "4"). Latency with thinking off and context cleared: 24 to 59 s per in-scope question (51 to 105 s with thinking on), still far above the 7 s of the grounded path because the client model has to read and rewrite long tool output. Small n (7 runs of 5 questions), one model.

@@ -1,12 +1,11 @@
 # extract.py
 
-> 16 nodes
+> 15 nodes
 
 ## Key Concepts
 
 - **extract.py** (23 connections) — `src/graphrag/extract.py`
 - **parse.py** (15 connections) — `src/graphrag/parse.py`
-- **re** (15 connections)
 - **ollama** (13 connections)
 - **segments()** (11 connections) — `src/graphrag/parse.py`
 - **new_concern_check.py** (11 connections) — `eval/new_concern_check.py`
@@ -23,18 +22,18 @@
 
 ## Relationships
 
-- [ground.py](ground.py.md) (15 shared connections)
-- [pipeline.py](pipeline.py.md) (12 shared connections)
-- [__init__.py](__init__.py.md) (7 shared connections)
-- [sys](sys.md) (7 shared connections)
+- [ground.py](ground.py.md) (14 shared connections)
+- [pipeline.py](pipeline.py.md) (10 shared connections)
 - [load.py](load.py.md) (6 shared connections)
-- [pathlib](pathlib.md) (3 shared connections)
+- [__init__.py](__init__.py.md) (6 shared connections)
+- [sys](sys.md) (6 shared connections)
+- [queries.py](queries.py.md) (4 shared connections)
 - [judge32b.py](judge32b.py.md) (3 shared connections)
-- [score.py](score.py.md) (3 shared connections)
-- [confirm_adr0008.py](confirm_adr0008.py.md) (3 shared connections)
-- [queries.py](queries.py.md) (3 shared connections)
-- [grounded.py](grounded.py.md) (2 shared connections)
-- [themes.py](themes.py.md) (2 shared connections)
+- [pathlib](pathlib.md) (2 shared connections)
+- [score.py](score.py.md) (2 shared connections)
+- [05_make_label_sheets.py](05_make_label_sheets.py.md) (2 shared connections)
+- [decision.py](decision.py.md) (1 shared connections)
+- [run_eval.py](run_eval.py.md) (1 shared connections)
 
 ## Source Files
 
@@ -44,7 +43,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 95 (100%)
+- EXTRACTED: 82 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

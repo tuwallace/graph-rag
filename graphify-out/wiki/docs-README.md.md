@@ -33,18 +33,18 @@
 
 ## Relationships
 
-- [mcp_server.py](mcp_server.py.md) (4 shared connections)
-- [router.py](router.py.md) (3 shared connections)
+- [decision.py](decision.py.md) (3 shared connections)
+- [grounded.py](grounded.py.md) (2 shared connections)
 - [02. Architecture](02._Architecture.md) (1 shared connections)
+- [04. Query routing and MCP tool surface (Interviewer corpus)](04._Query_routing_and_MCP_tool_surface_Interviewer_corpus.md) (1 shared connections)
+- [06. Evaluation and roadmap](06._Evaluation_and_roadmap.md) (1 shared connections)
 - [07. Implementation roadmap](07._Implementation_roadmap.md) (1 shared connections)
-- [Label confirmation](Label_confirmation.md) (1 shared connections)
-- [09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)](09._Completion_status_2026-11-10,_updated_after_the_owner's_decisions_and_Test_1.md) (1 shared connections)
+- [ask_interviews](ask_interviews.md) (1 shared connections)
 - [ADR-0001: Graph database](ADR-0001-_Graph_database.md) (1 shared connections)
 - [ADR-0002: How the graph is built](ADR-0002-_How_the_graph_is_built.md) (1 shared connections)
 - [ADR-0003: Vector retrieval and graph expansion](ADR-0003-_Vector_retrieval_and_graph_expansion.md) (1 shared connections)
 - [ADR-0004: Query interface the LLM uses](ADR-0004-_Query_interface_the_LLM_uses.md) (1 shared connections)
 - [ADR-0005: Local LLM selection](ADR-0005-_Local_LLM_selection.md) (1 shared connections)
-- [ADR-0006: Deployment topology](ADR-0006-_Deployment_topology.md) (1 shared connections)
 
 ## Source Files
 

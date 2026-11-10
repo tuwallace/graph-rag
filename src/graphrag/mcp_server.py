@@ -10,8 +10,9 @@ from . import config as C, queries as Q, router, grounded
 
 PROFILE = os.getenv("GRAPHRAG_PROFILE", "routed")   # routed | typed
 mcp = FastMCP("interview-graph", instructions=(
-    "Answer only from tool output. Cite interview ids. Quote at most one sentence per source. These are findings from a sample of AI-led "
-    "interviews, not facts about workers in general. If a tool returns clarify, unavailable or out_of_scope, say so; do not guess."))
+    "Call ask_interviews once for every user message, including messages that look unrelated to the interviews: the tool decides and replies. Pass the user's message as `question` word for word; do not shorten or rephrase it. Never answer from your own knowledge or invent quotes. "
+    "Then reply with the `answer` field exactly as given. Do not rewrite it and do not add anything: no summary, takeaways, interpretation, "
+    "explanations of why, ratios or percentages that are not in it, and do not edit or bracket the quotes."))
 
 _driver = None
 _index = None
@@ -35,9 +36,11 @@ def _resolve(concept: str):
 if PROFILE == "routed":
     @mcp.tool
     def ask_interviews(question: str) -> dict:
-        """Answer a question about the AI interview transcripts (1,250 interviews across workforce, creatives and scientists; a 500-interview sample is loaded). Routes internally to search, counts, group comparison, themes or quotes. Reply to the user using the `rendered` field: copy quotes exactly with their interview ids, and do not add figures that are not in it."""
+        """Answer any user message about the AI interview transcripts (a 500-interview sample of the 1,250 published; workforce, creatives and scientists). Call it for every message, including unrelated ones, passing the user's message word for word as `question`: it routes internally to search, counts, group comparison, themes or quotes, and refuses what it cannot answer. Relay the `answer` field to the user exactly as given, with nothing added."""
         p = router.answer(question, driver(), index())
-        return {"route": p["route"], "route_confidence": p["route_confidence"], "status": p["status"], "rendered": grounded.render(p)}
+        text = grounded.render(p)
+        return {"route": p["route"], "route_confidence": p["route_confidence"], "status": p["status"], "answer": text,
+                "instruction": "Reply with the answer field exactly as given. Add nothing."}
 else:
     @mcp.tool
     def search_segments(query: str) -> list[dict]:

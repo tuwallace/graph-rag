@@ -1,6 +1,6 @@
 # themes.py
 
-> 21 nodes
+> 22 nodes
 
 ## Key Concepts
 
@@ -9,6 +9,7 @@
 - **main()** (6 connections) — `src/graphrag/themes.py`
 - **summarise()** (6 connections) — `src/graphrag/themes.py`
 - **detect()** (4 connections) — `src/graphrag/themes.py`
+- **argparse** (4 connections)
 - **fetch()** (3 connections) — `src/graphrag/themes.py`
 - **M8 outcome (done 2026-11-07)** (3 connections) — `docs/07-implementation-roadmap.md`
 - **math** (3 connections)
@@ -31,9 +32,12 @@
 - [pipeline.py](pipeline.py.md) (4 shared connections)
 - [sys](sys.md) (3 shared connections)
 - [__init__.py](__init__.py.md) (3 shared connections)
-- [extract.py](extract.py.md) (2 shared connections)
+- [extract.py](extract.py.md) (1 shared connections)
 - [pathlib](pathlib.md) (1 shared connections)
 - [07. Implementation roadmap](07._Implementation_roadmap.md) (1 shared connections)
+- [queries.py](queries.py.md) (1 shared connections)
+- [load.py](load.py.md) (1 shared connections)
+- [06_score_labels.py](06_score_labels.py.md) (1 shared connections)
 
 ## Source Files
 
@@ -43,8 +47,8 @@
 
 ## Audit Trail
 
-- EXTRACTED: 42 (95%)
-- INFERRED: 2 (5%)
+- EXTRACTED: 45 (96%)
+- INFERRED: 2 (4%)
 - AMBIGUOUS: 0 (0%)
 
 ---

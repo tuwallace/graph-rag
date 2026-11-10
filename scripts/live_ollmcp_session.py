@@ -1,5 +1,5 @@
 """Drive a live ollmcp session (qwen3:8b-16k, routed profile, mcp.json) through a pseudo-terminal with five fixed questions, confirming each tool call.
-Run: uv run --with pexpect python scripts/live_ollmcp_session.py data/live_ollmcp.log   (needs Ollama, Neo4j and the models running; the log is git-ignored)
+Run: uv run --with pexpect python scripts/live_ollmcp_session.py data/live_ollmcp.log [nothink] [clear]   (needs Ollama, Neo4j and the models running; the log is git-ignored)
 """
 import pexpect, sys, re, time, json
 Q = ["What are the main themes across the interviews?",
@@ -19,6 +19,10 @@ def wait_prompt():
         if i == 1: c.sendline("y"); continue
         return False
 ok = wait_prompt(); print("started", ok, flush=True)
+if "nothink" in sys.argv[2:]:
+    c.sendline("/tm"); wait_prompt()   # toggle thinking mode off
+CLEAR = "clear" in sys.argv[2:]
 for q in Q:
+    if CLEAR: c.sendline("/cc"); wait_prompt()   # clear the conversation so earlier answers cannot be reused
     t0 = time.time(); c.sendline(q); r = wait_prompt(); print(f"{time.time()-t0:5.1f}s done={r}  {q}", flush=True)
-c.sendline("quit"); time.sleep(2); c.close()
+c.sendline("/quit"); time.sleep(2); c.close()

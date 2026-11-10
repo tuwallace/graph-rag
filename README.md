@@ -56,6 +56,8 @@ PYTHONPATH=src uv run python -m graphrag.themes --run-id demo1      # needs the 
 ollmcp --servers-json mcp.json --model qwen3:8b-16k
 ```
 
+**Using it in `ollmcp`.** The server returns validated facts in an `answer` field and tells the client to relay it unchanged, but a small client model can ignore that. In a live test, `qwen3:8b-16k` only called the tool reliably with thinking off (`/tm` in `ollmcp`) and the conversation cleared before each question (`/cc`); otherwise it sometimes skipped the tool and invented quotes. Questions unrelated to the interviews may be answered by the model itself without the tool. See `docs/08-evaluation-results.md`.
+
 Tests: `uv run pytest`. Evaluation: `eval/`.
 
 ## Privacy and safety

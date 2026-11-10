@@ -15,11 +15,10 @@
 
 ## Relationships
 
+- [sys](sys.md) (2 shared connections)
 - [05_make_label_sheets.py](05_make_label_sheets.py.md) (1 shared connections)
 - [pathlib](pathlib.md) (1 shared connections)
-- [extract.py](extract.py.md) (1 shared connections)
-- [sys](sys.md) (1 shared connections)
-- [pipeline.py](pipeline.py.md) (1 shared connections)
+- [queries.py](queries.py.md) (1 shared connections)
 
 ## Source Files
 

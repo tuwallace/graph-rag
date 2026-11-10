@@ -1,17 +1,17 @@
 # __init__.py
 
-> 18 nodes
+> 17 nodes
 
 ## Key Concepts
 
 - **__init__.py** (36 connections) — `src/graphrag/__init__.py`
-- **json** (32 connections)
+- **json** (33 connections)
 - **collections** (11 connections)
 - **recall_remeasure.py** (8 connections) — `eval/recall_remeasure.py`
 - **route_generated.py** (8 connections) — `eval/route_generated.py`
 - **compare_m2.py** (8 connections) — `scripts/compare_m2.py`
-- **make_label_sheet_v3.py** (8 connections) — `scripts/make_label_sheet_v3.py`
 - **check_labels.py** (7 connections) — `eval/check_labels.py`
+- **04_analyze.py** (5 connections) — `spike/04_analyze.py`
 - **check()** (1 connections) — `eval/check_labels.py`
 - **jl()** (1 connections) — `eval/check_labels.py`
 - **cover()** (1 connections) — `eval/recall_remeasure.py`
@@ -21,22 +21,21 @@
 - **Re-measure recall on the 10 transcripts of eval/judge32b.py recall, against the…** (1 connections) — `eval/recall_remeasure.py`
 - **Routing accuracy on questions written by a different model (qwen2.5:32b) from…** (1 connections) — `eval/route_generated.py`
 - **Compare v3 against the labelled v2 edges (data/labeling_claude, LLM labels).…** (1 connections) — `scripts/compare_m2.py`
-- **Blind labelling sheet from extraction v3.2 output -> data/labeling_v3/ (git-…** (1 connections) — `scripts/make_label_sheet_v3.py`
 
 ## Relationships
 
-- [sys](sys.md) (10 shared connections)
-- [pipeline.py](pipeline.py.md) (10 shared connections)
-- [confirm_adr0008.py](confirm_adr0008.py.md) (8 shared connections)
-- [extract.py](extract.py.md) (7 shared connections)
+- [sys](sys.md) (14 shared connections)
+- [pipeline.py](pipeline.py.md) (8 shared connections)
 - [pathlib](pathlib.md) (7 shared connections)
+- [extract.py](extract.py.md) (6 shared connections)
 - [queries.py](queries.py.md) (6 shared connections)
+- [05_make_label_sheets.py](05_make_label_sheets.py.md) (5 shared connections)
 - [run_eval.py](run_eval.py.md) (3 shared connections)
-- [05_make_label_sheets.py](05_make_label_sheets.py.md) (3 shared connections)
-- [ground.py](ground.py.md) (3 shared connections)
 - [load.py](load.py.md) (3 shared connections)
-- [mcp_server.py](mcp_server.py.md) (3 shared connections)
 - [themes.py](themes.py.md) (3 shared connections)
+- [ground.py](ground.py.md) (2 shared connections)
+- [confirm_adr0008.py](confirm_adr0008.py.md) (2 shared connections)
+- [judge32b.py](judge32b.py.md) (2 shared connections)
 
 ## Source Files
 
@@ -44,12 +43,12 @@
 - `eval/recall_remeasure.py`
 - `eval/route_generated.py`
 - `scripts/compare_m2.py`
-- `scripts/make_label_sheet_v3.py`
+- `spike/04_analyze.py`
 - `src/graphrag/__init__.py`
 
 ## Audit Trail
 
-- EXTRACTED: 104 (100%)
+- EXTRACTED: 102 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

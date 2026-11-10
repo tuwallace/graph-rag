@@ -33,11 +33,14 @@
 
 ## Relationships
 
-- [extract.py](extract.py.md) (15 shared connections)
-- [pipeline.py](pipeline.py.md) (4 shared connections)
-- [__init__.py](__init__.py.md) (3 shared connections)
+- [extract.py](extract.py.md) (14 shared connections)
+- [pipeline.py](pipeline.py.md) (3 shared connections)
+- [__init__.py](__init__.py.md) (2 shared connections)
 - [grounded.py](grounded.py.md) (2 shared connections)
 - [load.py](load.py.md) (2 shared connections)
+- [queries.py](queries.py.md) (1 shared connections)
+- [sys](sys.md) (1 shared connections)
+- [05_make_label_sheets.py](05_make_label_sheets.py.md) (1 shared connections)
 - [07. Implementation roadmap](07._Implementation_roadmap.md) (1 shared connections)
 
 ## Source Files
