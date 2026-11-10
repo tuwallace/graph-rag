@@ -3,14 +3,16 @@ Random sample (seed 21) of 120 of the new edges, labelled by qwen2.5:32b (run al
 Model-judged; the owner has not labelled these. Output: data/eval/concern_pass/new_edges_precision.jsonl. Resumable.
 Run: PYTHONPATH=src:. uv run python eval/new_concern_check.py
 """
-import json, random, collections
+import json, os, random, collections
 import ollama
 from graphrag import config as C
 from graphrag.parse import segments as parse_segments
 from graphrag.pipeline import select, unload
 
-MODEL = "qwen2.5:32b-instruct-q4_K_M"; N = 120
-OUT = C.ROOT / "data" / "eval" / "concern_pass" / "new_edges_precision.jsonl"
+MODEL = "qwen2.5:32b-instruct-q4_K_M"
+FRESH = os.environ.get("FRESH") == "1"   # second check after the verify-0.6 filter: fresh sample, excluding the 120 edges used to choose the threshold
+N = 100 if FRESH else 120
+OUT = C.ROOT / "data" / "eval" / "concern_pass" / ("new_edges_precision_filtered.jsonl" if FRESH else "new_edges_precision.jsonl")
 client = ollama.Client(host=C.OLLAMA_URL, timeout=900)
 CLAIM = "The participant is worried, frustrated or distrustful about AI because of: {n}."
 
@@ -29,7 +31,11 @@ if __name__ == "__main__":
         r = json.loads(l)
         for i, e in enumerate(r["edges"]):
             if e.get("prompt_version") == "concern-loose-v1": pool.append((r["transcript_id"], r["group"], i, e))
-    sample = random.Random(21).sample(pool, N)
+    if FRESH:
+        from graphrag.extract import _nq
+        used = {tuple(x) for x in json.load(open(C.ROOT / "data" / "eval" / "concern_pass" / "first_sample_quotes.json"))}
+        pool = [x for x in pool if (x[0], _nq(x[3]["quote"])) not in used]
+    sample = random.Random(22 if FRESH else 21).sample(pool, N)
     done = {json.loads(l)["key"] for l in open(OUT)} if OUT.exists() else set()
     print(f"pool {len(pool)}, sample {len(sample)}, done {len(done)}", flush=True)
     for j, (tid, grp, i, e) in enumerate(sample, 1):

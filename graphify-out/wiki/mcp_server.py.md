@@ -34,15 +34,15 @@
 ## Relationships
 
 - [router.py](router.py.md) (4 shared connections)
+- [json](json.md) (4 shared connections)
 - [queries.py](queries.py.md) (4 shared connections)
 - [docs/README.md](docs-README.md.md) (4 shared connections)
-- [load.py](load.py.md) (3 shared connections)
 - [07. Implementation roadmap](07._Implementation_roadmap.md) (3 shared connections)
-- [run_eval.py](run_eval.py.md) (3 shared connections)
-- [json](json.md) (2 shared connections)
-- [__init__.py](__init__.py.md) (2 shared connections)
+- [__init__.py](__init__.py.md) (3 shared connections)
+- [load.py](load.py.md) (2 shared connections)
 - [pipeline.py](pipeline.py.md) (1 shared connections)
-- [judge32b.py](judge32b.py.md) (1 shared connections)
+- [sys](sys.md) (1 shared connections)
+- [pathlib](pathlib.md) (1 shared connections)
 
 ## Source Files
 

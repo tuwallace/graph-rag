@@ -13,7 +13,7 @@
 
 ## Relationships
 
-- [json](json.md) (1 shared connections)
+- [collections](collections.md) (1 shared connections)
 - [__init__.py](__init__.py.md) (1 shared connections)
 
 ## Source Files

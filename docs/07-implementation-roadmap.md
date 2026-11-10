@@ -377,15 +377,15 @@ The new edges are about as precise as the old concern edges (63% correct, 87% co
 
 ## Concern pass applied to all 500 interviews (2026-11-09)
 
-Decision by the owner. `eval/concern_pass.py` (`CONCERN_SCOPE=all`) re-extracted concerns for all 500 interviews with the looser prompt `concern-loose-v1`, verified them at the same threshold (0.2), and `graphrag.concern_merge` added the ones whose quote was not already used in that interview (originals are kept as `graph_input.v1.jsonl` and `normalise.v1.json`). Existing edges and canonical names are unchanged; new names joined an existing canonical concern at cosine 0.85 or more, else clustered among themselves. Then Neo4j was reloaded (all checks pass) and the themes were rebuilt.
+Decision by the owner. `eval/concern_pass.py` (`CONCERN_SCOPE=all`) re-extracted concerns for all 500 interviews with the looser prompt `concern-loose-v1`, verified them at the same threshold (0.2), and `graphrag.concern_merge` added the ones whose quote was not already used in that interview (originals are kept as `graph_input.v1.jsonl` and `normalise.v1.json`). Existing edges and canonical names are unchanged; new names joined an existing canonical concern at cosine 0.85 or more, else clustered among themselves. This section first describes the unfiltered merge (1,208 edges); the filtered result that is now in the graph is under "Filter at verify 0.6" below. Then Neo4j was reloaded (all checks pass) and the themes were rebuilt.
 
 | | Before | After |
 |---|---|---|
-| Concern edges (`RAISES`) | 1,358 | 2,566 (+1,208 across 428 interviews) |
-| Concern nodes | 686 | 967 (591 new names joined existing concerns, 281 became new ones) |
+| Concern edges (`RAISES`) | 1,358 | 1,861 after the 0.6 filter below (2,566 before it; +503 across 307 interviews) |
+| Concern nodes | 686 | 786 (254 new names joined existing concerns, 100 became new ones) |
 | Task / AIUse edges | 600 / 3,020 | unchanged |
-| Most frequent concern (interviews) | hallucinations, 33 | ai inaccuracy 41, reliability 36, hallucinations 34 |
-| Themes | 12 | 11 (rebuilt; labels differ) |
+| Most frequent concerns (interviews) | hallucinations (33 mentions) | hallucinations 30, ai inaccuracy 28, reliability 25, ai limitations 16 |
+| Themes | 12 | 12 (rebuilt; labels differ) |
 
 **Quality was first known only from the 10-transcript test** (15 of 27 correct); the graph-wide check below replaces that estimate. Concern counts are higher and still lower bounds. Concern rankings changed, so any earlier concern figure in this file or in `08-evaluation-results.md` describes the graph before this pass.
 
@@ -410,3 +410,27 @@ Decision by the owner. `eval/concern_pass.py` (`CONCERN_SCOPE=all`) re-extracted
 **This is worse than the 10-transcript test (56% correct, 15% wrong) and worse than the original concern edges (63% correct, 13% wrong).** About a third of the new edges are wrong, not only hypothetical. The loose prompt raised concern coverage but at a clear cost in precision, so concern counts and rankings in the current graph carry that error, most in the workforce group and in edges with a low verify score. Concern counts remain lower bounds on coverage and are now also noisy on precision.
 
 Option not applied: raising the verify threshold for the new edges only (for example 0.6) would keep roughly half of them at about 61% correct and 20% wrong on this sample. The threshold would be chosen on the same sample used to measure it, so it would need a fresh sample to confirm. This is the owner's decision.
+
+### Filter at verify 0.6 (2026-11-10, owner decision)
+
+The owner chose to keep only new concern edges with a verify `supports` score of at least 0.6 (`NEW_SUPPORTS_MIN` in `concern_merge.py`; original edges keep the 0.2 threshold). The 1,208 unfiltered edges and the 281 concern nodes only they used were deleted from Neo4j, the 503 surviving edges were loaded (all load checks pass), and the themes were rebuilt (12 themes, all validated).
+
+| Graph after the filter | Count |
+|---|---|
+| Concern edges / nodes | 1,861 / 786 |
+| New edges kept / dropped | 503 / 705 |
+| Interviews with at least one new edge | 307 |
+
+**Fresh-sample check** (`FRESH=1 eval/new_concern_check.py`): 100 random kept new edges, excluding the 120 edges used to choose the threshold, labelled by `qwen2.5:32b` (model-judged, not by the owner; n = 100, about plus or minus 9 points).
+
+| Subset | n | Correct | Hypothetical | Wrong | Correct only | Correct or hypothetical |
+|---|---|---|---|---|---|---|
+| All filtered new edges | 100 | 76 | 10 | 14 | 76% | 86% |
+| Counted by queries | 95 | 74 | 7 | 14 | 78% | 85% |
+| Workforce | 51 | 37 | 4 | 10 | 73% | 80% |
+| Creatives | 22 | 17 | 4 | 1 | 77% | 95% |
+| Scientists | 27 | 22 | 2 | 3 | 81% | 89% |
+
+The filtered new edges are at least as precise as the original concern edges (63% correct, 87% counting hypothetical; 14% wrong against 13%). The 0.6 bucket scored 61% in the first sample and 76% in the fresh one, so the true figure is probably in between, and 76% should be read as an upper estimate. Cost: coverage. Of the 1,208 new edges only 503 remain, so concern recall sits between the 34% baseline and the 51% seen with the unfiltered pass on the 10 transcripts; **recall was not re-measured after the filter.**
+
+Re-checks after the filter: router v3 gives 34 of 36 on the original 40 and 18 of 18 on the confirmation 20, route-decision p50 1.68 s and p95 1.98 s (max 4.09 s, n = 20), and the MCP smoke test passes. The M7, 32b precision and recall, and groundedness figures were not re-run on this graph.

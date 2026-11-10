@@ -34,7 +34,7 @@
 ## Relationships
 
 - [mcp_server.py](mcp_server.py.md) (4 shared connections)
-- [router.py](router.py.md) (2 shared connections)
+- [router.py](router.py.md) (3 shared connections)
 - [02. Architecture](02._Architecture.md) (1 shared connections)
 - [07. Implementation roadmap](07._Implementation_roadmap.md) (1 shared connections)
 - [Label confirmation](Label_confirmation.md) (1 shared connections)

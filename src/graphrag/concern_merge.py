@@ -12,7 +12,8 @@ from .extract import _nq
 from .manifest import Stage
 
 PASS_VERSION = "concern-loose-v1"
-VERIFY_MIN = 0.2
+VERIFY_MIN = 0.2          # same as the main pipeline
+NEW_SUPPORTS_MIN = 0.6    # stricter for the loose pass: a 120-edge sample below 0.6 was 38% correct, 46% wrong (docs/07, 2026-11-10)
 
 
 def new_items(extract_rows: list[dict], verify_rows: dict, existing_quotes: dict[str, set]) -> dict[str, list[dict]]:
@@ -23,7 +24,7 @@ def new_items(extract_rows: list[dict], verify_rows: dict, existing_quotes: dict
         used, rows = set(existing_quotes.get(r["key"], set())), []
         for it, sc in zip(r["items"], v["scores"]):
             q = _nq(it["quote"])
-            if it.get("kind") == "concern" and it["grounded"] and it.get("segment_idx") is not None and V.keep(sc, VERIFY_MIN) and q not in used:
+            if it.get("kind") == "concern" and it["grounded"] and it.get("segment_idx") is not None and V.keep(sc, NEW_SUPPORTS_MIN) and q not in used:
                 used.add(q); rows.append({**it, "verify": sc})
         out[r["key"]] = rows
     return out

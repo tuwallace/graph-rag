@@ -12,9 +12,8 @@
 
 ## Relationships
 
-- [json](json.md) (3 shared connections)
-- [__init__.py](__init__.py.md) (1 shared connections)
-- [load.py](load.py.md) (1 shared connections)
+- [json](json.md) (4 shared connections)
+- [collections](collections.md) (1 shared connections)
 
 ## Source Files
 
