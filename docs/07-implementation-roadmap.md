@@ -387,8 +387,26 @@ Decision by the owner. `eval/concern_pass.py` (`CONCERN_SCOPE=all`) re-extracted
 | Most frequent concern (interviews) | hallucinations, 33 | ai inaccuracy 41, reliability 36, hallucinations 34 |
 | Themes | 12 | 11 (rebuilt; labels differ) |
 
-**Quality is only known from the 10-transcript test.** There 15 of 27 new edges (56%) were judged correct, 8 hypothetical and 4 wrong. The 1,208 new edges across 500 interviews were **not labelled**, so expect roughly the same mix: about a third are hypothetical or wrong, and the queries count only `current` and `affirmed` edges. Concern counts are higher and still lower bounds. Concern rankings changed, so any earlier concern figure in this file or in `08-evaluation-results.md` describes the graph before this pass.
+**Quality was first known only from the 10-transcript test** (15 of 27 correct); the graph-wide check below replaces that estimate. Concern counts are higher and still lower bounds. Concern rankings changed, so any earlier concern figure in this file or in `08-evaluation-results.md` describes the graph before this pass.
 
 **Re-checks on the new graph:** router v3 gives the same routing results on the original 40 (34 of 36 in scope) and the confirmation 20 (18 of 18); route-decision p50 1.68 s, p95 1.97 s (max 4.29 s), just under the accepted 2 s bound. `scripts/mcp_smoke.py` passes (all six routes). The M7 scores in `08-evaluation-results.md`, the 32b precision and recall figures, and the groundedness results were **not re-run** on the new graph and describe the graph before this pass.
 
 **Theme rebuild bug fixed:** label retries ran at temperature 0 and repeated the same invalid output, which dropped the largest theme. Retries now use a small temperature and tell the model why its answer was rejected.
+
+### Graph-wide check of the new concern edges (2026-11-10)
+
+`eval/new_concern_check.py`: a random sample of 120 of the 1,208 new edges (seed 21), labelled by `qwen2.5:32b` run alone with the same prompt as the earlier precision check. Model-judged; not labelled by the owner. n = 120, so each figure is roughly plus or minus 9 points.
+
+| Subset | n | Correct | Hypothetical | Wrong | Correct only | Correct or hypothetical |
+|---|---|---|---|---|---|---|
+| All new edges | 120 | 59 | 21 | 40 | 49% | 67% |
+| Counted by queries (current, affirmed) | 111 | 58 | 17 | 36 | 52% | 68% |
+| Workforce | 62 | 27 | 9 | 26 | 44% | 58% |
+| Creatives | 26 | 11 | 9 | 6 | 42% | 77% |
+| Scientists | 32 | 21 | 3 | 8 | 66% | 75% |
+| Verify score at least 0.6 | 59 | 36 | 11 | 12 | 61% | 80% |
+| Verify score under 0.6 | 61 | 23 | 10 | 28 | 38% | 54% |
+
+**This is worse than the 10-transcript test (56% correct, 15% wrong) and worse than the original concern edges (63% correct, 13% wrong).** About a third of the new edges are wrong, not only hypothetical. The loose prompt raised concern coverage but at a clear cost in precision, so concern counts and rankings in the current graph carry that error, most in the workforce group and in edges with a low verify score. Concern counts remain lower bounds on coverage and are now also noisy on precision.
+
+Option not applied: raising the verify threshold for the new edges only (for example 0.6) would keep roughly half of them at about 61% correct and 20% wrong on this sample. The threshold would be chosen on the same sample used to measure it, so it would need a fresh sample to confirm. This is the owner's decision.
