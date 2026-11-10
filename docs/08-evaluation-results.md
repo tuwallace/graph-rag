@@ -178,7 +178,7 @@ Change: `ask_interviews` now returns the validated facts in an `answer` field pl
 
 | Run | Thinking | Context cleared before each question | In-scope questions where the tool was called | Quotes in answers found in tool output | Notes |
 |---|---|---|---|---|---|
-| 1 (before the fix) | on | no | 4/4 | 8/8 in the checked answers, 2 with bracketed edits | false "2x", added explanations, 2+2 answered by the model |
+| 1 (before the fix) | on | no | 4/4 | 7/9 exact; the other 2 had bracketed edits | false "2x", added explanations, 2+2 answered by the model |
 | 2 | on | no | 3/4 | 4/11 | skipped the tool on the quotes question and **invented seven quotes with made-up interview ids** |
 | 3 | off | no | 4/4 | 4/4 | clean relay; the model shortened the last query, so the router asked for clarification; 2+2 refused through the tool |
 | 4 | off | no | 1/4 | 0/9 | skipped the tool for three questions and invented quotes |
