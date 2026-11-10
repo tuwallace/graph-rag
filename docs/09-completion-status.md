@@ -44,10 +44,15 @@ All ADRs accepted; precision target met; Gates G1 and G2 stay closed; router v3 
 1. ~~Re-run the end-to-end evaluation on the final graph~~ **Done 2026-11-10** (M7 table, groundedness, end-to-end latency per route; see 08).
 2. ~~Hygiene check on the concern-loose prompt~~ **Done:** 2 of 500 transcripts flagged ("human connection", a phrase in the prompt; 31 raw items, none kept in the graph).
 3. ~~Live session check~~ **Done 2026-11-10** (see 08). The server now returns an `answer` field with relay instructions; with thinking off and context cleared the relay is faithful (2 of 2 runs), otherwise `qwen3:8b-16k` skipped the tool in 3 of 5 runs and invented quotes. This is a limit of the small client model that the server cannot enforce; it is documented in the README.
-4. **PII residuals** listed in ADR-0012: first names alone, lowercase employers, phone formats.
+4. ~~PII residuals~~ **Done 2026-11-10** (see ADR-0012 and `scripts/pii_residuals.py`; also part of the pre-push check).
 5. **Run-to-run stability:** every result is one run; the larger-model judge was run once per item.
 6. **Normalisation error rate:** merge errors and missed merges on a sample, as the plan in 06 asks; the new concern names were merged by the same 0.85 threshold without a sample review.
 7. **Attitude labels:** agreement was 0.63 in M3 and no calibration curve was reported.
+
+## Closed after the last update (2026-11-10)
+
+- `theme_overview` latency lead: explained, not a regression (the first run had no themes; see 08).
+- PII residuals: scan run; see ADR-0012 and `scripts/pii_residuals.py`.
 
 ## Housekeeping
 

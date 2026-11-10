@@ -3,6 +3,7 @@
   2. no tracked file over 1 MB
   3. no tracked text file shares a run of MAX_RUN words with the corpus in data/raw (a sentence-length excerpt is allowed, a paragraph is not)
   4. gitleaks finds no secrets in the tracked files (skipped with a warning if gitleaks is not installed)
+  5. scripts/pii_residuals.py finds no phone numbers, stated first names or employers from the corpus in tracked files (needs data/raw)
 Run: uv run python scripts/prepush_check.py        Exit code 0 = clean.
 """
 import csv, pathlib, re, shutil, subprocess, sys
@@ -64,6 +65,10 @@ def main() -> int:
                 problems.append("gitleaks reported findings (" + " ".join(cmd[2:3] + cmd[3:4]) + "):\n" + (r.stdout + r.stderr)[-1500:])
     else:
         print("WARNING: gitleaks not installed; secret scan skipped")
+    if raw.exists() and corpus_files:
+        r = subprocess.run([sys.executable, str(ROOT / "scripts" / "pii_residuals.py")], capture_output=True, text=True)
+        if r.returncode != 0:
+            problems.append("PII residual candidates occur in tracked files (scripts/pii_residuals.py):\n" + r.stdout[-1500:])
     for m in problems:
         print("FAIL:", m)
     print(f"checked {len(files)} tracked files; {'FAILED' if problems else 'clean'}")

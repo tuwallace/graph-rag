@@ -42,3 +42,16 @@ The dataset card is corrected, or a larger PII scan finds identifying details.
 Checked over every file to be committed (docs, code, graphify map and wiki; 150 or so files): email addresses (none), URLs (domains only huggingface.co, ollama.com, github.com, anthropic.com, astral.sh and localhost), and capitalised multi-word names that also occur in participant turns of the 1,250 transcripts (one overlap, "Google Sheets", a product). `scripts/prepush_check.py` additionally fails on any run of 25 or more words shared with the corpus. Not checked: single first names, employers named in lowercase, phone-number formats, and anything in the data itself (the corpus is not redistributed). Quotes in docs are short attributed excerpts.
 
 Update 2026-11-09: the owner decided to stay with MIT (code and data), following the card's front matter. Attribution is unchanged.
+
+## PII residual pass (2026-11-10)
+
+`scripts/pii_residuals.py` covers the three items left open by the first pass. It builds candidates from the 1,250 transcripts in `data/raw` and reports which occur in a **tracked file** (and, with `--history`, anywhere in git history). It is also step 5 of `scripts/prepush_check.py`.
+
+| Check | Candidates found in the corpus | Occur in tracked files or history |
+|---|---|---|
+| Phone numbers (US-style formats and `+` international) | 0 | 0 |
+| First names that stand alone (stated, "my name is", "I'm X", or used by the interviewer to address the participant; checked against the system proper-names list) | 3 | 0 (the one repeated name is "Claude", the AI interviewer, allow-listed) |
+| Employers (phrases such as "work at/for X", "my company is X"; matched in any capitalisation) | 34 phrases | 0 after review: the three first hits were false positives ("A LOT", "AI's", "HTML") |
+| Unusual capitalised words (not in the system dictionary, mid-sentence) | 466 | 0 after review: 13 hits were products, vendors or headings ("Google", "Microsoft", "Linux", "Postgres", "Sheets", "Questions", ...), allow-listed by hand |
+
+**Limits.** Heuristic: it finds only names the interviewer used or the participant stated in a recognised pattern, only employers in the listed phrase patterns, and only names that are not dictionary words (a first name that is also a word, such as "Mark" or "Grace", is excluded by design). Seven-digit local phone numbers, handles and social-media names were not searched. Passing means no candidate from the corpus appears in the public repo, not that the corpus contains no PII. The local graph and the answers served by the MCP tool still contain participant quotes and are not covered by this check.
