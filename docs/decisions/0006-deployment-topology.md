@@ -1,6 +1,6 @@
 # ADR-0006: Deployment topology
 
-- Status: proposed (amended 2026-11-05: Qdrant and Phoenix are no longer required; only Neo4j runs in Docker)
+- Status: accepted 2026-11-10 by the project owner (earlier: proposed (amended 2026-11-05: Qdrant and Phoenix are no longer required; only Neo4j runs in Docker))
 - Date: 2026-11-05
 - Deciders: twallace
 - Reversibility: Easy. Everything is configured by URLs and compose files.

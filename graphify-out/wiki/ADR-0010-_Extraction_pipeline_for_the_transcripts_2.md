@@ -1,6 +1,6 @@
 # ADR-0010: Extraction pipeline for the transcripts
 
-> God node · 10 connections · `docs/decisions/0010-extraction-pipeline.md`
+> God node · 11 connections · `docs/decisions/0010-extraction-pipeline.md`
 
 **Community:** [ADR-0010: Extraction pipeline for the transcripts](ADR-0010-_Extraction_pipeline_for_the_transcripts.md)
 
@@ -8,6 +8,7 @@
 
 ### contains
 - 0010-extraction-pipeline.md `EXTRACTED`
+- Context `EXTRACTED`
 - Decision drivers `EXTRACTED`
 - Options `EXTRACTED`
 - Weighted decision matrix `EXTRACTED`
@@ -16,7 +17,7 @@
 - Confirmation `EXTRACTED`
 - Revisit when `EXTRACTED`
 - M3 amendments (2026-11-06) `EXTRACTED`
-- Context `EXTRACTED`
+- Owner decision (2026-11-10) `EXTRACTED`
 
 ---
 

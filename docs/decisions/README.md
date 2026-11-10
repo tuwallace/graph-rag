@@ -18,18 +18,18 @@ and a **reversibility** rating so each choice shows how costly it is to undo.
 
 | ADR | Title | Outcome | Reversibility | Status |
 |---|---|---|---|---|
-| [0001](0001-graph-database.md) | Graph database | Neo4j Community 5.x | Moderate | proposed, amended |
+| [0001](0001-graph-database.md) | Graph database | Neo4j Community 5.x | Moderate | accepted 2026-11-10 |
 | [0002](0002-graph-construction.md) | Graph construction (helpdesk) | Deterministic from tables | Easy | superseded by 0010 |
 | [0003](0003-retrieval-strategy.md) | Retrieval (helpdesk) | Keep Qdrant | Easy | superseded by 0011 |
-| [0004](0004-query-interface.md) | Query interface | Typed Cypher tools | Easy | accepted 2026-11-07 (latency bound amended) |
-| [0005](0005-local-llm-selection.md) | Local LLM selection | qwen3:8b-16k, 32b offline | Easy | proposed, amended |
-| [0006](0006-deployment-topology.md) | Deployment topology | Host Ollama and ollmcp, Neo4j in Docker | Easy | proposed, amended |
+| [0004](0004-query-interface.md) | Query interface | Typed Cypher tools | Easy | accepted 2026-11-10 |
+| [0005](0005-local-llm-selection.md) | Local LLM selection | qwen3:8b-16k, 32b offline | Easy | accepted 2026-11-10 |
+| [0006](0006-deployment-topology.md) | Deployment topology | Host Ollama and ollmcp, Neo4j in Docker | Easy | accepted 2026-11-10 |
 | [0007](0007-privacy-and-access.md) | Privacy (helpdesk) | Public comments only | Moderate | superseded by 0012 |
-| [0008](0008-decision-model-router.md) | Decision model as router | `nimble` routes | Easy | proposed, amended |
+| [0008](0008-decision-model-router.md) | Decision model as router | `nimble` routes | Easy | accepted 2026-11-10 (p95 under 2 s; router v3) |
 | [0009](0009-corpus-anthropic-interviewer.md) | Corpus | Anthropic Interviewer | Moderate | **accepted** |
-| [0010](0010-extraction-pipeline.md) | Extraction pipeline | Per-transcript extract, ground, verify, normalise | Easy | proposed |
-| [0011](0011-retrieval-in-neo4j.md) | Retrieval | Neo4j vector index | Easy | proposed |
-| [0012](0012-privacy-for-transcripts.md) | Privacy and licensing | Never commit data; attribution | Moderate | proposed |
+| [0010](0010-extraction-pipeline.md) | Extraction pipeline | Per-transcript extract, ground, verify, normalise | Easy | accepted 2026-11-10 |
+| [0011](0011-retrieval-in-neo4j.md) | Retrieval | Neo4j vector index | Easy | accepted 2026-11-10 |
+| [0012](0012-privacy-for-transcripts.md) | Privacy and licensing | Never commit data; attribution | Moderate | accepted 2026-11-10 |
 | [0013](0013-waive-human-labels.md) | Human labels | Waived for the demo; Gate 1 waived, not passed | Easy | accepted |
 
 Process: new decisions get the next number; a changed decision gets a **new** record that marks the old one `superseded by ADR-XXXX`. Do not edit accepted records
@@ -38,4 +38,4 @@ except to fix typos. Use [0000-template.md](0000-template.md).
 ## Open questions for you
 
 1. (Resolved: human labels waived, [ADR-0013](0013-waive-human-labels.md).)
-2. Is 500 transcripts (all creatives and scientists plus 250 workforce) the right demo scope, or do you want all 1,250 overnight runs?
+2. (Resolved 2026-11-10: 500 transcripts, all creatives and scientists plus 250 workforce, is the final scope.)

@@ -1,6 +1,6 @@
 # ADR-0001: Graph database
 
-- Status: proposed (amended 2026-11-05: written against helpdesk data; the Neo4j Community choice still holds, but node counts are about 1,250 interviews and 14,500 segments, and the vector index now lives here per [ADR-0011](0011-retrieval-in-neo4j.md))
+- Status: accepted 2026-11-10 by the project owner (earlier: proposed (amended 2026-11-05: written against helpdesk data; the Neo4j Community choice still holds, but node counts are about 1,250 interviews and 14,500 segments, and the vector index now lives here per [ADR-0011](0011-retrieval-in-neo4j.md)))
 - Date: 2026-11-05
 - Deciders: twallace
 - Reversibility: Moderate. The loader is a few hundred lines of Cypher and Python; the typed tools hold the queries. Switching to another Cypher database means porting those, not the data model.

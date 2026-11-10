@@ -1,6 +1,6 @@
 # ADR-0013: Proceed without human labels for the demo
 
-- Status: accepted by twallace on 2026-11-06
+- Status: accepted by twallace on 2026-11-06 (2026-11-10: Gates G1 and G2 stay closed on these terms, owner decision)
 - Date: 2026-11-06
 - Deciders: twallace
 - Reversibility: Easy. The blank human sheets are kept in `data/labeling_v3/blank_backup/` and the scorer still works on them.

@@ -1,6 +1,6 @@
 # ADR-0011: Retrieval for the transcript corpus
 
-- Status: proposed (supersedes [ADR-0003](0003-retrieval-strategy.md))
+- Status: accepted 2026-11-10 by the project owner (earlier: proposed (supersedes [ADR-0003](0003-retrieval-strategy.md)))
 - Date: 2026-11-05
 - Deciders: twallace
 - Reversibility: Easy. Embeddings are recomputable; both options read the same segments.

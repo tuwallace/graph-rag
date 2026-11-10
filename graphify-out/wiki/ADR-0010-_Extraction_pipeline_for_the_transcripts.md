@@ -1,10 +1,10 @@
 # ADR-0010: Extraction pipeline for the transcripts
 
-> 10 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **ADR-0010: Extraction pipeline for the transcripts** (10 connections) — `docs/decisions/0010-extraction-pipeline.md`
+- **ADR-0010: Extraction pipeline for the transcripts** (11 connections) — `docs/decisions/0010-extraction-pipeline.md`
 - **Confirmation** (1 connections) — `docs/decisions/0010-extraction-pipeline.md`
 - **Consequences** (1 connections) — `docs/decisions/0010-extraction-pipeline.md`
 - **Context** (1 connections) — `docs/decisions/0010-extraction-pipeline.md`
@@ -12,6 +12,7 @@
 - **Decision drivers** (1 connections) — `docs/decisions/0010-extraction-pipeline.md`
 - **M3 amendments (2026-11-06)** (1 connections) — `docs/decisions/0010-extraction-pipeline.md`
 - **Options** (1 connections) — `docs/decisions/0010-extraction-pipeline.md`
+- **Owner decision (2026-11-10)** (1 connections) — `docs/decisions/0010-extraction-pipeline.md`
 - **Revisit when** (1 connections) — `docs/decisions/0010-extraction-pipeline.md`
 - **Weighted decision matrix** (1 connections) — `docs/decisions/0010-extraction-pipeline.md`
 
@@ -25,7 +26,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 10 (100%)
+- EXTRACTED: 11 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

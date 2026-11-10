@@ -18,10 +18,10 @@
 ## Relationships
 
 - [__init__.py](__init__.py.md) (3 shared connections)
-- [sys](sys.md) (2 shared connections)
-- [json](json.md) (2 shared connections)
-- [pathlib](pathlib.md) (1 shared connections)
-- [pipeline.py](pipeline.py.md) (1 shared connections)
+- [confirm_adr0008.py](confirm_adr0008.py.md) (2 shared connections)
+- [pathlib](pathlib.md) (2 shared connections)
+- [sys](sys.md) (1 shared connections)
+- [extract.py](extract.py.md) (1 shared connections)
 
 ## Source Files
 

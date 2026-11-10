@@ -1,6 +1,6 @@
 # router.py
 
-> 45 nodes
+> 46 nodes
 
 ## Key Concepts
 
@@ -22,26 +22,26 @@
 - **state_for()** (3 connections) — `src/graphrag/verify.py`
 - **verify_item()** (3 connections) — `src/graphrag/verify.py`
 - **Nodes** (3 connections) — `docs/03-graph-schema.md`
+- **requests** (3 connections)
 - **segment_state()** (2 connections) — `src/graphrag/attributes.py`
 - **clarify()** (2 connections) — `src/graphrag/router.py`
 - **claim_for()** (2 connections) — `src/graphrag/verify.py`
 - **keep()** (2 connections) — `src/graphrag/verify.py`
 - **Decision-model attributes on `Segment` (properties, not nodes)** (2 connections) — `docs/03-graph-schema.md`
 - **Pipeline** (2 connections) — `docs/03-graph-schema.md`
-- **Throughput reality (measured, one machine)** (2 connections) — `docs/05-components.md`
-- *... and 20 more nodes in this community*
+- *... and 21 more nodes in this community*
 
 ## Relationships
 
-- [mcp_server.py](mcp_server.py.md) (4 shared connections)
-- [pipeline.py](pipeline.py.md) (4 shared connections)
+- [pipeline.py](pipeline.py.md) (5 shared connections)
+- [confirm_adr0008.py](confirm_adr0008.py.md) (5 shared connections)
 - [docs/README.md](docs-README.md.md) (3 shared connections)
-- [concern_merge.py](concern_merge.py.md) (2 shared connections)
-- [sys](sys.md) (2 shared connections)
-- [collections](collections.md) (2 shared connections)
-- [__init__.py](__init__.py.md) (2 shared connections)
 - [queries.py](queries.py.md) (2 shared connections)
-- [json](json.md) (1 shared connections)
+- [grounded.py](grounded.py.md) (2 shared connections)
+- [mcp_server.py](mcp_server.py.md) (2 shared connections)
+- [__init__.py](__init__.py.md) (2 shared connections)
+- [extract.py](extract.py.md) (1 shared connections)
+- [score.py](score.py.md) (1 shared connections)
 
 ## Source Files
 
@@ -56,7 +56,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 74 (90%)
+- EXTRACTED: 76 (90%)
 - INFERRED: 8 (10%)
 - AMBIGUOUS: 0 (0%)
 

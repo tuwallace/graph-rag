@@ -4,9 +4,9 @@
 
 There are no labels. Evaluation is the hardest part of this project and the part most likely to be skipped. Ground truth must be built by hand.
 
-## Labelling plan (optional; waived for the demo, see [ADR-0013](decisions/0013-waive-human-labels.md))
+## Labelling plan (as run: model labels, confirmed by the owner; see [ADR-0013](decisions/0013-waive-human-labels.md) and [09](09-completion-status.md))
 
-The demo proceeds with LLM labels (edge precision 0.74, `nimble` agreement 0.63). The table below is what a human check would cover; nothing here blocks progress.
+The project ran with model labels instead of hand labels: `qwen3` and `nimble` during the build, and `qwen2.5:32b` for the independent precision, recall and question checks (precision 78% strict, 90% counting hypothetical; the owner confirmed the labels and reviewed the generated questions). The table below is what a full human check would cover; it is not planned.
 
 | Set | Size | Task | Closes |
 |---|---|---|---|
@@ -36,7 +36,7 @@ Hold half of the questions back until the end. Review files can be generated fro
 Configurations: **A** qwen3 picks among the typed tools (6 tools visible), **B** `nimble` routes and one `ask_interviews` tool, **C** plain vector RAG with no graph (segments only, same answer model).
 The graph earns its place only if B beats C on the count, comparison and global questions. Symptom-style local questions may not improve; say so if they do not.
 
-## Phases
+## Phases (all done; see [07](07-implementation-roadmap.md) for dates and outcomes)
 
 | Phase | Deliverable | Exit criteria |
 |---|---|---|

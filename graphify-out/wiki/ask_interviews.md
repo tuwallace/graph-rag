@@ -1,6 +1,6 @@
 # ask_interviews()
 
-> God node · 14 connections · `src/graphrag/mcp_server.py`
+> God node · 15 connections · `src/graphrag/mcp_server.py`
 
 **Community:** [mcp_server.py](mcp_server.py.md)
 
@@ -25,6 +25,7 @@
 - Tool surface `INFERRED`
 - Metrics `INFERRED`
 - Milestones `INFERRED`
+- What changed against the first run (all 40) `INFERRED`
 - Decisions at a glance `INFERRED`
 - What was built `INFERRED`
 

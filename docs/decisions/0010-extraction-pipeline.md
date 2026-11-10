@@ -1,9 +1,13 @@
 # ADR-0010: Extraction pipeline for the transcripts
 
-- Status: proposed (supersedes [ADR-0002](0002-graph-construction.md) for this corpus)
+- Status: accepted 2026-11-10 by the project owner (earlier: proposed (supersedes [ADR-0002](0002-graph-construction.md) for this corpus))
 - Date: 2026-11-05
 - Deciders: twallace
 - Reversibility: Easy. Extraction output is a rebuildable artefact keyed by `run_id`, `model` and `prompt_version`.
+
+## Owner decision (2026-11-10)
+
+The precision target (about 0.80 with verify) is accepted as met on the larger-model measurement (78% correct, 90% counting hypothetical, 90 kept edges; see docs/07). The corpus scope is final at 500 interviews.
 
 ## Context
 

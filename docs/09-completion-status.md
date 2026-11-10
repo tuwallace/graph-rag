@@ -1,4 +1,4 @@
-# 09. Completion status (2026-11-10)
+# 09. Completion status (2026-11-10, updated after the owner's decisions and Test 1)
 
 What is done, what is open, and what still needs a decision or a test before the project is marked complete. All results describe the **500-interview** graph (500 of the 1,250 interviews in the dataset). Model-judged means judged by `qwen2.5:32b`; the owner has stated they confirmed the labels (see [08](08-evaluation-results.md)).
 
@@ -22,12 +22,16 @@ What is done, what is open, and what still needs a decision or a test before the
 | Grounding at least 90% | Kept edges re-grounded at load: 0 ungrounded of 5,503 kept edges | Met for kept edges |
 | Prompt hygiene, zero failures | 0 on the main extraction | **Not run on the loose concern prompt** |
 | Retrieval recall at 5 at least 0.7 | Passed on a proxy query set | **Owner's own 10 queries not done (waived)** |
-| Quotes exist and belong to the cited interview | 100% after the validator, on 60 questions | Met on the old graph; not re-run |
-| Number groundedness | 0 flagged figures on 60 questions | Met on the old graph; not re-run |
-| Router vs plain RAG | Reported in 08 | Done on the old graph |
-| Latency p50 and p95 per route | Router decision p95 1.98 s (bound 2 s); end-to-end figures in 08 | Router margin thin; end-to-end not re-run |
+| Quotes exist and belong to the cited interview | 100% after the validator, on 60 questions | Met on the final graph: 98/98 delivered (raw model text 91%; fallback 12%) |
+| Number groundedness | 0 flagged figures on 60 questions (first run) | Met in the first run; the final-graph run flagged 2 answers for figures and replaced them |
+| Router vs plain RAG | Reported in 08, re-run on the final graph | Done |
+| Latency p50 and p95 per route | Router decision p95 1.98 s (bound 2 s); end-to-end per route re-run | `theme_overview` in config B regressed to 24.5 s median (lead, not investigated) |
 
-## Open: needs your decision
+## Decided by the owner (2026-11-10)
+
+All ADRs accepted; precision target met; Gates G1 and G2 stay closed; router v3 kept (p95 under 2 s); scope final at 500 interviews; the 22 kept edges with no single segment (0.4%) are skipped at load and that stays.
+
+## Open: needs your decision (superseded by the section above; kept for the record)
 
 1. **ADR statuses.** ADR-0001, 0004, 0005, 0006, 0010, 0011 and 0012 are still "proposed". Decide accept, amend or supersede each; ADR-0010 carries the precision target above.
 2. **Precision target.** Accept 78% strict (90% lenient) as meeting "about 0.80", or require a better extractor or a stricter verify.
@@ -35,10 +39,10 @@ What is done, what is open, and what still needs a decision or a test before the
 4. **Router latency.** p95 of 1.98 s leaves almost no margin to 2 s. Keep v3 (your earlier decision) or trim the examples.
 5. **Scope.** 500 of 1,250 interviews. Declare 500 final, or schedule the remaining 750 (roughly 15 to 20 h of extraction, verify and attributes at the measured rates).
 
-## Open: tests not yet run
+## Open: tests not yet run (after Test 1)
 
-1. **Re-run the end-to-end evaluation on the final graph:** the M7 table (configs A, B, C), `grounded_eval.py`, and end-to-end p50 and p95 per route. They describe the graph before the concern pass.
-2. **Hygiene check on the concern-loose prompt** (the check on extracted names that appear in the prompt).
+1. ~~Re-run the end-to-end evaluation on the final graph~~ **Done 2026-11-10** (M7 table, groundedness, end-to-end latency per route; see 08).
+2. ~~Hygiene check on the concern-loose prompt~~ **Done:** 2 of 500 transcripts flagged ("human connection", a phrase in the prompt; 31 raw items, none kept in the graph).
 3. **Live session check:** `ollmcp` with `qwen3:8b-16k` over the final graph and the routed profile. The smoke script passes, but a recorded live run on the final graph is not in the docs.
 4. **PII residuals** listed in ADR-0012: first names alone, lowercase employers, phone formats.
 5. **Run-to-run stability:** every result is one run; the larger-model judge was run once per item.

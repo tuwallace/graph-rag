@@ -1,6 +1,6 @@
 # ADR-0012: Privacy, licensing and public-repo rules for the transcript corpus
 
-- Status: proposed (supersedes [ADR-0007](0007-privacy-and-access.md))
+- Status: accepted 2026-11-10 by the project owner (earlier: proposed (supersedes [ADR-0007](0007-privacy-and-access.md)))
 - Date: 2026-11-05
 - Deciders: twallace
 - Reversibility: Moderate. A leaked file in public git history is hard to retract.

@@ -1,6 +1,6 @@
 # ADR-0004: Query interface the LLM uses
 
-- Status: proposed (amended 2026-11-05: still holds; tools and routes are in [04](../04-query-and-tools.md) for the Interviewer corpus)
+- Status: accepted 2026-11-10 by the project owner (earlier: proposed (amended 2026-11-05: still holds; tools and routes are in [04](../04-query-and-tools.md) for the Interviewer corpus))
 - Date: 2026-11-05
 - Deciders: twallace
 - Reversibility: Easy. Tools are thin wrappers over Cypher in code.

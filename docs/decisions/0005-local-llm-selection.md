@@ -1,6 +1,6 @@
 # ADR-0005: Local LLM selection
 
-- Status: proposed (amended 2026-11-05: model roles are now extractor, verifier and router, answer writer and offline judge; see [05](../05-components.md))
+- Status: accepted 2026-11-10 by the project owner (earlier: proposed (amended 2026-11-05: model roles are now extractor, verifier and router, answer writer and offline judge; see [05](../05-components.md)))
 - Date: 2026-11-05
 - Deciders: twallace
 - Reversibility: Easy. Model names are config (`GEN_MODEL`, ollmcp `--model`).

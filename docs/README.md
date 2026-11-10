@@ -36,14 +36,14 @@ Stack: Ollama (qwen3, `nimble` decision model, nomic-embed-text), ollmcp, Docker
 | ADR | Decision | Status |
 |---|---|---|
 | [0009](decisions/0009-corpus-anthropic-interviewer.md) | Corpus: Interviewer instead of helpdesk | accepted by you; spike done |
-| [0010](decisions/0010-extraction-pipeline.md) | Extraction, grounding, `nimble` verification, normalisation; 500-transcript scope | proposed |
-| [0011](decisions/0011-retrieval-in-neo4j.md) | Neo4j vector index; Qdrant dropped | proposed |
-| [0012](decisions/0012-privacy-for-transcripts.md) | Never commit data; attribution; PII pass | proposed |
+| [0010](decisions/0010-extraction-pipeline.md) | Extraction, grounding, `nimble` verification, normalisation; 500-transcript scope | accepted 2026-11-10 |
+| [0011](decisions/0011-retrieval-in-neo4j.md) | Neo4j vector index; Qdrant dropped | accepted 2026-11-10 |
+| [0012](decisions/0012-privacy-for-transcripts.md) | Never commit data; attribution; PII pass | accepted 2026-11-10 |
 | [0013](decisions/0013-waive-human-labels.md) | Proceed without human labels (Gate 1 waived, not passed) | accepted |
-| [0008](decisions/0008-decision-model-router.md) | `nimble` routes; one `ask_interviews` tool | proposed |
-| [0001](decisions/0001-graph-database.md), [0005](decisions/0005-local-llm-selection.md), [0006](decisions/0006-deployment-topology.md) | Neo4j Community; model roles; topology | proposed, amended |
+| [0008](decisions/0008-decision-model-router.md) | `nimble` routes; one `ask_interviews` tool | accepted 2026-11-10 (router v3, p95 under 2 s) |
+| [0001](decisions/0001-graph-database.md), [0005](decisions/0005-local-llm-selection.md), [0006](decisions/0006-deployment-topology.md) | Neo4j Community; model roles; topology | accepted 2026-11-10 |
 | [0002](decisions/0002-graph-construction.md), [0003](decisions/0003-retrieval-strategy.md), [0007](decisions/0007-privacy-and-access.md) | Helpdesk-era decisions | superseded by 0010, 0011, 0012 |
-| [0004](decisions/0004-query-interface.md) | Typed tools over text-to-Cypher | proposed, still holds |
+| [0004](decisions/0004-query-interface.md) | Typed tools over text-to-Cypher | accepted 2026-11-10 |
 
 ## What I need from you
 

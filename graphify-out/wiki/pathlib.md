@@ -1,45 +1,50 @@
 # pathlib
 
-> 13 nodes
+> 15 nodes
 
 ## Key Concepts
 
 - **pathlib** (14 connections)
-- **mcp_smoke.py** (8 connections) — `scripts/mcp_smoke.py`
+- **grounded_eval.py** (13 connections) — `eval/grounded_eval.py`
+- **neo4j** (11 connections)
+- **gate2_retrieval.py** (7 connections) — `eval/gate2_retrieval.py`
 - **test_pipeline_stages.py** (6 connections) — `tests/test_pipeline_stages.py`
+- **score()** (4 connections) — `eval/grounded_eval.py`
 - **test_stages_resume_and_assemble()** (3 connections) — `tests/test_pipeline_stages.py`
+- **quality()** (2 connections) — `eval/grounded_eval.py`
 - **fake_extract()** (2 connections) — `tests/test_pipeline_stages.py`
 - **ext()** (2 connections) — `tests/test_pipeline_stages.py`
-- **fastmcp** (2 connections)
-- **main()** (1 connections) — `scripts/mcp_smoke.py`
+- **run()** (1 connections) — `eval/grounded_eval.py`
 - **test_scope_sizes_are_deterministic()** (1 connections) — `tests/test_pipeline_stages.py`
 - **embed()** (1 connections) — `tests/test_pipeline_stages.py`
-- **Start the MCP server over stdio and call it like a client would. Usage:…** (1 connections) — `scripts/mcp_smoke.py`
-- **asyncio** (1 connections)
-- **fastmcp_client_transports** (1 connections)
+- **Gate 2 proxy: do the top-5 vector hits for 10 queries contain answers that…** (1 connections) — `eval/gate2_retrieval.py`
+- **Re-measure groundedness with answer generation, through the grounded path…** (1 connections) — `eval/grounded_eval.py`
 
 ## Relationships
 
-- [json](json.md) (3 shared connections)
+- [__init__.py](__init__.py.md) (7 shared connections)
+- [pipeline.py](pipeline.py.md) (5 shared connections)
+- [extract.py](extract.py.md) (3 shared connections)
 - [sys](sys.md) (3 shared connections)
-- [__init__.py](__init__.py.md) (3 shared connections)
-- [pipeline.py](pipeline.py.md) (2 shared connections)
-- [mcp_server.py](mcp_server.py.md) (1 shared connections)
-- [judge32b.py](judge32b.py.md) (1 shared connections)
-- [run_eval.py](run_eval.py.md) (1 shared connections)
-- [score.py](score.py.md) (1 shared connections)
-- [concern_merge.py](concern_merge.py.md) (1 shared connections)
+- [score.py](score.py.md) (3 shared connections)
+- [confirm_adr0008.py](confirm_adr0008.py.md) (3 shared connections)
+- [run_eval.py](run_eval.py.md) (2 shared connections)
+- [load.py](load.py.md) (2 shared connections)
+- [mcp_server.py](mcp_server.py.md) (2 shared connections)
 - [queries.py](queries.py.md) (1 shared connections)
+- [themes.py](themes.py.md) (1 shared connections)
+- [judge32b.py](judge32b.py.md) (1 shared connections)
 
 ## Source Files
 
-- `scripts/mcp_smoke.py`
+- `eval/gate2_retrieval.py`
+- `eval/grounded_eval.py`
 - `tests/test_pipeline_stages.py`
 
 ## Audit Trail
 
-- EXTRACTED: 29 (97%)
-- INFERRED: 1 (3%)
+- EXTRACTED: 51 (98%)
+- INFERRED: 1 (2%)
 - AMBIGUOUS: 0 (0%)
 
 ---

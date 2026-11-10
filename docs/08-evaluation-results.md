@@ -102,3 +102,58 @@ Read with care: one author wrote the questions, the gold routes and the scoring 
 A {'compare_groups': 6.6, 'concept_stats': 4.2, 'evidence': 7.1, 'local_search': 7.8, 'out_of_scope': 1.1, 'theme_overview': 1.9}
 B {'compare_groups': 6.3, 'concept_stats': 4.8, 'evidence': 7.8, 'local_search': 9.6, 'out_of_scope': 2.5, 'theme_overview': 2.7}
 C {'compare_groups': 4.5, 'concept_stats': 5.3, 'evidence': 4.1, 'local_search': 7.0, 'out_of_scope': 3.2, 'theme_overview': 5.6}
+
+## Re-run on the final graph (2026-11-10)
+
+The M7 evaluation above was run on the graph before the concern pass. It was re-run on the final graph (concern pass applied at verify 0.6, 1,861 concern edges, 12 themes, router v3) with the same 40 questions, the same scorer and one run per config. The previous outputs are kept in `data/eval/pre-concern-pass/`. 500 of the 1,250 interviews; one author's questions; one run each, so gaps of one or two questions are noise.
+
+### All 40, final graph
+
+| Measure | A: qwen3 picks tools | B: nimble router | C: plain vector RAG |
+|---|---|---|---|
+| Questions run | 40 | 40 | 40 |
+| Route or tool correct (in scope) | 31/36 (86%) | 34/36 (94%) | n/a |
+| Abstained (in scope) | 0/36 (0%) | 2/36 (6%) | never |
+| Route correct when it answered | 31/36 (86%) | 32/34 (94%) | n/a |
+| Arguments correct (stats, compare, evidence) | 21/24 (88%) | 23/24 (96%) | n/a |
+| Out-of-scope handled (no query / refusal) | 4/4 (100%) | 4/4 (100%) | 3/4 (75%) *heuristic |
+| Count answers correct (stats + compare; compare check revised) | 14/17 (82%) | 13/17 (76%) | 0/17 (0%) |
+| Compare answers correct, original strict check | 1/7 (14%) | 0/7 (0%) | 0/7 (0%) |
+| Quotes found in the cited interview | 48/80 (60%) | 58/102 (57%) | 88/98 (90%) |
+| Quotes found anywhere in the corpus | 60/80 (75%) | 65/102 (64%) | 88/98 (90%) |
+| Numbers in answer found in tool output | 67/78 (86%) | 69/69 (100%) | 4/4 (100%) |
+| Latency p50 / p95 (s) | 5.5 / 14.5 | 6.6 / 21.2 | 5.0 / 8.7 |
+| Errors | 0 | 0 | 0 |
+
+### Per-route end-to-end latency (median s), final graph
+
+A {'compare_groups': 6.4, 'concept_stats': 4.2, 'evidence': 7.2, 'local_search': 7.7, 'out_of_scope': 1.1, 'theme_overview': 10.1}
+B {'compare_groups': 6.6, 'concept_stats': 5.5, 'evidence': 8.1, 'local_search': 10.5, 'out_of_scope': 3.0, 'theme_overview': 24.5}
+C {'compare_groups': 4.4, 'concept_stats': 5.4, 'evidence': 5.0, 'local_search': 7.0, 'out_of_scope': 3.2, 'theme_overview': 5.6}
+
+### What changed against the first run (all 40)
+
+| Measure | First run, B | Final graph, B | First run, A | Final graph, A |
+|---|---|---|---|---|
+| Route correct (in scope) | 33/36 | 34/36 | 31/36 | 31/36 |
+| Arguments correct | 21/24 | 23/24 | 21/24 | 21/24 |
+| Quotes found in the cited interview | 58/62 (94%) | 58/102 (57%) | 60/72 (83%) | 48/80 (60%) |
+| Numbers found in tool output | 45/45 | 69/69 | 62/64 | 67/78 (86%) |
+| Latency p50 / p95 (s) | 5.5 / 12.8 | 6.6 / 21.2 | 5.0 / 10.0 | 5.5 / 14.5 |
+
+**Quote validity fell, mostly for scoring reasons, not fabricated quotes.** The scorer takes any double-quoted span of four or more words as a quote. In this run the model (a) quoted whole theme summaries and wrapped each paragraph in double quotes on the four `theme_overview` questions (30 spans, none an interview quote), and (b) on q31 (evidence) wrapped each paragraph in double quotes around correct single-quoted verbatim quotes (5 spans, all inner quotes are in the tool output). Excluding those 35 spans, B scores 58 of 67 (87%), still below the first run's 94%, so some real drop remains (q05, q23). I did not change the scorer after seeing the result. The production path (`ask_interviews` with `grounded.py`) is the check that matters and is below.
+
+**`theme_overview` latency in config B regressed:** median 24.5 s against 2.7 s in the first run (plain RAG 5.6 s). The answers now restate every stored theme summary and are much longer; I have not investigated why they changed (the themes were rebuilt and router v3 is in use). It affects 4 questions, so treat it as a lead, not a measurement.
+
+### Groundedness on the final graph (60 questions, `eval/grounded_eval.py`, router v3)
+
+| Measure | First run (graph before the pass, router v2) | Final graph (router v3) |
+|---|---|---|
+| Questions that went through the model | 51 of 60 | 52 of 60 |
+| Fell back to the rendered facts | 2 of 51 (4%) | 6 of 52 (12%) |
+| Quotes found in the cited interview, raw model text | 89/92 (97%) | 97/107 (91%) |
+| Quotes found in the cited interview, text delivered | 90/90 (100%) | **98/98 (100%)** |
+| Stats answers matching the database | 15/15 | 15/15 |
+| Median time per question | 7.6 s | 6.7 s |
+
+Fallback reasons: quote not in tool output 10, figures not in tool output 2, quote source not cited 1 (routes: `concept_stats` 4, `evidence` 1, `theme_overview` 1). The validator caught every invalid quote again, so the delivered text is 100% grounded in the tool output, but the model needs the fallback three times as often as before.

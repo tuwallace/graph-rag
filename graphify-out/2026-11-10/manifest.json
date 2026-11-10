@@ -318,9 +318,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1794271737.2098498,
-    "seen": 1794271741.6057532,
-    "ast_hash": "e11837ff182cfd7afaf500312b1d8b46",
+    "mtime": 1794327162.7137198,
+    "seen": 1794327166.954091,
+    "ast_hash": "89cef5910d67b8919251418262eacb9f",
     "semantic_hash": ""
   },
   "docker-compose.yml": {
@@ -366,9 +366,9 @@
     "semantic_hash": ""
   },
   "docs/07-implementation-roadmap.md": {
-    "mtime": 1794271737.2095923,
-    "seen": 1794271741.605758,
-    "ast_hash": "4dd6553a83cc127347573eb5309017f7",
+    "mtime": 1794327162.7133338,
+    "seen": 1794327166.9540968,
+    "ast_hash": "861064051fef415e23170633491df4b7",
     "semantic_hash": ""
   },
   "docs/08-evaluation-results.md": {
@@ -534,15 +534,21 @@
     "semantic_hash": ""
   },
   "src/graphrag/concern_merge.py": {
-    "mtime": 1794249101.4669309,
-    "seen": 1794271741.6057339,
-    "ast_hash": "3373202416147a51580586e1def444fc",
+    "mtime": 1794324405.8902397,
+    "seen": 1794327166.954072,
+    "ast_hash": "bfecf6457638fe4d7f1827500f294fcd",
     "semantic_hash": ""
   },
   "tests/test_concern_merge.py": {
     "mtime": 1794249101.5005338,
     "seen": 1794271741.605746,
     "ast_hash": "98003cd4ad394709abd67f896a12aedb",
+    "semantic_hash": ""
+  },
+  "eval/new_concern_check.py": {
+    "mtime": 1794324437.2809265,
+    "seen": 1794327166.9540522,
+    "ast_hash": "97e47b136a7a99cb273143a3880b9d87",
     "semantic_hash": ""
   }
 }
