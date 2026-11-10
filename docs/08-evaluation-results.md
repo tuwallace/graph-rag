@@ -157,3 +157,17 @@ C {'compare_groups': 4.4, 'concept_stats': 5.4, 'evidence': 5.0, 'local_search':
 | Median time per question | 7.6 s | 6.7 s |
 
 Fallback reasons: quote not in tool output 10, figures not in tool output 2, quote source not cited 1 (routes: `concept_stats` 4, `evidence` 1, `theme_overview` 1). The validator caught every invalid quote again, so the delivered text is 100% grounded in the tool output, but the model needs the fallback three times as often as before.
+
+## Live `ollmcp` session on the final graph (2026-11-10)
+
+`scripts/live_ollmcp_session.py` ran one real session: `ollmcp` with `qwen3:8b-16k` (thinking on, its default), the routed profile (`mcp.json`, one tool `ask_interviews`), five fixed questions typed in order, each tool call confirmed with "y". One run; I read the answers against the tool output by hand and with a quote-containment check.
+
+| Question | Route (confidence) | Tool calls | Time | Check against the tool output |
+|---|---|---|---|---|
+| Main themes across the interviews | theme_overview (0.99) | 1 | 65 s | Themes, counts and concerns match the stored summaries; adds a "Key Takeaways" section |
+| Top concerns among scientists | concept_stats (0.92) | 1 | 72 s | Concepts and percentages match; adds interpretation |
+| Compare scientists and creatives on hallucinations | compare_groups (0.97) | 1 | 57 s | 4 of 4 quotes verbatim and the counts are right, but it says scientists are "2x more likely" than creatives (11.2% vs 0%), which is wrong (a ratio against 0% is undefined) and adds a "Why the Difference?" explanation the data does not give |
+| Show quotes about losing skills | evidence (0.92) | 1 | 51 s | 5 quotes, all from the tool output; 2 of them with editorial insertions in square brackets ("[AI tools]", "[to AI]") and one with changed capitalisation |
+| What is 2+2? | none | 0 | 12 s | The model answered "4" itself and never called the tool, so the `out_of_scope` route was not exercised |
+
+**What it shows.** The wiring works end to end: `ollmcp` lists the tool, the router picks the right route with high confidence on four of four in-scope questions, each answer rests on the stored data, and the quotes are real. But in this path `qwen3` writes the final text, so **the guarantees of `grounded.py` (validated quotes, no unsupported figures) do not apply**: the model added a false "2x" and unsupported explanations, lightly edited two quotes, and answered an out-of-scope question from its own knowledge. Latency is 51 to 72 s per in-scope question with thinking on, against about 7 s through the grounded path in the evaluation. Fixing this is a decision: for example return the grounded text from the server with an instruction to relay it unchanged, or turn thinking off in `ollmcp`.
