@@ -20,6 +20,7 @@ Stack: Ollama (qwen3, `nimble` decision model, nomic-embed-text), ollmcp, Docker
 | [06-evaluation-and-roadmap.md](06-evaluation-and-roadmap.md) | Labelling plan, metrics, phases, risks |
 | [07-implementation-roadmap.md](07-implementation-roadmap.md) | **Build order**, gates, fallbacks, first three actions |
 | [08-evaluation-results.md](08-evaluation-results.md) | M7 results: configs A, B, C on 40 questions |
+| [09-completion-status.md](09-completion-status.md) | What is done, what is open, and what needs a decision or a test |
 | [decisions/](decisions/README.md) | Decision records with weighted matrices |
 
 ## What the spike found (20 transcripts, one machine)

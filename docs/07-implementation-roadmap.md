@@ -434,3 +434,16 @@ The owner chose to keep only new concern edges with a verify `supports` score of
 The filtered new edges are at least as precise as the original concern edges (63% correct, 87% counting hypothetical; 14% wrong against 13%). The 0.6 bucket scored 61% in the first sample and 76% in the fresh one, so the true figure is probably in between, and 76% should be read as an upper estimate. Cost: coverage. Of the 1,208 new edges only 503 remain, so concern recall sits between the 34% baseline and the 51% seen with the unfiltered pass on the 10 transcripts; **recall was not re-measured after the filter.**
 
 Re-checks after the filter: router v3 gives 34 of 36 on the original 40 and 18 of 18 on the confirmation 20, route-decision p50 1.68 s and p95 1.98 s (max 4.09 s, n = 20), and the MCP smoke test passes. The M7, 32b precision and recall, and groundedness figures were not re-run on this graph.
+
+### Recall re-measured after the filter (2026-11-10)
+
+`eval/recall_remeasure.py`: the same 10 transcripts and the same 256 judge-listed items, covered by the original kept concepts (`graph_input.v1.jsonl`) and by the current ones, with identical judge settings in one run so judge variation cancels. Model-judged (`qwen2.5:32b`); the judge settings differ slightly from the first run (smaller context), which is why the baseline reads 32% here against 34% earlier.
+
+| Kind | Items | Covered before | Covered now |
+|---|---|---|---|
+| All | 256 | 83 (32%) | 102 (40%) |
+| AI uses | 88 | 38 (43%) | 39 (44%) |
+| Tasks | 94 | 29 (31%) | 32 (34%) |
+| Concerns | 74 | 16 (22%) | 31 (42%) |
+
+The filtered second pass roughly doubles concern coverage on these 10 transcripts (22% to 42%) and moves overall coverage by 8 points. It sits below the unfiltered pass (51% for concerns), as expected. AI uses and tasks did not change. Recall remains well under precision, so counts are lower bounds. n = 10 transcripts: noisy.
