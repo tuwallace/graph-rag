@@ -7,3 +7,11 @@ __pycache__/
 *.pyc
 graphify-out/cache/
 .claude/
+
+# video build artefacts (regenerable; see docs/video/README.md)
+docs/video/anim/node_modules
+docs/video/anim/out/
+docs/video/anim/public/narration/
+docs/video/narration/.venv/
+docs/video/narration/__pycache__/
+docs/video/upload/*.mp4

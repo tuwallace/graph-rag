@@ -1,0 +1,352 @@
+1
+00:00:00,500 --> 00:00:05,687
+I built a system that answers questions
+about five hundred AI interviews,
+
+2
+00:00:05,687 --> 00:00:07,250
+entirely on my laptop.
+
+3
+00:00:07,600 --> 00:00:11,500
+Ask it which concerns scientists raise most,
+and it counts.
+
+4
+00:00:11,850 --> 00:00:16,827
+Plain vector search got none of seventeen
+counting and comparison questions
+
+5
+00:00:16,827 --> 00:00:17,225
+right.
+
+6
+00:00:17,575 --> 00:00:19,525
+The graph got thirteen.
+
+7
+00:00:19,875 --> 00:00:24,448
+But the part worth watching is how often my
+own checks were wrong, and how I
+
+8
+00:00:24,448 --> 00:00:25,050
+found out.
+
+9
+00:00:25,400 --> 00:00:28,150
+Here is the whole story, with the numbers.
+
+10
+00:00:28,762 --> 00:00:33,581
+The data is five hundred interviews from the
+Anthropic Interviewer dataset,
+
+11
+00:00:33,581 --> 00:00:36,537
+where people describe how they use AI at
+work.
+
+12
+00:00:36,887 --> 00:00:42,089
+A local model reads each transcript and
+pulls out tasks, uses of AI, and
+
+13
+00:00:42,089 --> 00:00:44,112
+concerns, each with a quote.
+
+14
+00:00:44,462 --> 00:00:49,237
+A second small model checks that every quote
+really supports its claim.
+
+15
+00:00:49,587 --> 00:00:53,862
+Similar names are merged, and everything
+goes into Neo4j.
+
+16
+00:00:54,212 --> 00:00:58,437
+When you ask a question, a router picks one
+of a few fixed queries.
+
+17
+00:00:58,787 --> 00:01:01,337
+No model writes database code.
+
+18
+00:01:01,687 --> 00:01:06,691
+One important limit: the interviews were run
+by an AI and the people chose
+
+19
+00:01:06,691 --> 00:01:11,762
+to take part, so every count describes this
+sample, not workers in general.
+
+20
+00:01:12,384 --> 00:01:14,234
+Here is why a graph.
+
+21
+00:01:14,584 --> 00:01:19,339
+Ask for the top concerns among scientists,
+and the answer is a ranked list
+
+22
+00:01:19,339 --> 00:01:22,809
+with counts out of one hundred twenty-five
+interviews.
+
+23
+00:01:23,159 --> 00:01:28,109
+Plain retrieval can only show you a few
+similar answers, so it cannot count.
+
+24
+00:01:28,459 --> 00:01:33,524
+On my forty test questions, it got zero of
+seventeen count and comparison
+
+25
+00:01:33,524 --> 00:01:34,634
+questions right.
+
+26
+00:01:34,984 --> 00:01:37,059
+The graph answered thirteen.
+
+27
+00:01:37,409 --> 00:01:41,734
+That is the one place the extra machinery
+clearly earns its place.
+
+28
+00:01:42,353 --> 00:01:44,453
+How good is the extraction?
+
+29
+00:01:45,003 --> 00:01:49,303
+I asked a bigger model to check ninety of
+the extracted facts.
+
+30
+00:01:49,653 --> 00:01:54,214
+Seventy-eight percent were correct, and
+ninety percent if you count things
+
+31
+00:01:54,214 --> 00:01:55,878
+the person only wished for.
+
+32
+00:01:56,228 --> 00:01:59,903
+Concerns were the weak spot, at sixty-three
+percent.
+
+33
+00:02:00,253 --> 00:02:02,203
+And recall was worse.
+
+34
+00:02:02,553 --> 00:02:07,283
+On ten transcripts, the graph captured only
+about a third of what people
+
+35
+00:02:07,283 --> 00:02:08,203
+actually said.
+
+36
+00:02:08,553 --> 00:02:10,778
+So counts here are lower bounds.
+
+37
+00:02:11,404 --> 00:02:15,479
+So I tried to fix recall with a looser
+prompt for concerns.
+
+38
+00:02:15,829 --> 00:02:20,401
+Coverage went up, but when I checked a
+random sample of the new facts, only
+
+39
+00:02:20,401 --> 00:02:23,754
+forty-nine percent were correct and a third
+were wrong.
+
+40
+00:02:24,104 --> 00:02:29,024
+I raised the verification threshold, kept
+about forty percent of them, and
+
+41
+00:02:29,024 --> 00:02:33,079
+tested on a fresh sample so I wasn't grading
+my own homework.
+
+42
+00:02:33,429 --> 00:02:35,929
+Seventy-six percent were correct.
+
+43
+00:02:36,279 --> 00:02:41,181
+Concern coverage on those ten transcripts
+went from twenty-two to forty-two
+
+44
+00:02:41,181 --> 00:02:41,704
+percent.
+
+45
+00:02:42,333 --> 00:02:45,333
+A small decision model routes each question.
+
+46
+00:02:45,683 --> 00:02:50,292
+It picked the right route on thirty-four of
+thirty-six questions, against
+
+47
+00:02:50,292 --> 00:02:53,133
+thirty-one for a model choosing tools
+itself.
+
+48
+00:02:53,483 --> 00:02:58,338
+Shorter route descriptions were faster but
+it gave up more often, so I kept
+
+49
+00:02:58,338 --> 00:03:02,158
+the longer ones and accepted about two
+seconds for routing.
+
+50
+00:03:02,508 --> 00:03:06,915
+On forty questions written by a different
+model, accuracy was about
+
+51
+00:03:06,915 --> 00:03:10,533
+seventy-five percent, so treat it as good,
+not perfect.
+
+52
+00:03:11,150 --> 00:03:14,975
+A language model writing the answer can
+invent a quote.
+
+53
+00:03:15,325 --> 00:03:20,034
+So the server builds the facts itself, lets
+the model only phrase them, and
+
+54
+00:03:20,034 --> 00:03:23,425
+checks every quote and number against the
+tool output.
+
+55
+00:03:23,775 --> 00:03:27,625
+If anything doesn't match, it falls back to
+the plain facts.
+
+56
+00:03:27,975 --> 00:03:32,624
+Across sixty questions, every delivered
+quote was real: ninety-eight of
+
+57
+00:03:32,624 --> 00:03:33,475
+ninety-eight.
+
+58
+00:03:33,825 --> 00:03:38,475
+The price is that about one answer in eight
+falls back to the plain text.
+
+59
+00:03:39,113 --> 00:03:43,863
+Then I let a small local model use the tool
+in ollmcp.
+
+60
+00:03:44,213 --> 00:03:49,050
+In a long conversation it sometimes skipped
+the tool and wrote quotes with
+
+61
+00:03:49,050 --> 00:03:50,488
+made-up interview ids.
+
+62
+00:03:50,838 --> 00:03:53,363
+That happened in three of five runs.
+
+63
+00:03:53,713 --> 00:03:57,806
+With thinking switched off and the
+conversation cleared before each
+
+64
+00:03:57,806 --> 00:04:01,288
+question, it relayed the answers faithfully
+in both runs.
+
+65
+00:04:01,638 --> 00:04:03,888
+The server cannot force that.
+
+66
+00:04:04,238 --> 00:04:09,080
+The lesson is that free chat with a small
+model is unvalidated, so keep the
+
+67
+00:04:09,080 --> 00:04:11,663
+validated path for anything you publish.
+
+68
+00:04:12,282 --> 00:04:14,207
+Five things I would keep.
+
+69
+00:04:14,557 --> 00:04:19,282
+One, a graph is worth it for counting and
+comparing, not for everything.
+
+70
+00:04:19,632 --> 00:04:22,457
+Two, test any fix on a fresh sample.
+
+71
+00:04:22,807 --> 00:04:27,732
+Three, say who judged your numbers; mine
+were a larger model, confirmed by
+
+72
+00:04:27,732 --> 00:04:27,932
+me.
+
+73
+00:04:28,282 --> 00:04:32,482
+Four, check what a model hands you against
+the source, every time.
+
+74
+00:04:32,832 --> 00:04:35,957
+And five, say how much of the data you used.
+
+75
+00:04:36,307 --> 00:04:40,132
+This was five hundred of twelve hundred
+fifty interviews.
+
+76
+00:04:40,482 --> 00:04:44,482
+The code and every result are on GitHub,
+linked below.

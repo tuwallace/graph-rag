@@ -1,0 +1,27 @@
+A local graph-RAG over 500 of the 1,250 Anthropic Interviewer transcripts: Ollama (qwen3:8b, nomic-embed-text), a small decision model as router, Neo4j, and ollmcp.
+What worked (counting and comparing), what didn't (a looser extraction prompt, an unvalidated small client model), and how it was checked.
+Code + write-up: https://github.com/tuwallace/graph-rag
+
+0:00 Hook
+0:28 What I built
+1:12 Why a graph: counting questions
+1:42 How good is the extraction?
+2:11 The recall fix that backfired
+2:42 Routing the question
+3:10 Answers you can trust
+3:38 A small model in ollmcp
+4:12 Takeaways
+
+HOW TO READ THE NUMBERS
+All scores are judged by a larger model (qwen2.5:32b) and the labels were confirmed by me. Each result is one run on a sample of 500 of the 1,250 interviews.
+The interviews were run by an AI interviewer and the participants chose to take part, so counts describe this sample, not workers in general.
+
+ABOUT THIS VIDEO
+- Narration is a synthetic (AI-generated) voice, made with Kokoro-82M.
+- The terminal segments (why a graph, answers you can trust, a small model in ollmcp) are replays of real captured output, not live screen recordings.
+  Lines starting with [annotation] are added by me and are not program output.
+- Animations were built with Remotion.
+
+CREDITS
+Dataset: Anthropic/AnthropicInterviewer on Hugging Face (Anthropic).
+Tools: Ollama, Neo4j, FastMCP, ollmcp, Remotion, Kokoro.

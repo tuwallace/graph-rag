@@ -1,0 +1,17 @@
+--- live run ---
+question: Top concerns among scientists?
+  source=llm  issues=0
+  delivered text (first lines):
+    The top concerns among scientists, based on 125 interviews, include hallucinations (14 interviews; 11.2%)...
+
+--- stored case from the 60-question run ---
+question: What worries creatives the most?
+  source=rendered_fallback  issues=4
+    issue: quote not in tool output: "AI lacks creativity, it can't think like a human"
+    issue: quote not in tool output: 'Job obsolescence is a real fear'
+    issue: quote not in tool output: 'Market saturation could hurt our work'
+  delivered text (first lines):
+    Concerns about AI mentioned most among creatives interviews (125 interviews; counted once per interview, ...
+    1. ai lacks creativity: 7 interviews (5.6%)
+    2. job obsolescence: 7 interviews (5.6%)
+

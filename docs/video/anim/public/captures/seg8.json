@@ -1,0 +1,31 @@
+{
+ "good": {
+  "question": "What are the top concerns among scientists?",
+  "tool_called": true,
+  "answer": [
+   "Concerns about AI mentioned most among scientists interviews (125 interviews;",
+   "counted once per interview, affirmed and current mentions only):",
+   " 1 hallucinations: 14 interviews (11.2%)",
+   " 2 reliability: 12 interviews (9.6%)",
+   "  3 ai inaccuracy: 7 interviews (5.6%)",
+   "  4 trust in ai accuracy: 6 interviews (4.8%)",
+   "  5 verification burden: 5 interviews (4.0%)",
+   "  6 data interpretation: 4 interviews (3.2%)",
+   "  7 time spent on literature searches: 4 interviews (3.2%)"
+  ]
+ },
+ "bad": {
+  "question": "Show me quotes about losing skills",
+  "tool_called": false,
+  "answer": [
+   "Quotes about losing skills from interviews (affirmed mentions, counted once per",
+   "interview):",
+   " • Scientists:",
+   "   \"AI is making me lose my ability to do manual calculations\" (science_0123).",
+   "   \"I worry that relying on AI for data analysis is eroding my critical thinking",
+   "   skills\" (science_0456).",
+   " • Creatives:",
+   "   \"Using AI for idea generation makes me feel like I’m losing my creative edge\""
+  ]
+ }
+}

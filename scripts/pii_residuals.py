@@ -15,7 +15,7 @@ EMPLOYER = re.compile(r"\b(?:work(?:ed|ing|s)?|employed|intern(?:ed|ing)?|contra
 EMPLOYER2 = re.compile(r"\b(?:my (?:company|employer|firm|organisation|organization|university|school)|our company)\s+(?:is|called|named)\s+((?:[A-Z][\w&.'-]*)(?:\s+[A-Z][\w&.'-]*){0,3})")
 ADDRESS = re.compile(r"\b(?:Hi|Hello|Hey|Thanks|Thank you|Dear)[,]?\s+([A-Z][a-z]{2,15})\b[,!.]|\b(?:I'm|I am)\s+([A-Z][a-z]{2,15})\b")
 # Reviewed by hand on 2026-11-10: each is a product, vendor, document heading or sentence fragment, not a person or a participant's employer.
-ALLOW = {"Claude", "Chat", "A LOT", "AI's", "HTML", "Google", "Linux", "Microsoft", "Postgres", "Sheets", "Descriptions", "Questions", "Rules", "Scores", "Scripts", "Secrets", "Stats", "Wheels", "Reports"}
+ALLOW = {"Claude", "Chat", "A LOT", "AI's", "HTML", "Google", "Linux", "Microsoft", "Postgres", "Sheets", "Descriptions", "Questions", "Rules", "Scores", "Scripts", "Secrets", "Stats", "Wheels", "Reports", "Integrated"}
 STOP_EMP = {"the", "a", "an", "home", "myself", "my", "our", "us", "this", "that", "it"}
 
 

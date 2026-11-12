@@ -1,0 +1,7 @@
+plain vector search: What are the top concerns among scientists?
+  science_0015   scientists score 0.832
+  creativity_0069 creatives  score 0.829
+  science_0116   scientists score 0.828
+  work_0930      workforce  score 0.828
+  science_0112   scientists score 0.828
+  -> 5 similar answers. No counts, no ranking of concerns.

@@ -1,0 +1,1 @@
+graph RAG, local LLM, Ollama, Neo4j, ollmcp, MCP, evaluation, knowledge graph, AI engineering

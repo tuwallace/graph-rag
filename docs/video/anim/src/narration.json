@@ -1,0 +1,326 @@
+{
+ "seg1": {
+  "audio": "narration/seg1.wav",
+  "duration": 28.9,
+  "sentences": [
+   {
+    "text": "I built a system that answers questions about five hundred AI interviews, entirely on my laptop.",
+    "start": 0.5,
+    "end": 7.25
+   },
+   {
+    "text": "Ask it which concerns scientists raise most, and it counts.",
+    "start": 7.6,
+    "end": 11.5
+   },
+   {
+    "text": "Plain vector search got none of seventeen counting and comparison questions right.",
+    "start": 11.85,
+    "end": 17.225
+   },
+   {
+    "text": "The graph got thirteen.",
+    "start": 17.575,
+    "end": 19.525
+   },
+   {
+    "text": "But the part worth watching is how often my own checks were wrong, and how I found out.",
+    "start": 19.875,
+    "end": 25.05
+   },
+   {
+    "text": "Here is the whole story, with the numbers.",
+    "start": 25.4,
+    "end": 28.15
+   }
+  ]
+ },
+ "seg2": {
+  "audio": "narration/seg2.wav",
+  "duration": 44.25,
+  "sentences": [
+   {
+    "text": "The data is five hundred interviews from the Anthropic Interviewer dataset, where people describe how they use AI at work.",
+    "start": 0.5,
+    "end": 8.275
+   },
+   {
+    "text": "A local model reads each transcript and pulls out tasks, uses of AI, and concerns, each with a quote.",
+    "start": 8.625,
+    "end": 15.85
+   },
+   {
+    "text": "A second small model checks that every quote really supports its claim.",
+    "start": 16.2,
+    "end": 20.975
+   },
+   {
+    "text": "Similar names are merged, and everything goes into Neo4j.",
+    "start": 21.325,
+    "end": 25.6
+   },
+   {
+    "text": "When you ask a question, a router picks one of a few fixed queries.",
+    "start": 25.95,
+    "end": 30.175
+   },
+   {
+    "text": "No model writes database code.",
+    "start": 30.525,
+    "end": 33.075
+   },
+   {
+    "text": "One important limit: the interviews were run by an AI and the people chose to take part, so every count describes this sample, not workers in general.",
+    "start": 33.425,
+    "end": 43.5
+   }
+  ]
+ },
+ "seg3": {
+  "audio": "narration/seg3.wav",
+  "duration": 30.6,
+  "sentences": [
+   {
+    "text": "Here is why a graph.",
+    "start": 0.5,
+    "end": 2.35
+   },
+   {
+    "text": "Ask for the top concerns among scientists, and the answer is a ranked list with counts out of one hundred twenty-five interviews.",
+    "start": 2.7,
+    "end": 10.925
+   },
+   {
+    "text": "Plain retrieval can only show you a few similar answers, so it cannot count.",
+    "start": 11.275,
+    "end": 16.225
+   },
+   {
+    "text": "On my forty test questions, it got zero of seventeen count and comparison questions right.",
+    "start": 16.575,
+    "end": 22.75
+   },
+   {
+    "text": "The graph answered thirteen.",
+    "start": 23.1,
+    "end": 25.175
+   },
+   {
+    "text": "That is the one place the extra machinery clearly earns its place.",
+    "start": 25.525,
+    "end": 29.85
+   }
+  ]
+ },
+ "seg4": {
+  "audio": "narration/seg4.wav",
+  "duration": 29.675,
+  "sentences": [
+   {
+    "text": "How good is the extraction?",
+    "start": 0.5,
+    "end": 2.6
+   },
+   {
+    "text": "I asked a bigger model to check ninety of the extracted facts.",
+    "start": 3.15,
+    "end": 7.45
+   },
+   {
+    "text": "Seventy-eight percent were correct, and ninety percent if you count things the person only wished for.",
+    "start": 7.8,
+    "end": 14.025
+   },
+   {
+    "text": "Concerns were the weak spot, at sixty-three percent.",
+    "start": 14.375,
+    "end": 18.05
+   },
+   {
+    "text": "And recall was worse.",
+    "start": 18.4,
+    "end": 20.35
+   },
+   {
+    "text": "On ten transcripts, the graph captured only about a third of what people actually said.",
+    "start": 20.7,
+    "end": 26.35
+   },
+   {
+    "text": "So counts here are lower bounds.",
+    "start": 26.7,
+    "end": 28.925
+   }
+  ]
+ },
+ "seg5": {
+  "audio": "narration/seg5.wav",
+  "duration": 31.55,
+  "sentences": [
+   {
+    "text": "So I tried to fix recall with a looser prompt for concerns.",
+    "start": 0.5,
+    "end": 4.575
+   },
+   {
+    "text": "Coverage went up, but when I checked a random sample of the new facts, only forty-nine percent were correct and a third were wrong.",
+    "start": 4.925,
+    "end": 12.85
+   },
+   {
+    "text": "I raised the verification threshold, kept about forty percent of them, and tested on a fresh sample so I wasn't grading my own homework.",
+    "start": 13.2,
+    "end": 22.175
+   },
+   {
+    "text": "Seventy-six percent were correct.",
+    "start": 22.525,
+    "end": 25.025
+   },
+   {
+    "text": "Concern coverage on those ten transcripts went from twenty-two to forty-two percent.",
+    "start": 25.375,
+    "end": 30.8
+   }
+  ]
+ },
+ "seg6": {
+  "audio": "narration/seg6.wav",
+  "duration": 29.45,
+  "sentences": [
+   {
+    "text": "A small decision model routes each question.",
+    "start": 0.5,
+    "end": 3.5
+   },
+   {
+    "text": "It picked the right route on thirty-four of thirty-six questions, against thirty-one for a model choosing tools itself.",
+    "start": 3.85,
+    "end": 11.3
+   },
+   {
+    "text": "Shorter route descriptions were faster but it gave up more often, so I kept the longer ones and accepted about two seconds for routing.",
+    "start": 11.65,
+    "end": 20.325
+   },
+   {
+    "text": "On forty questions written by a different model, accuracy was about seventy-five percent, so treat it as good, not perfect.",
+    "start": 20.675,
+    "end": 28.7
+   }
+  ]
+ },
+ "seg7": {
+  "audio": "narration/seg7.wav",
+  "duration": 28.575,
+  "sentences": [
+   {
+    "text": "A language model writing the answer can invent a quote.",
+    "start": 0.5,
+    "end": 4.325
+   },
+   {
+    "text": "So the server builds the facts itself, lets the model only phrase them, and checks every quote and number against the tool output.",
+    "start": 4.675,
+    "end": 12.775
+   },
+   {
+    "text": "If anything doesn't match, it falls back to the plain facts.",
+    "start": 13.125,
+    "end": 16.975
+   },
+   {
+    "text": "Across sixty questions, every delivered quote was real: ninety-eight of ninety-eight.",
+    "start": 17.325,
+    "end": 22.825
+   },
+   {
+    "text": "The price is that about one answer in eight falls back to the plain text.",
+    "start": 23.175,
+    "end": 27.825
+   }
+  ]
+ },
+ "seg8": {
+  "audio": "narration/seg8.wav",
+  "duration": 33.8,
+  "sentences": [
+   {
+    "text": "Then I let a small local model use the tool in ollmcp.",
+    "start": 0.5,
+    "end": 5.25
+   },
+   {
+    "text": "In a long conversation it sometimes skipped the tool and wrote quotes with made-up interview ids.",
+    "start": 5.6,
+    "end": 11.875
+   },
+   {
+    "text": "That happened in three of five runs.",
+    "start": 12.225,
+    "end": 14.75
+   },
+   {
+    "text": "With thinking switched off and the conversation cleared before each question, it relayed the answers faithfully in both runs.",
+    "start": 15.1,
+    "end": 22.675
+   },
+   {
+    "text": "The server cannot force that.",
+    "start": 23.025,
+    "end": 25.275
+   },
+   {
+    "text": "The lesson is that free chat with a small model is unvalidated, so keep the validated path for anything you publish.",
+    "start": 25.625,
+    "end": 33.05
+   }
+  ]
+ },
+ "seg9": {
+  "audio": "narration/seg9.wav",
+  "duration": 33.45,
+  "sentences": [
+   {
+    "text": "Five things I would keep.",
+    "start": 0.5,
+    "end": 2.425
+   },
+   {
+    "text": "One, a graph is worth it for counting and comparing, not for everything.",
+    "start": 2.775,
+    "end": 7.5
+   },
+   {
+    "text": "Two, test any fix on a fresh sample.",
+    "start": 7.85,
+    "end": 10.675
+   },
+   {
+    "text": "Three, say who judged your numbers; mine were a larger model, confirmed by me.",
+    "start": 11.025,
+    "end": 16.15
+   },
+   {
+    "text": "Four, check what a model hands you against the source, every time.",
+    "start": 16.5,
+    "end": 20.7
+   },
+   {
+    "text": "And five, say how much of the data you used.",
+    "start": 21.05,
+    "end": 24.175
+   },
+   {
+    "text": "This was five hundred of twelve hundred fifty interviews.",
+    "start": 24.525,
+    "end": 28.35
+   },
+   {
+    "text": "The code and every result are on GitHub, linked below.",
+    "start": 28.7,
+    "end": 32.7
+   }
+  ]
+ }
+}

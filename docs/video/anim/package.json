@@ -1,0 +1,14 @@
+{
+  "name": "graph-rag-video-clips",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Animated and terminal-replay clips for the graph-rag video (see ../script.md)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "still": "remotion still src/index.ts --port=3100",
+    "render": "remotion render src/index.ts --port=3100",
+    "render:all": "for c in Hook Pipeline Extraction Backfire Routing Takeaways Seg3 Seg7 Seg8; do remotion render src/index.ts $c out/$c.mp4 --overwrite --port=3100 || exit 1; done"
+  },
+  "dependencies": { "@remotion/cli": "^4.0.537", "react": "^19.3.1", "react-dom": "^19.3.1", "remotion": "^4.0.537" },
+  "devDependencies": { "@types/react": "^19.3.0", "typescript": "^7.0.2" }
+}
