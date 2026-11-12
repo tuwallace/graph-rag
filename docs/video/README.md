@@ -2,7 +2,7 @@
 
 A 4.8-minute YouTube video about this project ("I built a graph RAG over 500 AI interviews, and checked it honestly"). The structure and tooling follow the
 helpdesk-rag video. Rendered audio and video are **not** committed (regenerable); this folder has the sources and the scripts to rebuild them.
-Nothing has been uploaded.
+The published video: https://youtu.be/Ewr40PPcdpA
 
 | Path | What it is |
 |---|---|
